@@ -4,7 +4,7 @@ import psycopg2
 import bycrypt
 
 #REMEMBER encrypt so that others cannot get access to the database without authorization.
-databaseConnect = psycopg2.connect("dbname='tempName' user='dBeaver' host='serverHost' password='notUsedYet'")
+databaseConnect = psycopg2.connect("dbname='tempName' user='dBeaver' host='testHost' password='notUsedYet'")
 dataBaseEditor = databaseConnect.cursor()
 
 #Encyclopedia class
@@ -79,3 +79,4 @@ class Persons:
     
 #TODO Write Python to add the tuples (Page:People []) that uses PostgreSQL commands
 #to add to our current databaase.
+
