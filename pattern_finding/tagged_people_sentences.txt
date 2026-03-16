@@ -2,9 +2,11 @@
 VOLUME: v1
 
 ARTICLE: Project MUSE - UTHLEDE (OT-POLIZEIHAFTLAGER) [aka UTTLEDE]
+
 ------------------------------------
 
 ARTICLE: Project MUSE - GRÜNBERG I
+
 NAME: Designation       Individual
 First Name              Anna
 Alt First Name           NaN
@@ -104,6 +106,7 @@ SENTENCE: The column was under the command of Karl Herman Jeschke (he was Lagerf
 ------------------------------------
 
 ARTICLE: Project MUSE - REMSCHEID-LÜTTRINGHAUSEN
+
 NAME: Designation       Individual
 First Name             Willy
 Alt First Name           NaN
@@ -131,6 +134,7 @@ SENTENCE: Another prisoner, Social Democrat Emil Hirsch, had just entrusted him 
 ------------------------------------
 
 ARTICLE: Project MUSE - MÜHLDORF
+
 NAME: Designation       Individual
 First Name            Walter
 Alt First Name           NaN
@@ -164,12 +168,13 @@ Alt Last Name              NaN
 Title                      NaN
 Place                      NaN
 Organization               NaN
-SENTENCE: In another U.S. military trial, the roll-call leader at camp M 1, SS-Oberscharführer Georg Schallermair, was sentenced to death and executed in June 1951 at Landsberg am Lech.6 German investigations by the state prosecutors of Traunstein and München II into the camp leaders, prisoner-functionaries, OT, and company officials did not result in any prosecutions.7
-[('In', 'IN'), ('another', 'DT'), ('U.S.', 'NNP'), ('military', 'JJ'), ('trial', 'NN'), (',', ','), ('the', 'DT'), ('roll-call', 'JJ'), ('leader', 'NN'), ('at', 'IN'), ('camp', 'JJ'), ('M', 'NNP'), ('1', 'CD'), (',', ','), ('SS-Oberscharführer', 'NNP'), ('Georg', 'NNP'), ('Schallermair', 'NNP'), (',', ','), ('was', 'VBD'), ('sentenced', 'VBN'), ('to', 'TO'), ('death', 'NN'), ('and', 'CC'), ('executed', 'VBN'), ('in', 'IN'), ('June', 'NNP'), ('1951', 'CD'), ('at', 'IN'), ('Landsberg', 'NNP'), ('am', 'VBP'), ('Lech.6', 'JJ'), ('German', 'JJ'), ('investigations', 'NNS'), ('by', 'IN'), ('the', 'DT'), ('state', 'NN'), ('prosecutors', 'NNS'), ('of', 'IN'), ('Traunstein', 'NNP'), ('and', 'CC'), ('München', 'NNP'), ('II', 'NNP'), ('into', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('leaders', 'NNS'), (',', ','), ('prisoner-functionaries', 'NNS'), (',', ','), ('OT', 'NNP'), (',', ','), ('and', 'CC'), ('company', 'NN'), ('officials', 'NNS'), ('did', 'VBD'), ('not', 'RB'), ('result', 'VB'), ('in', 'IN'), ('any', 'DT'), ('prosecutions.7', 'NN')] 
+SENTENCE: In another U.S. military trial, the roll-call leader at camp M 1, SS-Oberscharführer Georg Schallermair, was sentenced to death and executed in June 1951 at Landsberg am Lech.
+[('In', 'IN'), ('another', 'DT'), ('U.S.', 'NNP'), ('military', 'JJ'), ('trial', 'NN'), (',', ','), ('the', 'DT'), ('roll-call', 'JJ'), ('leader', 'NN'), ('at', 'IN'), ('camp', 'JJ'), ('M', 'NNP'), ('1', 'CD'), (',', ','), ('SS-Oberscharführer', 'NNP'), ('Georg', 'NNP'), ('Schallermair', 'NNP'), (',', ','), ('was', 'VBD'), ('sentenced', 'VBN'), ('to', 'TO'), ('death', 'NN'), ('and', 'CC'), ('executed', 'VBN'), ('in', 'IN'), ('June', 'NNP'), ('1951', 'CD'), ('at', 'IN'), ('Landsberg', 'NNP'), ('am', 'VBP'), ('Lech', 'NNP'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - ZSCHORLAU
+
 NAME: Designation       Individual
 First Name            Robert
 Alt First Name           NaN
@@ -245,6 +250,7 @@ SENTENCE: Zschorlau’s harsh conditions and rough interrogations caused the dea
 ------------------------------------
 
 ARTICLE: Project MUSE - SCHÖNEFELD [aka AL HENSCHEL]
+
 NAME: Designation       Individual
 First Name             Oskar
 Alt First Name           NaN
@@ -257,6 +263,18 @@ Organization             NaN
 SENTENCE: The women had to do forced labor in the Henschel-Flugzeug-Werke (HFW), a company founded by Oskar R. Henschel in 1933.
 [('The', 'DT'), ('women', 'NNS'), ('had', 'VBD'), ('to', 'TO'), ('do', 'VB'), ('forced', 'VBN'), ('labor', 'NN'), ('in', 'IN'), ('the', 'DT'), ('Henschel-Flugzeug-Werke', 'NNP'), ('(', '('), ('HFW', 'NNP'), (')', ')'), (',', ','), ('a', 'DT'), ('company', 'NN'), ('founded', 'VBN'), ('by', 'IN'), ('Oskar', 'NNP'), ('R.', 'NNP'), ('Henschel', 'NNP'), ('in', 'IN'), ('1933', 'CD'), ('.', '.')] 
 
+NAME: Designation       Individual
+First Name              Emil
+Alt First Name           NaN
+Middle Name              NaN
+Last Name             Rieder
+Alt Last Name            NaN
+Title                    NaN
+Place                    NaN
+Organization             NaN
+SENTENCE: He was replaced by 45-year-old SS-Oberscharführer Emil Rieder.
+[('He', 'PRP'), ('was', 'VBD'), ('replaced', 'VBN'), ('by', 'IN'), ('45-year-old', 'JJ'), ('SS-Oberscharführer', 'NNP'), ('Emil', 'NNP'), ('Rieder', 'NNP'), ('.', '.')] 
+
 NAME: Designation          Individual
 First Name            Henriette
 Alt First Name              NaN
@@ -266,8 +284,8 @@ Alt Last Name               NaN
 Title                       NaN
 Place                       NaN
 Organization                NaN
-SENTENCE: According to survivors, those women who had to work the night shift from 7:00 p.m. to 7:00 a.m. hated it more because of the cold.9 The survivor Henriette Cartier-Worms described her working conditions in a statement she made for the trial against the major war criminals that was held at the International Military Tribunal in Nürnberg: “My work involved drilling eight-mm holes in steel or hardened aluminum with a heavy, seven kilo [15.4-pound] steam hammer.
-[('According', 'VBG'), ('to', 'TO'), ('survivors', 'NNS'), (',', ','), ('those', 'DT'), ('women', 'NNS'), ('who', 'WP'), ('had', 'VBD'), ('to', 'TO'), ('work', 'VB'), ('the', 'DT'), ('night', 'NN'), ('shift', 'NN'), ('from', 'IN'), ('7:00', 'CD'), ('p.m.', 'NN'), ('to', 'TO'), ('7:00', 'CD'), ('a.m.', 'RB'), ('hated', 'VBD'), ('it', 'PRP'), ('more', 'RBR'), ('because', 'IN'), ('of', 'IN'), ('the', 'DT'), ('cold.9', 'NN'), ('The', 'DT'), ('survivor', 'NN'), ('Henriette', 'NNP'), ('Cartier-Worms', 'NNP'), ('described', 'VBD'), ('her', 'PRP$'), ('working', 'JJ'), ('conditions', 'NNS'), ('in', 'IN'), ('a', 'DT'), ('statement', 'NN'), ('she', 'PRP'), ('made', 'VBD'), ('for', 'IN'), ('the', 'DT'), ('trial', 'NN'), ('against', 'IN'), ('the', 'DT'), ('major', 'JJ'), ('war', 'NN'), ('criminals', 'NNS'), ('that', 'WDT'), ('was', 'VBD'), ('held', 'VBN'), ('at', 'IN'), ('the', 'DT'), ('International', 'NNP'), ('Military', 'NNP'), ('Tribunal', 'NNP'), ('in', 'IN'), ('Nürnberg', 'NNP'), (':', ':'), ('“', 'NN'), ('My', 'NNP'), ('work', 'NN'), ('involved', 'VBN'), ('drilling', 'VBG'), ('eight-mm', 'JJ'), ('holes', 'NNS'), ('in', 'IN'), ('steel', 'NN'), ('or', 'CC'), ('hardened', 'VBN'), ('aluminum', 'NN'), ('with', 'IN'), ('a', 'DT'), ('heavy', 'JJ'), (',', ','), ('seven', 'CD'), ('kilo', 'NNS'), ('[', 'JJ'), ('15.4-pound', 'JJ'), (']', 'NNP'), ('steam', 'NN'), ('hammer', 'NN'), ('.', '.')] 
+SENTENCE: The survivor Henriette Cartier-Worms described her working conditions in a statement she made for the trial against the major war criminals that was held at the International Military Tribunal in Nürnberg: “My work involved drilling eight-mm holes in steel or hardened aluminum with a heavy, seven kilo [15.-pound] steam hammer.
+[('The', 'DT'), ('survivor', 'NN'), ('Henriette', 'NNP'), ('Cartier-Worms', 'NNP'), ('described', 'VBD'), ('her', 'PRP$'), ('working', 'JJ'), ('conditions', 'NNS'), ('in', 'IN'), ('a', 'DT'), ('statement', 'NN'), ('she', 'PRP'), ('made', 'VBD'), ('for', 'IN'), ('the', 'DT'), ('trial', 'NN'), ('against', 'IN'), ('the', 'DT'), ('major', 'JJ'), ('war', 'NN'), ('criminals', 'NNS'), ('that', 'WDT'), ('was', 'VBD'), ('held', 'VBN'), ('at', 'IN'), ('the', 'DT'), ('International', 'NNP'), ('Military', 'NNP'), ('Tribunal', 'NNP'), ('in', 'IN'), ('Nürnberg', 'NNP'), (':', ':'), ('“', 'NN'), ('My', 'NNP'), ('work', 'NN'), ('involved', 'VBN'), ('drilling', 'VBG'), ('eight-mm', 'JJ'), ('holes', 'NNS'), ('in', 'IN'), ('steel', 'NN'), ('or', 'CC'), ('hardened', 'VBN'), ('aluminum', 'NN'), ('with', 'IN'), ('a', 'DT'), ('heavy', 'JJ'), (',', ','), ('seven', 'CD'), ('kilo', 'NNS'), ('[', 'JJ'), ('15.-pound', 'JJ'), (']', 'NNP'), ('steam', 'NN'), ('hammer', 'NN'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name              Anna
@@ -290,12 +308,13 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: The former camp guard Hildegard Glimpel was sentenced to a three-month jail term for mistreating prisoners.17 Investigations by the Central Office of State Justice Administrations (ZdL) in Ludwigsburg ceased investigating in 1971, as there was no evidence of the premeditated murder of camp inmates.
-[('The', 'DT'), ('former', 'JJ'), ('camp', 'NN'), ('guard', 'NN'), ('Hildegard', 'NNP'), ('Glimpel', 'NNP'), ('was', 'VBD'), ('sentenced', 'VBN'), ('to', 'TO'), ('a', 'DT'), ('three-month', 'JJ'), ('jail', 'NN'), ('term', 'NN'), ('for', 'IN'), ('mistreating', 'VBG'), ('prisoners.17', 'JJ'), ('Investigations', 'NNS'), ('by', 'IN'), ('the', 'DT'), ('Central', 'NNP'), ('Office', 'NNP'), ('of', 'IN'), ('State', 'NNP'), ('Justice', 'NNP'), ('Administrations', 'NNP'), ('(', '('), ('ZdL', 'NNP'), (')', ')'), ('in', 'IN'), ('Ludwigsburg', 'NNP'), ('ceased', 'VBD'), ('investigating', 'VBG'), ('in', 'IN'), ('1971', 'CD'), (',', ','), ('as', 'IN'), ('there', 'EX'), ('was', 'VBD'), ('no', 'DT'), ('evidence', 'NN'), ('of', 'IN'), ('the', 'DT'), ('premeditated', 'JJ'), ('murder', 'NN'), ('of', 'IN'), ('camp', 'NN'), ('inmates', 'NNS'), ('.', '.')] 
+SENTENCE: The former camp guard Hildegard Glimpel was sentenced to a three-month jail term for mistreating prisoners.
+[('The', 'DT'), ('former', 'JJ'), ('camp', 'NN'), ('guard', 'NN'), ('Hildegard', 'NNP'), ('Glimpel', 'NNP'), ('was', 'VBD'), ('sentenced', 'VBN'), ('to', 'TO'), ('a', 'DT'), ('three-month', 'JJ'), ('jail', 'NN'), ('term', 'NN'), ('for', 'IN'), ('mistreating', 'VBG'), ('prisoners', 'NNS'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - HENNIGSDORF
+
 NAME: Designation       Individual
 First Name           Wilhelm
 Alt First Name           NaN
@@ -305,9 +324,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: In May 1940, the board of directors of the rolling mill negotiated with SS-Hauptsturmführer Wilhelm Burböck of the Inspectorate of  [End Page 1315] Concentration Camps (IKL) in Oranienburg about details regarding transport, food, accommodation, and payment.1
-The concentration camp prisoners were taken daily by truck to Hennigsdorf.
-[('In', 'IN'), ('May', 'NNP'), ('1940', 'CD'), (',', ','), ('the', 'DT'), ('board', 'NN'), ('of', 'IN'), ('directors', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('rolling', 'NN'), ('mill', 'NN'), ('negotiated', 'VBN'), ('with', 'IN'), ('SS-Hauptsturmführer', 'NNP'), ('Wilhelm', 'NNP'), ('Burböck', 'NNP'), ('of', 'IN'), ('the', 'DT'), ('Inspectorate', 'NNP'), ('of', 'IN'), ('[', 'NNP'), ('End', 'NNP'), ('Page', 'NN'), ('1315', 'CD'), (']', 'NNP'), ('Concentration', 'NNP'), ('Camps', 'NNP'), ('(', '('), ('IKL', 'NNP'), (')', ')'), ('in', 'IN'), ('Oranienburg', 'NNP'), ('about', 'IN'), ('details', 'NNS'), ('regarding', 'VBG'), ('transport', 'NN'), (',', ','), ('food', 'NN'), (',', ','), ('accommodation', 'NN'), (',', ','), ('and', 'CC'), ('payment.1', 'VBZ'), ('The', 'DT'), ('concentration', 'NN'), ('camp', 'NN'), ('prisoners', 'NNS'), ('were', 'VBD'), ('taken', 'VBN'), ('daily', 'RB'), ('by', 'IN'), ('truck', 'NN'), ('to', 'TO'), ('Hennigsdorf', 'NNP'), ('.', '.')] 
+SENTENCE: In May 1940, the board of directors of the rolling mill negotiated with SS-Hauptsturmführer Wilhelm Burböck of the Inspectorate of   Concentration Camps (IKL) in Oranienburg about details regarding transport, food, accommodation, and payment.
+[('In', 'IN'), ('May', 'NNP'), ('1940', 'CD'), (',', ','), ('the', 'DT'), ('board', 'NN'), ('of', 'IN'), ('directors', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('rolling', 'NN'), ('mill', 'NN'), ('negotiated', 'VBN'), ('with', 'IN'), ('SS-Hauptsturmführer', 'NNP'), ('Wilhelm', 'NNP'), ('Burböck', 'NNP'), ('of', 'IN'), ('the', 'DT'), ('Inspectorate', 'NNP'), ('of', 'IN'), ('Concentration', 'NNP'), ('Camps', 'NNP'), ('(', '('), ('IKL', 'NNP'), (')', ')'), ('in', 'IN'), ('Oranienburg', 'NNP'), ('about', 'IN'), ('details', 'NNS'), ('regarding', 'VBG'), ('transport', 'NN'), (',', ','), ('food', 'NN'), (',', ','), ('accommodation', 'NN'), (',', ','), ('and', 'CC'), ('payment', 'NN'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name            Janina
@@ -318,13 +336,14 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: It included an infirmary, kitchen barracks, washing and toilet facilities, as well as rooms for the female SS guards.10 “Hennigsdorf,” according to the then-25-year-old Janina Krafczyk from Warsaw, who together with her mother had been transported to the subcamp, “appeared luxurious in comparison to Ravensbrück because everyone had their own bed.”11
+SENTENCE: “Hennigsdorf,” according to the then-25-year-old Janina Krafczyk from Warsaw, who together with her mother had been transported to the subcamp, “appeared luxurious in comparison to Ravensbrück because everyone had their own bed.”
 The SS initially gave the women civilian clothes, which were marked with a white-painted cross.
-[('It', 'PRP'), ('included', 'VBD'), ('an', 'DT'), ('infirmary', 'JJ'), (',', ','), ('kitchen', 'JJ'), ('barracks', 'NNS'), (',', ','), ('washing', 'VBG'), ('and', 'CC'), ('toilet', 'NN'), ('facilities', 'NNS'), (',', ','), ('as', 'RB'), ('well', 'RB'), ('as', 'IN'), ('rooms', 'NNS'), ('for', 'IN'), ('the', 'DT'), ('female', 'JJ'), ('SS', 'NNP'), ('guards.10', 'NN'), ('“', 'NNP'), ('Hennigsdorf', 'NNP'), (',', ','), ('”', 'NNP'), ('according', 'VBG'), ('to', 'TO'), ('the', 'DT'), ('then-25-year-old', 'JJ'), ('Janina', 'NNP'), ('Krafczyk', 'NNP'), ('from', 'IN'), ('Warsaw', 'NNP'), (',', ','), ('who', 'WP'), ('together', 'RB'), ('with', 'IN'), ('her', 'PRP$'), ('mother', 'NN'), ('had', 'VBD'), ('been', 'VBN'), ('transported', 'VBN'), ('to', 'TO'), ('the', 'DT'), ('subcamp', 'NN'), (',', ','), ('“', 'NN'), ('appeared', 'VBD'), ('luxurious', 'JJ'), ('in', 'IN'), ('comparison', 'NN'), ('to', 'TO'), ('Ravensbrück', 'NNP'), ('because', 'IN'), ('everyone', 'NN'), ('had', 'VBD'), ('their', 'PRP$'), ('own', 'JJ'), ('bed.', 'NN'), ('”', '$'), ('11', 'CD'), ('The', 'DT'), ('SS', 'NNP'), ('initially', 'RB'), ('gave', 'VBD'), ('the', 'DT'), ('women', 'NNS'), ('civilian', 'JJ'), ('clothes', 'NNS'), (',', ','), ('which', 'WDT'), ('were', 'VBD'), ('marked', 'VBN'), ('with', 'IN'), ('a', 'DT'), ('white-painted', 'JJ'), ('cross', 'NN'), ('.', '.')] 
+[('“', 'NN'), ('Hennigsdorf', 'NNP'), (',', ','), ('”', 'NNP'), ('according', 'VBG'), ('to', 'TO'), ('the', 'DT'), ('then-25-year-old', 'JJ'), ('Janina', 'NNP'), ('Krafczyk', 'NNP'), ('from', 'IN'), ('Warsaw', 'NNP'), (',', ','), ('who', 'WP'), ('together', 'RB'), ('with', 'IN'), ('her', 'PRP$'), ('mother', 'NN'), ('had', 'VBD'), ('been', 'VBN'), ('transported', 'VBN'), ('to', 'TO'), ('the', 'DT'), ('subcamp', 'NN'), (',', ','), ('“', 'NN'), ('appeared', 'VBD'), ('luxurious', 'JJ'), ('in', 'IN'), ('comparison', 'NN'), ('to', 'TO'), ('Ravensbrück', 'NNP'), ('because', 'IN'), ('everyone', 'NN'), ('had', 'VBD'), ('their', 'PRP$'), ('own', 'JJ'), ('bed.', 'NN'), ('”', 'IN'), ('The', 'DT'), ('SS', 'NNP'), ('initially', 'RB'), ('gave', 'VBD'), ('the', 'DT'), ('women', 'NNS'), ('civilian', 'JJ'), ('clothes', 'NNS'), (',', ','), ('which', 'WDT'), ('were', 'VBD'), ('marked', 'VBN'), ('with', 'IN'), ('a', 'DT'), ('white-painted', 'JJ'), ('cross', 'NN'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - GLEIWITZ II
+
 NAME: Designation         Individual
 First Name              Konrad
 Alt First Name             NaN
@@ -400,6 +419,7 @@ SENTENCE: When prisoner Stanisława Müller (a nurse at the subcamp) leaned out 
 ------------------------------------
 
 ARTICLE: Project MUSE - REICHENBACH [aka LANGENBIELAU]
+
 NAME: Designation       Individual
 First Name            Albert
 Alt First Name           NaN
@@ -445,9 +465,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: To muffle the screams, the guards held a cushion over the prisoners’ faces.1
-Among the Reichenbach perpetrators were Toni Grunwald and Dr. Kassebaum.
-[('To', 'TO'), ('muffle', 'VB'), ('the', 'DT'), ('screams', 'NN'), (',', ','), ('the', 'DT'), ('guards', 'NNS'), ('held', 'VBD'), ('a', 'DT'), ('cushion', 'NN'), ('over', 'IN'), ('the', 'DT'), ('prisoners', 'NNS'), ('’', 'VBP'), ('faces.1', 'NN'), ('Among', 'IN'), ('the', 'DT'), ('Reichenbach', 'NNP'), ('perpetrators', 'NNS'), ('were', 'VBD'), ('Toni', 'NNP'), ('Grunwald', 'NNP'), ('and', 'CC'), ('Dr.', 'NNP'), ('Kassebaum', 'NNP'), ('.', '.')] 
+SENTENCE: Among the Reichenbach perpetrators were Toni Grunwald and Dr. Kassebaum.
+[('Among', 'IN'), ('the', 'DT'), ('Reichenbach', 'NNP'), ('perpetrators', 'NNS'), ('were', 'VBD'), ('Toni', 'NNP'), ('Grunwald', 'NNP'), ('and', 'CC'), ('Dr.', 'NNP'), ('Kassebaum', 'NNP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name              Paul
@@ -458,9 +477,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Grunwald, a former Communist, forced prisoners to injest castor oil, after announcing his intention of releaving their “thirst.” The camp physician, Kassebaum, berated detainees for “faking” injuries sustained during interrogation.2
-On March 22, one day after Reich President Paul von Hindenburg officially received Hitler’s government at Potsdam, the SS celebrated by parading battered SPD members through  [End Page 156] the neighboring marketplace.
-[('Grunwald', 'NNP'), (',', ','), ('a', 'DT'), ('former', 'JJ'), ('Communist', 'NN'), (',', ','), ('forced', 'VBD'), ('prisoners', 'NNS'), ('to', 'TO'), ('injest', 'VB'), ('castor', 'NN'), ('oil', 'NN'), (',', ','), ('after', 'IN'), ('announcing', 'VBG'), ('his', 'PRP$'), ('intention', 'NN'), ('of', 'IN'), ('releaving', 'VBG'), ('their', 'PRP$'), ('“', 'JJ'), ('thirst.', 'NN'), ('”', 'VBD'), ('The', 'DT'), ('camp', 'NN'), ('physician', 'NN'), (',', ','), ('Kassebaum', 'NNP'), (',', ','), ('berated', 'VBD'), ('detainees', 'NNS'), ('for', 'IN'), ('“', 'JJ'), ('faking', 'VBG'), ('”', 'JJ'), ('injuries', 'NNS'), ('sustained', 'VBN'), ('during', 'IN'), ('interrogation.2', 'NN'), ('On', 'IN'), ('March', 'NNP'), ('22', 'CD'), (',', ','), ('one', 'CD'), ('day', 'NN'), ('after', 'IN'), ('Reich', 'NNP'), ('President', 'NNP'), ('Paul', 'NNP'), ('von', 'NNP'), ('Hindenburg', 'NNP'), ('officially', 'RB'), ('received', 'VBD'), ('Hitler', 'NNP'), ('’', 'NNP'), ('s', 'JJ'), ('government', 'NN'), ('at', 'IN'), ('Potsdam', 'NNP'), (',', ','), ('the', 'DT'), ('SS', 'NNP'), ('celebrated', 'VBN'), ('by', 'IN'), ('parading', 'VBG'), ('battered', 'VBN'), ('SPD', 'NNP'), ('members', 'NNS'), ('through', 'IN'), ('[', 'JJ'), ('End', 'NNP'), ('Page', 'NNP'), ('156', 'CD'), (']', 'VBD'), ('the', 'DT'), ('neighboring', 'JJ'), ('marketplace', 'NN'), ('.', '.')] 
+SENTENCE: On March 22, one day after Reich President Paul von Hindenburg officially received Hitler’s government at Potsdam, the SS celebrated by parading battered SPD members through   the neighboring marketplace.
+[('On', 'IN'), ('March', 'NNP'), ('22', 'CD'), (',', ','), ('one', 'CD'), ('day', 'NN'), ('after', 'IN'), ('Reich', 'NNP'), ('President', 'NNP'), ('Paul', 'NNP'), ('von', 'NNP'), ('Hindenburg', 'NNP'), ('officially', 'RB'), ('received', 'VBD'), ('Hitler', 'NNP'), ('’', 'NNP'), ('s', 'JJ'), ('government', 'NN'), ('at', 'IN'), ('Potsdam', 'NNP'), (',', ','), ('the', 'DT'), ('SS', 'NNP'), ('celebrated', 'VBN'), ('by', 'IN'), ('parading', 'VBG'), ('battered', 'VBN'), ('SPD', 'NNP'), ('members', 'NNS'), ('through', 'IN'), ('the', 'DT'), ('neighboring', 'JJ'), ('marketplace', 'NN'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name           Hermann
@@ -486,9 +504,22 @@ Organization             NaN
 SENTENCE: At least two torture victims, Social Democrat Hermann Schencker and Communist leader Albert Janka, died as a result of their injuries.
 [('At', 'IN'), ('least', 'JJS'), ('two', 'CD'), ('torture', 'NN'), ('victims', 'NNS'), (',', ','), ('Social', 'NNP'), ('Democrat', 'NNP'), ('Hermann', 'NNP'), ('Schencker', 'NNP'), ('and', 'CC'), ('Communist', 'NNP'), ('leader', 'NN'), ('Albert', 'NNP'), ('Janka', 'NNP'), (',', ','), ('died', 'VBD'), ('as', 'IN'), ('a', 'DT'), ('result', 'NN'), ('of', 'IN'), ('their', 'PRP$'), ('injuries', 'NNS'), ('.', '.')] 
 
+NAME: Designation       Individual
+First Name             Erwin
+Alt First Name           NaN
+Middle Name              NaN
+Last Name            Hartsch
+Alt Last Name            NaN
+Title                    NaN
+Place                    NaN
+Organization             NaN
+SENTENCE: Among the Reichenbach prisoners was SPD Reichstag deputy Erwin Hartsch.
+[('Among', 'IN'), ('the', 'DT'), ('Reichenbach', 'NNP'), ('prisoners', 'NNS'), ('was', 'VBD'), ('SPD', 'NNP'), ('Reichstag', 'NNP'), ('deputy', 'NN'), ('Erwin', 'NNP'), ('Hartsch', 'NNP'), ('.', '.')] 
+
 ------------------------------------
 
 ARTICLE: Project MUSE - SCHLESIERSEE I
+
 NAME: Designation       Individual
 First Name             Count
 Alt First Name           NaN
@@ -555,12 +586,15 @@ SENTENCE: She found shelter with Maria Wojciech, a resident of the village of Wi
 VOLUME: v2
 
 ARTICLE: Project MUSE - DRIBIN
+
 ------------------------------------
 
 ARTICLE: Project MUSE - BARANOVKA
+
 ------------------------------------
 
 ARTICLE: Project MUSE - MIKHALPOL’
+
 NAME: Designation       Individual
 First Name             Ernst
 Alt First Name           NaN
@@ -582,9 +616,8 @@ Alt Last Name             NaN
 Title                     NaN
 Place                     NaN
 Organization              NaN
-SENTENCE: According to a Soviet postwar publication, in the middle of July 1941, the Ukrainian Nachtigall Battalion arrived from Lwów, and its members took part in the shootings of Jews in the village.1
-According to the postwar testimony of German agricultural leader Wilhelm Knöchelmann, there was already a ghetto for the Jews in Mikhalpol’ on his arrival there (in around November 1941).
-[('According', 'VBG'), ('to', 'TO'), ('a', 'DT'), ('Soviet', 'JJ'), ('postwar', 'JJ'), ('publication', 'NN'), (',', ','), ('in', 'IN'), ('the', 'DT'), ('middle', 'NN'), ('of', 'IN'), ('July', 'NNP'), ('1941', 'CD'), (',', ','), ('the', 'DT'), ('Ukrainian', 'JJ'), ('Nachtigall', 'NNP'), ('Battalion', 'NNP'), ('arrived', 'VBD'), ('from', 'IN'), ('Lwów', 'NNP'), (',', ','), ('and', 'CC'), ('its', 'PRP$'), ('members', 'NNS'), ('took', 'VBD'), ('part', 'NN'), ('in', 'IN'), ('the', 'DT'), ('shootings', 'NNS'), ('of', 'IN'), ('Jews', 'NNP'), ('in', 'IN'), ('the', 'DT'), ('village.1', 'NN'), ('According', 'VBG'), ('to', 'TO'), ('the', 'DT'), ('postwar', 'JJ'), ('testimony', 'NN'), ('of', 'IN'), ('German', 'JJ'), ('agricultural', 'JJ'), ('leader', 'NN'), ('Wilhelm', 'NNP'), ('Knöchelmann', 'NNP'), (',', ','), ('there', 'EX'), ('was', 'VBD'), ('already', 'RB'), ('a', 'DT'), ('ghetto', 'NN'), ('for', 'IN'), ('the', 'DT'), ('Jews', 'NNPS'), ('in', 'IN'), ('Mikhalpol', 'NNP'), ('’', 'NN'), ('on', 'IN'), ('his', 'PRP$'), ('arrival', 'NN'), ('there', 'EX'), ('(', '('), ('in', 'IN'), ('around', 'IN'), ('November', 'NNP'), ('1941', 'CD'), (')', ')'), ('.', '.')] 
+SENTENCE: According to the postwar testimony of German agricultural leader Wilhelm Knöchelmann, there was already a ghetto for the Jews in Mikhalpol’ on his arrival there (in around November 1941).
+[('According', 'VBG'), ('to', 'TO'), ('the', 'DT'), ('postwar', 'JJ'), ('testimony', 'NN'), ('of', 'IN'), ('German', 'JJ'), ('agricultural', 'JJ'), ('leader', 'NN'), ('Wilhelm', 'NNP'), ('Knöchelmann', 'NNP'), (',', ','), ('there', 'EX'), ('was', 'VBD'), ('already', 'RB'), ('a', 'DT'), ('ghetto', 'NN'), ('for', 'IN'), ('the', 'DT'), ('Jews', 'NNPS'), ('in', 'IN'), ('Mikhalpol', 'NNP'), ('’', 'NN'), ('on', 'IN'), ('his', 'PRP$'), ('arrival', 'NN'), ('there', 'EX'), ('(', '('), ('in', 'IN'), ('around', 'IN'), ('November', 'NNP'), ('1941', 'CD'), (')', ')'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name              Karl
@@ -607,12 +640,13 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: In Iarmolintsy, all the Jews gathered from Gebiet Jarmolinzy were confined within a derelict barracks compound close to the railway station for a number of days.3 On the arrival of a detachment of Security Police and SD from Starokonstantinov, under the command of SS-Hauptscharführer Karl Graf, the Jews were shot in groups into three pits prepared nearby.
-[('In', 'IN'), ('Iarmolintsy', 'NNP'), (',', ','), ('all', 'PDT'), ('the', 'DT'), ('Jews', 'NNP'), ('gathered', 'VBD'), ('from', 'IN'), ('Gebiet', 'NNP'), ('Jarmolinzy', 'NNP'), ('were', 'VBD'), ('confined', 'VBN'), ('within', 'IN'), ('a', 'DT'), ('derelict', 'NN'), ('barracks', 'VBZ'), ('compound', 'NN'), ('close', 'RB'), ('to', 'TO'), ('the', 'DT'), ('railway', 'NN'), ('station', 'NN'), ('for', 'IN'), ('a', 'DT'), ('number', 'NN'), ('of', 'IN'), ('days.3', 'NN'), ('On', 'IN'), ('the', 'DT'), ('arrival', 'NN'), ('of', 'IN'), ('a', 'DT'), ('detachment', 'NN'), ('of', 'IN'), ('Security', 'NNP'), ('Police', 'NNP'), ('and', 'CC'), ('SD', 'NNP'), ('from', 'IN'), ('Starokonstantinov', 'NNP'), (',', ','), ('under', 'IN'), ('the', 'DT'), ('command', 'NN'), ('of', 'IN'), ('SS-Hauptscharführer', 'NNP'), ('Karl', 'NNP'), ('Graf', 'NNP'), (',', ','), ('the', 'DT'), ('Jews', 'NNPS'), ('were', 'VBD'), ('shot', 'VBN'), ('in', 'IN'), ('groups', 'NNS'), ('into', 'IN'), ('three', 'CD'), ('pits', 'NNS'), ('prepared', 'VBD'), ('nearby', 'RB'), ('.', '.')] 
+SENTENCE: On the arrival of a detachment of Security Police and SD from Starokonstantinov, under the command of SS-Hauptscharführer Karl Graf, the Jews were shot in groups into three pits prepared nearby.
+[('On', 'IN'), ('the', 'DT'), ('arrival', 'NN'), ('of', 'IN'), ('a', 'DT'), ('detachment', 'NN'), ('of', 'IN'), ('Security', 'NNP'), ('Police', 'NNP'), ('and', 'CC'), ('SD', 'NNP'), ('from', 'IN'), ('Starokonstantinov', 'NNP'), (',', ','), ('under', 'IN'), ('the', 'DT'), ('command', 'NN'), ('of', 'IN'), ('SS-Hauptscharführer', 'NNP'), ('Karl', 'NNP'), ('Graf', 'NNP'), (',', ','), ('the', 'DT'), ('Jews', 'NNPS'), ('were', 'VBD'), ('shot', 'VBN'), ('in', 'IN'), ('groups', 'NNS'), ('into', 'IN'), ('three', 'CD'), ('pits', 'NNS'), ('prepared', 'VBD'), ('nearby', 'RB'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - PAKRUOJIS
+
 NAME: Designation       Individual
 First Name             Moshe
 Alt First Name           NaN
@@ -652,9 +686,11 @@ SENTENCE: The Jewish doctor in Pakruojis, Markus Screiber, was initially spared,
 ------------------------------------
 
 ARTICLE: Project MUSE - GULBENE
+
 ------------------------------------
 
 ARTICLE: Project MUSE - OSIPOVICHI
+
 NAME: Designation       Individual
 First Name              Rosa
 Alt First Name           NaN
@@ -664,9 +700,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: A group of Jews was shot as Soviet activists.1
-In August or September 1941, a ghetto was created in the town.2 It included the following streets from Rosa Luxemburg to Vera Khoruzhaia: Kommunisticheskaia, Chumakova, Oktiabr’skaia, Gorky, Raboche-Krest’ianskaia, Polevaia, Kalinin, and Serov; and these streets in their entirety: Karl Liebknecht, Krasnoarmeiskaia Sotsialisticheskaia, Revoliutsionnaia, Karl Marx, Promyshlennaia, and Protasevichskaia.
-[('A', 'DT'), ('group', 'NN'), ('of', 'IN'), ('Jews', 'NNP'), ('was', 'VBD'), ('shot', 'VBN'), ('as', 'IN'), ('Soviet', 'JJ'), ('activists.1', 'NN'), ('In', 'IN'), ('August', 'NNP'), ('or', 'CC'), ('September', 'NNP'), ('1941', 'CD'), (',', ','), ('a', 'DT'), ('ghetto', 'NN'), ('was', 'VBD'), ('created', 'VBN'), ('in', 'IN'), ('the', 'DT'), ('town.2', 'NN'), ('It', 'PRP'), ('included', 'VBD'), ('the', 'DT'), ('following', 'VBG'), ('streets', 'NNS'), ('from', 'IN'), ('Rosa', 'NNP'), ('Luxemburg', 'NNP'), ('to', 'TO'), ('Vera', 'NNP'), ('Khoruzhaia', 'NNP'), (':', ':'), ('Kommunisticheskaia', 'NNP'), (',', ','), ('Chumakova', 'NNP'), (',', ','), ('Oktiabr', 'NNP'), ('’', 'NNP'), ('skaia', 'NN'), (',', ','), ('Gorky', 'NNP'), (',', ','), ('Raboche-Krest', 'NNP'), ('’', 'NNP'), ('ianskaia', 'NN'), (',', ','), ('Polevaia', 'NNP'), (',', ','), ('Kalinin', 'NNP'), (',', ','), ('and', 'CC'), ('Serov', 'NNP'), (';', ':'), ('and', 'CC'), ('these', 'DT'), ('streets', 'NNS'), ('in', 'IN'), ('their', 'PRP$'), ('entirety', 'NN'), (':', ':'), ('Karl', 'NNP'), ('Liebknecht', 'NNP'), (',', ','), ('Krasnoarmeiskaia', 'NNP'), ('Sotsialisticheskaia', 'NNP'), (',', ','), ('Revoliutsionnaia', 'NNP'), (',', ','), ('Karl', 'NNP'), ('Marx', 'NNP'), (',', ','), ('Promyshlennaia', 'NNP'), (',', ','), ('and', 'CC'), ('Protasevichskaia', 'NNP'), ('.', '.')] 
+SENTENCE: It included the following streets from Rosa Luxemburg to Vera Khoruzhaia: Kommunisticheskaia, Chumakova, Oktiabr’skaia, Gorky, Raboche-Krest’ianskaia, Polevaia, Kalinin, and Serov; and these streets in their entirety: Karl Liebknecht, Krasnoarmeiskaia Sotsialisticheskaia, Revoliutsionnaia, Karl Marx, Promyshlennaia, and Protasevichskaia.
+[('It', 'PRP'), ('included', 'VBD'), ('the', 'DT'), ('following', 'VBG'), ('streets', 'NNS'), ('from', 'IN'), ('Rosa', 'NNP'), ('Luxemburg', 'NNP'), ('to', 'TO'), ('Vera', 'NNP'), ('Khoruzhaia', 'NNP'), (':', ':'), ('Kommunisticheskaia', 'NNP'), (',', ','), ('Chumakova', 'NNP'), (',', ','), ('Oktiabr', 'NNP'), ('’', 'NNP'), ('skaia', 'NN'), (',', ','), ('Gorky', 'NNP'), (',', ','), ('Raboche-Krest', 'NNP'), ('’', 'NNP'), ('ianskaia', 'NN'), (',', ','), ('Polevaia', 'NNP'), (',', ','), ('Kalinin', 'NNP'), (',', ','), ('and', 'CC'), ('Serov', 'NNP'), (';', ':'), ('and', 'CC'), ('these', 'DT'), ('streets', 'NNS'), ('in', 'IN'), ('their', 'PRP$'), ('entirety', 'NN'), (':', ':'), ('Karl', 'NNP'), ('Liebknecht', 'NNP'), (',', ','), ('Krasnoarmeiskaia', 'NNP'), ('Sotsialisticheskaia', 'NNP'), (',', ','), ('Revoliutsionnaia', 'NNP'), (',', ','), ('Karl', 'NNP'), ('Marx', 'NNP'), (',', ','), ('Promyshlennaia', 'NNP'), (',', ','), ('and', 'CC'), ('Protasevichskaia', 'NNP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name              Karl
@@ -677,9 +712,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: A group of Jews was shot as Soviet activists.1
-In August or September 1941, a ghetto was created in the town.2 It included the following streets from Rosa Luxemburg to Vera Khoruzhaia: Kommunisticheskaia, Chumakova, Oktiabr’skaia, Gorky, Raboche-Krest’ianskaia, Polevaia, Kalinin, and Serov; and these streets in their entirety: Karl Liebknecht, Krasnoarmeiskaia Sotsialisticheskaia, Revoliutsionnaia, Karl Marx, Promyshlennaia, and Protasevichskaia.
-[('A', 'DT'), ('group', 'NN'), ('of', 'IN'), ('Jews', 'NNP'), ('was', 'VBD'), ('shot', 'VBN'), ('as', 'IN'), ('Soviet', 'JJ'), ('activists.1', 'NN'), ('In', 'IN'), ('August', 'NNP'), ('or', 'CC'), ('September', 'NNP'), ('1941', 'CD'), (',', ','), ('a', 'DT'), ('ghetto', 'NN'), ('was', 'VBD'), ('created', 'VBN'), ('in', 'IN'), ('the', 'DT'), ('town.2', 'NN'), ('It', 'PRP'), ('included', 'VBD'), ('the', 'DT'), ('following', 'VBG'), ('streets', 'NNS'), ('from', 'IN'), ('Rosa', 'NNP'), ('Luxemburg', 'NNP'), ('to', 'TO'), ('Vera', 'NNP'), ('Khoruzhaia', 'NNP'), (':', ':'), ('Kommunisticheskaia', 'NNP'), (',', ','), ('Chumakova', 'NNP'), (',', ','), ('Oktiabr', 'NNP'), ('’', 'NNP'), ('skaia', 'NN'), (',', ','), ('Gorky', 'NNP'), (',', ','), ('Raboche-Krest', 'NNP'), ('’', 'NNP'), ('ianskaia', 'NN'), (',', ','), ('Polevaia', 'NNP'), (',', ','), ('Kalinin', 'NNP'), (',', ','), ('and', 'CC'), ('Serov', 'NNP'), (';', ':'), ('and', 'CC'), ('these', 'DT'), ('streets', 'NNS'), ('in', 'IN'), ('their', 'PRP$'), ('entirety', 'NN'), (':', ':'), ('Karl', 'NNP'), ('Liebknecht', 'NNP'), (',', ','), ('Krasnoarmeiskaia', 'NNP'), ('Sotsialisticheskaia', 'NNP'), (',', ','), ('Revoliutsionnaia', 'NNP'), (',', ','), ('Karl', 'NNP'), ('Marx', 'NNP'), (',', ','), ('Promyshlennaia', 'NNP'), (',', ','), ('and', 'CC'), ('Protasevichskaia', 'NNP'), ('.', '.')] 
+SENTENCE: It included the following streets from Rosa Luxemburg to Vera Khoruzhaia: Kommunisticheskaia, Chumakova, Oktiabr’skaia, Gorky, Raboche-Krest’ianskaia, Polevaia, Kalinin, and Serov; and these streets in their entirety: Karl Liebknecht, Krasnoarmeiskaia Sotsialisticheskaia, Revoliutsionnaia, Karl Marx, Promyshlennaia, and Protasevichskaia.
+[('It', 'PRP'), ('included', 'VBD'), ('the', 'DT'), ('following', 'VBG'), ('streets', 'NNS'), ('from', 'IN'), ('Rosa', 'NNP'), ('Luxemburg', 'NNP'), ('to', 'TO'), ('Vera', 'NNP'), ('Khoruzhaia', 'NNP'), (':', ':'), ('Kommunisticheskaia', 'NNP'), (',', ','), ('Chumakova', 'NNP'), (',', ','), ('Oktiabr', 'NNP'), ('’', 'NNP'), ('skaia', 'NN'), (',', ','), ('Gorky', 'NNP'), (',', ','), ('Raboche-Krest', 'NNP'), ('’', 'NNP'), ('ianskaia', 'NN'), (',', ','), ('Polevaia', 'NNP'), (',', ','), ('Kalinin', 'NNP'), (',', ','), ('and', 'CC'), ('Serov', 'NNP'), (';', ':'), ('and', 'CC'), ('these', 'DT'), ('streets', 'NNS'), ('in', 'IN'), ('their', 'PRP$'), ('entirety', 'NN'), (':', ':'), ('Karl', 'NNP'), ('Liebknecht', 'NNP'), (',', ','), ('Krasnoarmeiskaia', 'NNP'), ('Sotsialisticheskaia', 'NNP'), (',', ','), ('Revoliutsionnaia', 'NNP'), (',', ','), ('Karl', 'NNP'), ('Marx', 'NNP'), (',', ','), ('Promyshlennaia', 'NNP'), (',', ','), ('and', 'CC'), ('Protasevichskaia', 'NNP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name              Karl
@@ -690,9 +724,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: A group of Jews was shot as Soviet activists.1
-In August or September 1941, a ghetto was created in the town.2 It included the following streets from Rosa Luxemburg to Vera Khoruzhaia: Kommunisticheskaia, Chumakova, Oktiabr’skaia, Gorky, Raboche-Krest’ianskaia, Polevaia, Kalinin, and Serov; and these streets in their entirety: Karl Liebknecht, Krasnoarmeiskaia Sotsialisticheskaia, Revoliutsionnaia, Karl Marx, Promyshlennaia, and Protasevichskaia.
-[('A', 'DT'), ('group', 'NN'), ('of', 'IN'), ('Jews', 'NNP'), ('was', 'VBD'), ('shot', 'VBN'), ('as', 'IN'), ('Soviet', 'JJ'), ('activists.1', 'NN'), ('In', 'IN'), ('August', 'NNP'), ('or', 'CC'), ('September', 'NNP'), ('1941', 'CD'), (',', ','), ('a', 'DT'), ('ghetto', 'NN'), ('was', 'VBD'), ('created', 'VBN'), ('in', 'IN'), ('the', 'DT'), ('town.2', 'NN'), ('It', 'PRP'), ('included', 'VBD'), ('the', 'DT'), ('following', 'VBG'), ('streets', 'NNS'), ('from', 'IN'), ('Rosa', 'NNP'), ('Luxemburg', 'NNP'), ('to', 'TO'), ('Vera', 'NNP'), ('Khoruzhaia', 'NNP'), (':', ':'), ('Kommunisticheskaia', 'NNP'), (',', ','), ('Chumakova', 'NNP'), (',', ','), ('Oktiabr', 'NNP'), ('’', 'NNP'), ('skaia', 'NN'), (',', ','), ('Gorky', 'NNP'), (',', ','), ('Raboche-Krest', 'NNP'), ('’', 'NNP'), ('ianskaia', 'NN'), (',', ','), ('Polevaia', 'NNP'), (',', ','), ('Kalinin', 'NNP'), (',', ','), ('and', 'CC'), ('Serov', 'NNP'), (';', ':'), ('and', 'CC'), ('these', 'DT'), ('streets', 'NNS'), ('in', 'IN'), ('their', 'PRP$'), ('entirety', 'NN'), (':', ':'), ('Karl', 'NNP'), ('Liebknecht', 'NNP'), (',', ','), ('Krasnoarmeiskaia', 'NNP'), ('Sotsialisticheskaia', 'NNP'), (',', ','), ('Revoliutsionnaia', 'NNP'), (',', ','), ('Karl', 'NNP'), ('Marx', 'NNP'), (',', ','), ('Promyshlennaia', 'NNP'), (',', ','), ('and', 'CC'), ('Protasevichskaia', 'NNP'), ('.', '.')] 
+SENTENCE: It included the following streets from Rosa Luxemburg to Vera Khoruzhaia: Kommunisticheskaia, Chumakova, Oktiabr’skaia, Gorky, Raboche-Krest’ianskaia, Polevaia, Kalinin, and Serov; and these streets in their entirety: Karl Liebknecht, Krasnoarmeiskaia Sotsialisticheskaia, Revoliutsionnaia, Karl Marx, Promyshlennaia, and Protasevichskaia.
+[('It', 'PRP'), ('included', 'VBD'), ('the', 'DT'), ('following', 'VBG'), ('streets', 'NNS'), ('from', 'IN'), ('Rosa', 'NNP'), ('Luxemburg', 'NNP'), ('to', 'TO'), ('Vera', 'NNP'), ('Khoruzhaia', 'NNP'), (':', ':'), ('Kommunisticheskaia', 'NNP'), (',', ','), ('Chumakova', 'NNP'), (',', ','), ('Oktiabr', 'NNP'), ('’', 'NNP'), ('skaia', 'NN'), (',', ','), ('Gorky', 'NNP'), (',', ','), ('Raboche-Krest', 'NNP'), ('’', 'NNP'), ('ianskaia', 'NN'), (',', ','), ('Polevaia', 'NNP'), (',', ','), ('Kalinin', 'NNP'), (',', ','), ('and', 'CC'), ('Serov', 'NNP'), (';', ':'), ('and', 'CC'), ('these', 'DT'), ('streets', 'NNS'), ('in', 'IN'), ('their', 'PRP$'), ('entirety', 'NN'), (':', ':'), ('Karl', 'NNP'), ('Liebknecht', 'NNP'), (',', ','), ('Krasnoarmeiskaia', 'NNP'), ('Sotsialisticheskaia', 'NNP'), (',', ','), ('Revoliutsionnaia', 'NNP'), (',', ','), ('Karl', 'NNP'), ('Marx', 'NNP'), (',', ','), ('Promyshlennaia', 'NNP'), (',', ','), ('and', 'CC'), ('Protasevichskaia', 'NNP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name            Afroim
@@ -709,6 +742,7 @@ SENTENCE: One of its three members was Afroim Khavkin, who before the war had be
 ------------------------------------
 
 ARTICLE: Project MUSE - KRETINGA
+
 NAME: Designation         Individual
 First Name        Hans-Joachim
 Alt First Name             NaN
@@ -718,9 +752,8 @@ Alt Last Name              NaN
 Title                      NaN
 Place                      NaN
 Organization               NaN
-SENTENCE: Kretinga lay within the zone (extending 25 kilometers [15.5 miles] behind the former Lithuanian-German border) that was subjected to “cleansing operations” against Jews and other suspected enemies, conducted by the head of the Staatspolizei (Stapo) office in Tilsit, SS-Sturmbannführer Hans-Joachim Böhme, during the first days of the occupation.1
-German armed forces occupied Kretinga on June 22, 1941, without encountering any serious resistance.
-[('Kretinga', 'NNP'), ('lay', 'VBD'), ('within', 'IN'), ('the', 'DT'), ('zone', 'NN'), ('(', '('), ('extending', 'VBG'), ('25', 'CD'), ('kilometers', 'NNS'), ('[', 'VBP'), ('15.5', 'CD'), ('miles', 'NNS'), (']', 'RB'), ('behind', 'IN'), ('the', 'DT'), ('former', 'JJ'), ('Lithuanian-German', 'NNP'), ('border', 'NN'), (')', ')'), ('that', 'WDT'), ('was', 'VBD'), ('subjected', 'VBN'), ('to', 'TO'), ('“', 'VB'), ('cleansing', 'VBG'), ('operations', 'NNS'), ('”', 'FW'), ('against', 'IN'), ('Jews', 'NNP'), ('and', 'CC'), ('other', 'JJ'), ('suspected', 'JJ'), ('enemies', 'NNS'), (',', ','), ('conducted', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('head', 'NN'), ('of', 'IN'), ('the', 'DT'), ('Staatspolizei', 'NNP'), ('(', '('), ('Stapo', 'NNP'), (')', ')'), ('office', 'NN'), ('in', 'IN'), ('Tilsit', 'NNP'), (',', ','), ('SS-Sturmbannführer', 'NNP'), ('Hans-Joachim', 'NNP'), ('Böhme', 'NNP'), (',', ','), ('during', 'IN'), ('the', 'DT'), ('first', 'JJ'), ('days', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('occupation.1', 'JJ'), ('German', 'NNP'), ('armed', 'VBD'), ('forces', 'NNS'), ('occupied', 'VBN'), ('Kretinga', 'NNP'), ('on', 'IN'), ('June', 'NNP'), ('22', 'CD'), (',', ','), ('1941', 'CD'), (',', ','), ('without', 'IN'), ('encountering', 'VBG'), ('any', 'DT'), ('serious', 'JJ'), ('resistance', 'NN'), ('.', '.')] 
+SENTENCE: Kretinga lay within the zone (extending 25 kilometers [15. miles] behind the former Lithuanian-German border) that was subjected to “cleansing operations” against Jews and other suspected enemies, conducted by the head of the Staatspolizei (Stapo) office in Tilsit, SS-Sturmbannführer Hans-Joachim Böhme, during the first days of the occupation.
+[('Kretinga', 'NNP'), ('lay', 'VBD'), ('within', 'IN'), ('the', 'DT'), ('zone', 'NN'), ('(', '('), ('extending', 'VBG'), ('25', 'CD'), ('kilometers', 'NNS'), ('[', 'VBP'), ('15.', 'CD'), ('miles', 'NNS'), (']', 'RB'), ('behind', 'IN'), ('the', 'DT'), ('former', 'JJ'), ('Lithuanian-German', 'NNP'), ('border', 'NN'), (')', ')'), ('that', 'WDT'), ('was', 'VBD'), ('subjected', 'VBN'), ('to', 'TO'), ('“', 'VB'), ('cleansing', 'VBG'), ('operations', 'NNS'), ('”', 'FW'), ('against', 'IN'), ('Jews', 'NNP'), ('and', 'CC'), ('other', 'JJ'), ('suspected', 'JJ'), ('enemies', 'NNS'), (',', ','), ('conducted', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('head', 'NN'), ('of', 'IN'), ('the', 'DT'), ('Staatspolizei', 'NNP'), ('(', '('), ('Stapo', 'NNP'), (')', ')'), ('office', 'NN'), ('in', 'IN'), ('Tilsit', 'NNP'), (',', ','), ('SS-Sturmbannführer', 'NNP'), ('Hans-Joachim', 'NNP'), ('Böhme', 'NNP'), (',', ','), ('during', 'IN'), ('the', 'DT'), ('first', 'JJ'), ('days', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('occupation', 'NN'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name            Pranas
@@ -731,12 +764,13 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Pranas Lukys was sentenced to five years in prison by the German court in Ulm in 1960.9
-[('Pranas', 'NNP'), ('Lukys', 'NNP'), ('was', 'VBD'), ('sentenced', 'VBN'), ('to', 'TO'), ('five', 'CD'), ('years', 'NNS'), ('in', 'IN'), ('prison', 'NN'), ('by', 'IN'), ('the', 'DT'), ('German', 'JJ'), ('court', 'NN'), ('in', 'IN'), ('Ulm', 'NNP'), ('in', 'IN'), ('1960.9', 'CD')] 
+SENTENCE: Pranas Lukys was sentenced to five years in prison by the German court in Ulm in 1960.
+[('Pranas', 'NNP'), ('Lukys', 'NNP'), ('was', 'VBD'), ('sentenced', 'VBN'), ('to', 'TO'), ('five', 'CD'), ('years', 'NNS'), ('in', 'IN'), ('prison', 'NN'), ('by', 'IN'), ('the', 'DT'), ('German', 'JJ'), ('court', 'NN'), ('in', 'IN'), ('Ulm', 'NNP'), ('in', 'IN'), ('1960', 'CD'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - LIUBAR
+
 NAME: Designation       Individual
 First Name             Hirsh
 Alt First Name           NaN
@@ -746,13 +780,13 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Dr. Blümel was appointed as the Gebietskommissar.3
-Just after the occupation of the town, the Jewish family of Hirsh Halperine, consisting of four individuals, was accused of sabotage and shot.
-[('Dr.', 'NNP'), ('Blümel', 'NNP'), ('was', 'VBD'), ('appointed', 'VBN'), ('as', 'IN'), ('the', 'DT'), ('Gebietskommissar.3', 'NNP'), ('Just', 'NNP'), ('after', 'IN'), ('the', 'DT'), ('occupation', 'NN'), ('of', 'IN'), ('the', 'DT'), ('town', 'NN'), (',', ','), ('the', 'DT'), ('Jewish', 'JJ'), ('family', 'NN'), ('of', 'IN'), ('Hirsh', 'NNP'), ('Halperine', 'NNP'), (',', ','), ('consisting', 'VBG'), ('of', 'IN'), ('four', 'CD'), ('individuals', 'NNS'), (',', ','), ('was', 'VBD'), ('accused', 'VBN'), ('of', 'IN'), ('sabotage', 'NN'), ('and', 'CC'), ('shot', 'NN'), ('.', '.')] 
+SENTENCE: Just after the occupation of the town, the Jewish family of Hirsh Halperine, consisting of four individuals, was accused of sabotage and shot.
+[('Just', 'RB'), ('after', 'IN'), ('the', 'DT'), ('occupation', 'NN'), ('of', 'IN'), ('the', 'DT'), ('town', 'NN'), (',', ','), ('the', 'DT'), ('Jewish', 'JJ'), ('family', 'NN'), ('of', 'IN'), ('Hirsh', 'NNP'), ('Halperine', 'NNP'), (',', ','), ('consisting', 'VBG'), ('of', 'IN'), ('four', 'CD'), ('individuals', 'NNS'), (',', ','), ('was', 'VBD'), ('accused', 'VBN'), ('of', 'IN'), ('sabotage', 'NN'), ('and', 'CC'), ('shot', 'NN'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - HERMANOWICZE
+
 NAME: Designation       Individual
 First Name             Iosif
 Alt First Name           NaN
@@ -762,9 +796,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: The occupiers made the Jews destroy their synagogue and burn all ritual objects and books.2 Then, in the fall of 1941, on orders of the Gebietskommissar in Głębokie, some 60 Jewish families—altogether 270 people—were sent to the Szarkowszczyzna ghetto.3 The non-Jewish population of Hermanowicze prevailed upon the Gebietskommissar to allow the families of the brothers Khona-Hirsh and Iosif Sosnovik, who were pharmacists, to continue to live in the town so the pharmacy could function.4
-On November 17, 1942, a punitive unit from Szarkowszczyzna shot Boris Sosnovik while trying to escape, but Iosif Sosnovik was able to flee; he was subsequently sheltered by the Arliukevich family in Podorszczyna.
-[('The', 'DT'), ('occupiers', 'NNS'), ('made', 'VBD'), ('the', 'DT'), ('Jews', 'NNP'), ('destroy', 'VB'), ('their', 'PRP$'), ('synagogue', 'NN'), ('and', 'CC'), ('burn', 'VB'), ('all', 'DT'), ('ritual', 'JJ'), ('objects', 'NNS'), ('and', 'CC'), ('books.2', 'NN'), ('Then', 'RB'), (',', ','), ('in', 'IN'), ('the', 'DT'), ('fall', 'NN'), ('of', 'IN'), ('1941', 'CD'), (',', ','), ('on', 'IN'), ('orders', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Gebietskommissar', 'NNP'), ('in', 'IN'), ('Głębokie', 'NNP'), (',', ','), ('some', 'DT'), ('60', 'CD'), ('Jewish', 'JJ'), ('families—altogether', 'RB'), ('270', 'CD'), ('people—were', 'JJ'), ('sent', 'VBN'), ('to', 'TO'), ('the', 'DT'), ('Szarkowszczyzna', 'NNP'), ('ghetto.3', 'VBD'), ('The', 'DT'), ('non-Jewish', 'JJ'), ('population', 'NN'), ('of', 'IN'), ('Hermanowicze', 'NNP'), ('prevailed', 'VBD'), ('upon', 'IN'), ('the', 'DT'), ('Gebietskommissar', 'NNP'), ('to', 'TO'), ('allow', 'VB'), ('the', 'DT'), ('families', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('brothers', 'NNS'), ('Khona-Hirsh', 'NNP'), ('and', 'CC'), ('Iosif', 'NNP'), ('Sosnovik', 'NNP'), (',', ','), ('who', 'WP'), ('were', 'VBD'), ('pharmacists', 'NNS'), (',', ','), ('to', 'TO'), ('continue', 'VB'), ('to', 'TO'), ('live', 'VB'), ('in', 'IN'), ('the', 'DT'), ('town', 'NN'), ('so', 'RB'), ('the', 'DT'), ('pharmacy', 'NN'), ('could', 'MD'), ('function.4', 'VB'), ('On', 'IN'), ('November', 'NNP'), ('17', 'CD'), (',', ','), ('1942', 'CD'), (',', ','), ('a', 'DT'), ('punitive', 'JJ'), ('unit', 'NN'), ('from', 'IN'), ('Szarkowszczyzna', 'NNP'), ('shot', 'NN'), ('Boris', 'NNP'), ('Sosnovik', 'NNP'), ('while', 'IN'), ('trying', 'VBG'), ('to', 'TO'), ('escape', 'VB'), (',', ','), ('but', 'CC'), ('Iosif', 'NNP'), ('Sosnovik', 'NNP'), ('was', 'VBD'), ('able', 'JJ'), ('to', 'TO'), ('flee', 'VB'), (';', ':'), ('he', 'PRP'), ('was', 'VBD'), ('subsequently', 'RB'), ('sheltered', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('Arliukevich', 'NNP'), ('family', 'NN'), ('in', 'IN'), ('Podorszczyna', 'NNP'), ('.', '.')] 
+SENTENCE: On November 17, 1942, a punitive unit from Szarkowszczyzna shot Boris Sosnovik while trying to escape, but Iosif Sosnovik was able to flee; he was subsequently sheltered by the Arliukevich family in Podorszczyna.
+[('On', 'IN'), ('November', 'NNP'), ('17', 'CD'), (',', ','), ('1942', 'CD'), (',', ','), ('a', 'DT'), ('punitive', 'JJ'), ('unit', 'NN'), ('from', 'IN'), ('Szarkowszczyzna', 'NNP'), ('shot', 'NN'), ('Boris', 'NNP'), ('Sosnovik', 'NNP'), ('while', 'IN'), ('trying', 'VBG'), ('to', 'TO'), ('escape', 'VB'), (',', ','), ('but', 'CC'), ('Iosif', 'NNP'), ('Sosnovik', 'NNP'), ('was', 'VBD'), ('able', 'JJ'), ('to', 'TO'), ('flee', 'VB'), (';', ':'), ('he', 'PRP'), ('was', 'VBD'), ('subsequently', 'RB'), ('sheltered', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('Arliukevich', 'NNP'), ('family', 'NN'), ('in', 'IN'), ('Podorszczyna', 'NNP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name             Boris
@@ -775,9 +808,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: The occupiers made the Jews destroy their synagogue and burn all ritual objects and books.2 Then, in the fall of 1941, on orders of the Gebietskommissar in Głębokie, some 60 Jewish families—altogether 270 people—were sent to the Szarkowszczyzna ghetto.3 The non-Jewish population of Hermanowicze prevailed upon the Gebietskommissar to allow the families of the brothers Khona-Hirsh and Iosif Sosnovik, who were pharmacists, to continue to live in the town so the pharmacy could function.4
-On November 17, 1942, a punitive unit from Szarkowszczyzna shot Boris Sosnovik while trying to escape, but Iosif Sosnovik was able to flee; he was subsequently sheltered by the Arliukevich family in Podorszczyna.
-[('The', 'DT'), ('occupiers', 'NNS'), ('made', 'VBD'), ('the', 'DT'), ('Jews', 'NNP'), ('destroy', 'VB'), ('their', 'PRP$'), ('synagogue', 'NN'), ('and', 'CC'), ('burn', 'VB'), ('all', 'DT'), ('ritual', 'JJ'), ('objects', 'NNS'), ('and', 'CC'), ('books.2', 'NN'), ('Then', 'RB'), (',', ','), ('in', 'IN'), ('the', 'DT'), ('fall', 'NN'), ('of', 'IN'), ('1941', 'CD'), (',', ','), ('on', 'IN'), ('orders', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Gebietskommissar', 'NNP'), ('in', 'IN'), ('Głębokie', 'NNP'), (',', ','), ('some', 'DT'), ('60', 'CD'), ('Jewish', 'JJ'), ('families—altogether', 'RB'), ('270', 'CD'), ('people—were', 'JJ'), ('sent', 'VBN'), ('to', 'TO'), ('the', 'DT'), ('Szarkowszczyzna', 'NNP'), ('ghetto.3', 'VBD'), ('The', 'DT'), ('non-Jewish', 'JJ'), ('population', 'NN'), ('of', 'IN'), ('Hermanowicze', 'NNP'), ('prevailed', 'VBD'), ('upon', 'IN'), ('the', 'DT'), ('Gebietskommissar', 'NNP'), ('to', 'TO'), ('allow', 'VB'), ('the', 'DT'), ('families', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('brothers', 'NNS'), ('Khona-Hirsh', 'NNP'), ('and', 'CC'), ('Iosif', 'NNP'), ('Sosnovik', 'NNP'), (',', ','), ('who', 'WP'), ('were', 'VBD'), ('pharmacists', 'NNS'), (',', ','), ('to', 'TO'), ('continue', 'VB'), ('to', 'TO'), ('live', 'VB'), ('in', 'IN'), ('the', 'DT'), ('town', 'NN'), ('so', 'RB'), ('the', 'DT'), ('pharmacy', 'NN'), ('could', 'MD'), ('function.4', 'VB'), ('On', 'IN'), ('November', 'NNP'), ('17', 'CD'), (',', ','), ('1942', 'CD'), (',', ','), ('a', 'DT'), ('punitive', 'JJ'), ('unit', 'NN'), ('from', 'IN'), ('Szarkowszczyzna', 'NNP'), ('shot', 'NN'), ('Boris', 'NNP'), ('Sosnovik', 'NNP'), ('while', 'IN'), ('trying', 'VBG'), ('to', 'TO'), ('escape', 'VB'), (',', ','), ('but', 'CC'), ('Iosif', 'NNP'), ('Sosnovik', 'NNP'), ('was', 'VBD'), ('able', 'JJ'), ('to', 'TO'), ('flee', 'VB'), (';', ':'), ('he', 'PRP'), ('was', 'VBD'), ('subsequently', 'RB'), ('sheltered', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('Arliukevich', 'NNP'), ('family', 'NN'), ('in', 'IN'), ('Podorszczyna', 'NNP'), ('.', '.')] 
+SENTENCE: On November 17, 1942, a punitive unit from Szarkowszczyzna shot Boris Sosnovik while trying to escape, but Iosif Sosnovik was able to flee; he was subsequently sheltered by the Arliukevich family in Podorszczyna.
+[('On', 'IN'), ('November', 'NNP'), ('17', 'CD'), (',', ','), ('1942', 'CD'), (',', ','), ('a', 'DT'), ('punitive', 'JJ'), ('unit', 'NN'), ('from', 'IN'), ('Szarkowszczyzna', 'NNP'), ('shot', 'NN'), ('Boris', 'NNP'), ('Sosnovik', 'NNP'), ('while', 'IN'), ('trying', 'VBG'), ('to', 'TO'), ('escape', 'VB'), (',', ','), ('but', 'CC'), ('Iosif', 'NNP'), ('Sosnovik', 'NNP'), ('was', 'VBD'), ('able', 'JJ'), ('to', 'TO'), ('flee', 'VB'), (';', ':'), ('he', 'PRP'), ('was', 'VBD'), ('subsequently', 'RB'), ('sheltered', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('Arliukevich', 'NNP'), ('family', 'NN'), ('in', 'IN'), ('Podorszczyna', 'NNP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name             Maria
@@ -806,6 +838,7 @@ SENTENCE: Edliu Milner was hidden by the family of Efrem Savel’evich Ivanov.
 ------------------------------------
 
 ARTICLE: Project MUSE - KORCZYNA
+
 NAME: Designation       Individual
 First Name                J.
 Alt First Name           NaN
@@ -924,9 +957,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Also, a 38-year-old, Lejb Korb, is registered as having been shot by the police in November 1941; the precise reason why he was killed, however, is not known.7
-Survivor Aron Neubarth, who moved to the ghetto when rural Jews were brought in (in June 1942), testified that Korczyna’s Jews were allowed to leave the ghetto only for organized labor assignments.
-[('Also', 'RB'), (',', ','), ('a', 'DT'), ('38-year-old', 'JJ'), (',', ','), ('Lejb', 'NNP'), ('Korb', 'NNP'), (',', ','), ('is', 'VBZ'), ('registered', 'VBN'), ('as', 'IN'), ('having', 'VBG'), ('been', 'VBN'), ('shot', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('police', 'NN'), ('in', 'IN'), ('November', 'NNP'), ('1941', 'CD'), (';', ':'), ('the', 'DT'), ('precise', 'JJ'), ('reason', 'NN'), ('why', 'WRB'), ('he', 'PRP'), ('was', 'VBD'), ('killed', 'VBN'), (',', ','), ('however', 'RB'), (',', ','), ('is', 'VBZ'), ('not', 'RB'), ('known.7', 'JJ'), ('Survivor', 'NNP'), ('Aron', 'NNP'), ('Neubarth', 'NNP'), (',', ','), ('who', 'WP'), ('moved', 'VBD'), ('to', 'TO'), ('the', 'DT'), ('ghetto', 'NN'), ('when', 'WRB'), ('rural', 'JJ'), ('Jews', 'NNPS'), ('were', 'VBD'), ('brought', 'VBN'), ('in', 'IN'), ('(', '('), ('in', 'IN'), ('June', 'NNP'), ('1942', 'CD'), (')', ')'), (',', ','), ('testified', 'VBD'), ('that', 'IN'), ('Korczyna', 'NNP'), ('’', 'NNP'), ('s', 'JJ'), ('Jews', 'NNPS'), ('were', 'VBD'), ('allowed', 'VBN'), ('to', 'TO'), ('leave', 'VB'), ('the', 'DT'), ('ghetto', 'NN'), ('only', 'RB'), ('for', 'IN'), ('organized', 'VBN'), ('labor', 'NN'), ('assignments', 'NNS'), ('.', '.')] 
+SENTENCE: Also, a 38-year-old, Lejb Korb, is registered as having been shot by the police in November 1941; the precise reason why he was killed, however, is not known.
+[('Also', 'RB'), (',', ','), ('a', 'DT'), ('38-year-old', 'JJ'), (',', ','), ('Lejb', 'NNP'), ('Korb', 'NNP'), (',', ','), ('is', 'VBZ'), ('registered', 'VBN'), ('as', 'IN'), ('having', 'VBG'), ('been', 'VBN'), ('shot', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('police', 'NN'), ('in', 'IN'), ('November', 'NNP'), ('1941', 'CD'), (';', ':'), ('the', 'DT'), ('precise', 'JJ'), ('reason', 'NN'), ('why', 'WRB'), ('he', 'PRP'), ('was', 'VBD'), ('killed', 'VBN'), (',', ','), ('however', 'RB'), (',', ','), ('is', 'VBZ'), ('not', 'RB'), ('known', 'VBN'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name              Aron
@@ -937,9 +969,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Also, a 38-year-old, Lejb Korb, is registered as having been shot by the police in November 1941; the precise reason why he was killed, however, is not known.7
-Survivor Aron Neubarth, who moved to the ghetto when rural Jews were brought in (in June 1942), testified that Korczyna’s Jews were allowed to leave the ghetto only for organized labor assignments.
-[('Also', 'RB'), (',', ','), ('a', 'DT'), ('38-year-old', 'JJ'), (',', ','), ('Lejb', 'NNP'), ('Korb', 'NNP'), (',', ','), ('is', 'VBZ'), ('registered', 'VBN'), ('as', 'IN'), ('having', 'VBG'), ('been', 'VBN'), ('shot', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('police', 'NN'), ('in', 'IN'), ('November', 'NNP'), ('1941', 'CD'), (';', ':'), ('the', 'DT'), ('precise', 'JJ'), ('reason', 'NN'), ('why', 'WRB'), ('he', 'PRP'), ('was', 'VBD'), ('killed', 'VBN'), (',', ','), ('however', 'RB'), (',', ','), ('is', 'VBZ'), ('not', 'RB'), ('known.7', 'JJ'), ('Survivor', 'NNP'), ('Aron', 'NNP'), ('Neubarth', 'NNP'), (',', ','), ('who', 'WP'), ('moved', 'VBD'), ('to', 'TO'), ('the', 'DT'), ('ghetto', 'NN'), ('when', 'WRB'), ('rural', 'JJ'), ('Jews', 'NNPS'), ('were', 'VBD'), ('brought', 'VBN'), ('in', 'IN'), ('(', '('), ('in', 'IN'), ('June', 'NNP'), ('1942', 'CD'), (')', ')'), (',', ','), ('testified', 'VBD'), ('that', 'IN'), ('Korczyna', 'NNP'), ('’', 'NNP'), ('s', 'JJ'), ('Jews', 'NNPS'), ('were', 'VBD'), ('allowed', 'VBN'), ('to', 'TO'), ('leave', 'VB'), ('the', 'DT'), ('ghetto', 'NN'), ('only', 'RB'), ('for', 'IN'), ('organized', 'VBN'), ('labor', 'NN'), ('assignments', 'NNS'), ('.', '.')] 
+SENTENCE: Survivor Aron Neubarth, who moved to the ghetto when rural Jews were brought in (in June 1942), testified that Korczyna’s Jews were allowed to leave the ghetto only for organized labor assignments.
+[('Survivor', 'NNP'), ('Aron', 'NNP'), ('Neubarth', 'NNP'), (',', ','), ('who', 'WP'), ('moved', 'VBD'), ('to', 'TO'), ('the', 'DT'), ('ghetto', 'NN'), ('when', 'WRB'), ('rural', 'JJ'), ('Jews', 'NNPS'), ('were', 'VBD'), ('brought', 'VBN'), ('in', 'IN'), ('(', '('), ('in', 'IN'), ('June', 'NNP'), ('1942', 'CD'), (')', ')'), (',', ','), ('testified', 'VBD'), ('that', 'IN'), ('Korczyna', 'NNP'), ('’', 'NNP'), ('s', 'JJ'), ('Jews', 'NNPS'), ('were', 'VBD'), ('allowed', 'VBN'), ('to', 'TO'), ('leave', 'VB'), ('the', 'DT'), ('ghetto', 'NN'), ('only', 'RB'), ('for', 'IN'), ('organized', 'VBN'), ('labor', 'NN'), ('assignments', 'NNS'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name        Aleksander
@@ -983,6 +1014,7 @@ SENTENCE: The reorganized branch was now led by a refugee from Kraków, Aleksand
 VOLUME: v3
 
 ARTICLE: Project MUSE - VENICE
+
 NAME: Designation       Individual
 First Name            Adolfo
 Alt First Name           NaN
@@ -998,6 +1030,7 @@ SENTENCE: On August 17, 1944, an additional 21 of the 32 patients over 70 years 
 ------------------------------------
 
 ARTICLE: Project MUSE - THEBES
+
 NAME: Designation          Individual
 First Name              Lampros
 Alt First Name              NaN
@@ -1007,12 +1040,25 @@ Alt Last Name               NaN
 Title                       NaN
 Place                       NaN
 Organization                NaN
-SENTENCE: Former prisoner  [End Page 522] Lampros Mpourogiannēs reported that a Greek collaborator turned him in to the collaborationist Legionaries, which in turn handed him over to the Italians.
-[('Former', 'NNP'), ('prisoner', 'NN'), ('[', 'JJ'), ('End', 'NNP'), ('Page', 'NNP'), ('522', 'CD'), (']', 'NNP'), ('Lampros', 'NNP'), ('Mpourogiannēs', 'NNP'), ('reported', 'VBD'), ('that', 'IN'), ('a', 'DT'), ('Greek', 'JJ'), ('collaborator', 'NN'), ('turned', 'VBD'), ('him', 'PRP'), ('in', 'IN'), ('to', 'TO'), ('the', 'DT'), ('collaborationist', 'NN'), ('Legionaries', 'NNP'), (',', ','), ('which', 'WDT'), ('in', 'IN'), ('turn', 'NN'), ('handed', 'VBD'), ('him', 'PRP'), ('over', 'IN'), ('to', 'TO'), ('the', 'DT'), ('Italians', 'NNPS'), ('.', '.')] 
+SENTENCE: Former prisoner   Lampros Mpourogiannēs reported that a Greek collaborator turned him in to the collaborationist Legionaries, which in turn handed him over to the Italians.
+[('Former', 'NNP'), ('prisoner', 'NN'), ('Lampros', 'NNP'), ('Mpourogiannēs', 'NNP'), ('reported', 'VBD'), ('that', 'IN'), ('a', 'DT'), ('Greek', 'JJ'), ('collaborator', 'NN'), ('turned', 'VBD'), ('him', 'PRP'), ('in', 'IN'), ('to', 'TO'), ('the', 'DT'), ('collaborationist', 'NN'), ('Legionaries', 'NNP'), (',', ','), ('which', 'WDT'), ('in', 'IN'), ('turn', 'NN'), ('handed', 'VBD'), ('him', 'PRP'), ('over', 'IN'), ('to', 'TO'), ('the', 'DT'), ('Italians', 'NNPS'), ('.', '.')] 
+
+NAME: Designation       Individual
+First Name            Cicero
+Alt First Name           NaN
+Middle Name              NaN
+Last Name               Aldo
+Alt Last Name            NaN
+Title                    NaN
+Place                    NaN
+Organization             NaN
+SENTENCE: One of the three Italians accused of committing war crimes in Thebes and mentioned in the Central Register of War Criminals and Security Suspects Consolidated Wanted List (CROWCASS) of the United Nations War Crimes Commission (UNWCC) was the Thebes guard, Caporale Cicero Aldo.
+[('One', 'CD'), ('of', 'IN'), ('the', 'DT'), ('three', 'CD'), ('Italians', 'NNPS'), ('accused', 'VBN'), ('of', 'IN'), ('committing', 'VBG'), ('war', 'NN'), ('crimes', 'NNS'), ('in', 'IN'), ('Thebes', 'NNP'), ('and', 'CC'), ('mentioned', 'VBN'), ('in', 'IN'), ('the', 'DT'), ('Central', 'NNP'), ('Register', 'NNP'), ('of', 'IN'), ('War', 'NNP'), ('Criminals', 'NNP'), ('and', 'CC'), ('Security', 'NNP'), ('Suspects', 'NNP'), ('Consolidated', 'NNP'), ('Wanted', 'VBD'), ('List', 'NNP'), ('(', '('), ('CROWCASS', 'NNP'), (')', ')'), ('of', 'IN'), ('the', 'DT'), ('United', 'NNP'), ('Nations', 'NNP'), ('War', 'NNP'), ('Crimes', 'NNP'), ('Commission', 'NNP'), ('(', '('), ('UNWCC', 'NNP'), (')', ')'), ('was', 'VBD'), ('the', 'DT'), ('Thebes', 'NNP'), ('guard', 'NN'), (',', ','), ('Caporale', 'NNP'), ('Cicero', 'NNP'), ('Aldo', 'NNP'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - MONTSÛRS
+
 NAME: Designation       Individual
 First Name              Jean
 Alt First Name           NaN
@@ -1022,8 +1068,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: The Mayenne Prefecture in Angers, directed by Regional Prefect Jean Roussillon (until the end of July 1943), chose the premises of an abandoned limestone quarry in Montsûrs to set  [End Page 187] up one of two camps for Roma (Gypsies or nomads in French police reports) in the department.
-[('The', 'DT'), ('Mayenne', 'NNP'), ('Prefecture', 'NNP'), ('in', 'IN'), ('Angers', 'NNP'), (',', ','), ('directed', 'VBN'), ('by', 'IN'), ('Regional', 'NNP'), ('Prefect', 'NNP'), ('Jean', 'NNP'), ('Roussillon', 'NNP'), ('(', '('), ('until', 'IN'), ('the', 'DT'), ('end', 'NN'), ('of', 'IN'), ('July', 'NNP'), ('1943', 'CD'), (')', ')'), (',', ','), ('chose', 'VBD'), ('the', 'DT'), ('premises', 'NNS'), ('of', 'IN'), ('an', 'DT'), ('abandoned', 'VBN'), ('limestone', 'NN'), ('quarry', 'NN'), ('in', 'IN'), ('Montsûrs', 'NNP'), ('to', 'TO'), ('set', 'VB'), ('[', 'JJ'), ('End', 'NNP'), ('Page', 'NNP'), ('187', 'CD'), (']', 'VBD'), ('up', 'RB'), ('one', 'CD'), ('of', 'IN'), ('two', 'CD'), ('camps', 'NNS'), ('for', 'IN'), ('Roma', 'NNP'), ('(', '('), ('Gypsies', 'NNPS'), ('or', 'CC'), ('nomads', 'NNS'), ('in', 'IN'), ('French', 'JJ'), ('police', 'NNS'), ('reports', 'NNS'), (')', ')'), ('in', 'IN'), ('the', 'DT'), ('department', 'NN'), ('.', '.')] 
+SENTENCE: The Mayenne Prefecture in Angers, directed by Regional Prefect Jean Roussillon (until the end of July 1943), chose the premises of an abandoned limestone quarry in Montsûrs to set   up one of two camps for Roma (Gypsies or nomads in French police reports) in the department.
+[('The', 'DT'), ('Mayenne', 'NNP'), ('Prefecture', 'NNP'), ('in', 'IN'), ('Angers', 'NNP'), (',', ','), ('directed', 'VBN'), ('by', 'IN'), ('Regional', 'NNP'), ('Prefect', 'NNP'), ('Jean', 'NNP'), ('Roussillon', 'NNP'), ('(', '('), ('until', 'IN'), ('the', 'DT'), ('end', 'NN'), ('of', 'IN'), ('July', 'NNP'), ('1943', 'CD'), (')', ')'), (',', ','), ('chose', 'VBD'), ('the', 'DT'), ('premises', 'NNS'), ('of', 'IN'), ('an', 'DT'), ('abandoned', 'VBN'), ('limestone', 'NN'), ('quarry', 'NN'), ('in', 'IN'), ('Montsûrs', 'NNP'), ('to', 'TO'), ('set', 'VB'), ('up', 'RP'), ('one', 'CD'), ('of', 'IN'), ('two', 'CD'), ('camps', 'NNS'), ('for', 'IN'), ('Roma', 'NNP'), ('(', '('), ('Gypsies', 'NNPS'), ('or', 'CC'), ('nomads', 'NNS'), ('in', 'IN'), ('French', 'JJ'), ('police', 'NNS'), ('reports', 'NNS'), (')', ')'), ('in', 'IN'), ('the', 'DT'), ('department', 'NN'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name          Emmanuel
@@ -1040,6 +1086,7 @@ SENTENCE: According to historian Emmanuel Filhol, the detainees suffered from li
 ------------------------------------
 
 ARTICLE: Project MUSE - KOPRIVNICA
+
 NAME: Designation       Individual
 First Name              Anna
 Alt First Name           NaN
@@ -1049,8 +1096,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: The Croatian prisoners consisted primarily of members of the prewar political Left.1 According to historian Anna Maria Grünfelder, some Seventh-Day Adventists were also interned in the camp.
-[('The', 'DT'), ('Croatian', 'JJ'), ('prisoners', 'NNS'), ('consisted', 'VBD'), ('primarily', 'RB'), ('of', 'IN'), ('members', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('prewar', 'JJ'), ('political', 'JJ'), ('Left.1', 'NNP'), ('According', 'VBG'), ('to', 'TO'), ('historian', 'JJ'), ('Anna', 'NNP'), ('Maria', 'NNP'), ('Grünfelder', 'NNP'), (',', ','), ('some', 'DT'), ('Seventh-Day', 'JJ'), ('Adventists', 'NNS'), ('were', 'VBD'), ('also', 'RB'), ('interned', 'VBN'), ('in', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('.', '.')] 
+SENTENCE: According to historian Anna Maria Grünfelder, some Seventh-Day Adventists were also interned in the camp.
+[('According', 'VBG'), ('to', 'TO'), ('historian', 'JJ'), ('Anna', 'NNP'), ('Maria', 'NNP'), ('Grünfelder', 'NNP'), (',', ','), ('some', 'DT'), ('Seventh-Day', 'JJ'), ('Adventists', 'NNS'), ('were', 'VBD'), ('also', 'RB'), ('interned', 'VBN'), ('in', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name            Martin
@@ -1103,6 +1150,7 @@ SENTENCE: Historian Jaša Romano estimated that there were approximately 200 int
 ------------------------------------
 
 ARTICLE: Project MUSE - CONOTCĂUŢI
+
 NAME: Designation       Individual
 First Name             Iosif
 Alt First Name           NaN
@@ -1112,8 +1160,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Overseeing the township’s affairs were the Şargorod raion’s praetors, Iosif Dindelegan and Dimitrie Rusu, and its district gendarmes commanders (comandanţii sectorului de jandarmi), Locotenents Vasile Grama and Vasile Mihăilescu.1 Between 1941 and 1944, the Moghilev judeţ had four prefects whose decisions directly affected the lives of the Jewish deportees: Colonels Constantin Dumitru, Dr. Ion C. Băleanu, Constantin Năsturaş, and Constantin Loghin.
-[('Overseeing', 'VBG'), ('the', 'DT'), ('township', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('affairs', 'NNS'), ('were', 'VBD'), ('the', 'DT'), ('Şargorod', 'JJ'), ('raion', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('praetors', 'NNS'), (',', ','), ('Iosif', 'NNP'), ('Dindelegan', 'NNP'), ('and', 'CC'), ('Dimitrie', 'NNP'), ('Rusu', 'NNP'), (',', ','), ('and', 'CC'), ('its', 'PRP$'), ('district', 'NN'), ('gendarmes', 'NNS'), ('commanders', 'NNS'), ('(', '('), ('comandanţii', 'JJ'), ('sectorului', 'NN'), ('de', 'IN'), ('jandarmi', 'NN'), (')', ')'), (',', ','), ('Locotenents', 'NNP'), ('Vasile', 'NNP'), ('Grama', 'NNP'), ('and', 'CC'), ('Vasile', 'NNP'), ('Mihăilescu.1', 'NNP'), ('Between', 'NNP'), ('1941', 'CD'), ('and', 'CC'), ('1944', 'CD'), (',', ','), ('the', 'DT'), ('Moghilev', 'NNP'), ('judeţ', 'NN'), ('had', 'VBD'), ('four', 'CD'), ('prefects', 'NNS'), ('whose', 'WP$'), ('decisions', 'NNS'), ('directly', 'RB'), ('affected', 'VBD'), ('the', 'DT'), ('lives', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Jewish', 'JJ'), ('deportees', 'NNS'), (':', ':'), ('Colonels', 'NNP'), ('Constantin', 'NNP'), ('Dumitru', 'NNP'), (',', ','), ('Dr.', 'NNP'), ('Ion', 'NNP'), ('C.', 'NNP'), ('Băleanu', 'NNP'), (',', ','), ('Constantin', 'NNP'), ('Năsturaş', 'NNP'), (',', ','), ('and', 'CC'), ('Constantin', 'NNP'), ('Loghin', 'NNP'), ('.', '.')] 
+SENTENCE: Overseeing the township’s affairs were the Şargorod raion’s praetors, Iosif Dindelegan and Dimitrie Rusu, and its district gendarmes commanders (comandanţii sectorului de jandarmi), Locotenents Vasile Grama and Vasile Mihăilescu.
+[('Overseeing', 'VBG'), ('the', 'DT'), ('township', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('affairs', 'NNS'), ('were', 'VBD'), ('the', 'DT'), ('Şargorod', 'JJ'), ('raion', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('praetors', 'NNS'), (',', ','), ('Iosif', 'NNP'), ('Dindelegan', 'NNP'), ('and', 'CC'), ('Dimitrie', 'NNP'), ('Rusu', 'NNP'), (',', ','), ('and', 'CC'), ('its', 'PRP$'), ('district', 'NN'), ('gendarmes', 'NNS'), ('commanders', 'NNS'), ('(', '('), ('comandanţii', 'JJ'), ('sectorului', 'NN'), ('de', 'IN'), ('jandarmi', 'NN'), (')', ')'), (',', ','), ('Locotenents', 'NNP'), ('Vasile', 'NNP'), ('Grama', 'NNP'), ('and', 'CC'), ('Vasile', 'NNP'), ('Mihăilescu', 'NNP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name            Vasile
@@ -1124,8 +1172,20 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Overseeing the township’s affairs were the Şargorod raion’s praetors, Iosif Dindelegan and Dimitrie Rusu, and its district gendarmes commanders (comandanţii sectorului de jandarmi), Locotenents Vasile Grama and Vasile Mihăilescu.1 Between 1941 and 1944, the Moghilev judeţ had four prefects whose decisions directly affected the lives of the Jewish deportees: Colonels Constantin Dumitru, Dr. Ion C. Băleanu, Constantin Năsturaş, and Constantin Loghin.
-[('Overseeing', 'VBG'), ('the', 'DT'), ('township', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('affairs', 'NNS'), ('were', 'VBD'), ('the', 'DT'), ('Şargorod', 'JJ'), ('raion', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('praetors', 'NNS'), (',', ','), ('Iosif', 'NNP'), ('Dindelegan', 'NNP'), ('and', 'CC'), ('Dimitrie', 'NNP'), ('Rusu', 'NNP'), (',', ','), ('and', 'CC'), ('its', 'PRP$'), ('district', 'NN'), ('gendarmes', 'NNS'), ('commanders', 'NNS'), ('(', '('), ('comandanţii', 'JJ'), ('sectorului', 'NN'), ('de', 'IN'), ('jandarmi', 'NN'), (')', ')'), (',', ','), ('Locotenents', 'NNP'), ('Vasile', 'NNP'), ('Grama', 'NNP'), ('and', 'CC'), ('Vasile', 'NNP'), ('Mihăilescu.1', 'NNP'), ('Between', 'NNP'), ('1941', 'CD'), ('and', 'CC'), ('1944', 'CD'), (',', ','), ('the', 'DT'), ('Moghilev', 'NNP'), ('judeţ', 'NN'), ('had', 'VBD'), ('four', 'CD'), ('prefects', 'NNS'), ('whose', 'WP$'), ('decisions', 'NNS'), ('directly', 'RB'), ('affected', 'VBD'), ('the', 'DT'), ('lives', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Jewish', 'JJ'), ('deportees', 'NNS'), (':', ':'), ('Colonels', 'NNP'), ('Constantin', 'NNP'), ('Dumitru', 'NNP'), (',', ','), ('Dr.', 'NNP'), ('Ion', 'NNP'), ('C.', 'NNP'), ('Băleanu', 'NNP'), (',', ','), ('Constantin', 'NNP'), ('Năsturaş', 'NNP'), (',', ','), ('and', 'CC'), ('Constantin', 'NNP'), ('Loghin', 'NNP'), ('.', '.')] 
+SENTENCE: Overseeing the township’s affairs were the Şargorod raion’s praetors, Iosif Dindelegan and Dimitrie Rusu, and its district gendarmes commanders (comandanţii sectorului de jandarmi), Locotenents Vasile Grama and Vasile Mihăilescu.
+[('Overseeing', 'VBG'), ('the', 'DT'), ('township', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('affairs', 'NNS'), ('were', 'VBD'), ('the', 'DT'), ('Şargorod', 'JJ'), ('raion', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('praetors', 'NNS'), (',', ','), ('Iosif', 'NNP'), ('Dindelegan', 'NNP'), ('and', 'CC'), ('Dimitrie', 'NNP'), ('Rusu', 'NNP'), (',', ','), ('and', 'CC'), ('its', 'PRP$'), ('district', 'NN'), ('gendarmes', 'NNS'), ('commanders', 'NNS'), ('(', '('), ('comandanţii', 'JJ'), ('sectorului', 'NN'), ('de', 'IN'), ('jandarmi', 'NN'), (')', ')'), (',', ','), ('Locotenents', 'NNP'), ('Vasile', 'NNP'), ('Grama', 'NNP'), ('and', 'CC'), ('Vasile', 'NNP'), ('Mihăilescu', 'NNP'), ('.', '.')] 
+
+NAME: Designation       Individual
+First Name            Vasile
+Alt First Name           NaN
+Middle Name              NaN
+Last Name         Mihăilescu
+Alt Last Name            NaN
+Title                    NaN
+Place                    NaN
+Organization             NaN
+SENTENCE: Overseeing the township’s affairs were the Şargorod raion’s praetors, Iosif Dindelegan and Dimitrie Rusu, and its district gendarmes commanders (comandanţii sectorului de jandarmi), Locotenents Vasile Grama and Vasile Mihăilescu.
+[('Overseeing', 'VBG'), ('the', 'DT'), ('township', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('affairs', 'NNS'), ('were', 'VBD'), ('the', 'DT'), ('Şargorod', 'JJ'), ('raion', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('praetors', 'NNS'), (',', ','), ('Iosif', 'NNP'), ('Dindelegan', 'NNP'), ('and', 'CC'), ('Dimitrie', 'NNP'), ('Rusu', 'NNP'), (',', ','), ('and', 'CC'), ('its', 'PRP$'), ('district', 'NN'), ('gendarmes', 'NNS'), ('commanders', 'NNS'), ('(', '('), ('comandanţii', 'JJ'), ('sectorului', 'NN'), ('de', 'IN'), ('jandarmi', 'NN'), (')', ')'), (',', ','), ('Locotenents', 'NNP'), ('Vasile', 'NNP'), ('Grama', 'NNP'), ('and', 'CC'), ('Vasile', 'NNP'), ('Mihăilescu', 'NNP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name        Constantin
@@ -1136,8 +1196,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Overseeing the township’s affairs were the Şargorod raion’s praetors, Iosif Dindelegan and Dimitrie Rusu, and its district gendarmes commanders (comandanţii sectorului de jandarmi), Locotenents Vasile Grama and Vasile Mihăilescu.1 Between 1941 and 1944, the Moghilev judeţ had four prefects whose decisions directly affected the lives of the Jewish deportees: Colonels Constantin Dumitru, Dr. Ion C. Băleanu, Constantin Năsturaş, and Constantin Loghin.
-[('Overseeing', 'VBG'), ('the', 'DT'), ('township', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('affairs', 'NNS'), ('were', 'VBD'), ('the', 'DT'), ('Şargorod', 'JJ'), ('raion', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('praetors', 'NNS'), (',', ','), ('Iosif', 'NNP'), ('Dindelegan', 'NNP'), ('and', 'CC'), ('Dimitrie', 'NNP'), ('Rusu', 'NNP'), (',', ','), ('and', 'CC'), ('its', 'PRP$'), ('district', 'NN'), ('gendarmes', 'NNS'), ('commanders', 'NNS'), ('(', '('), ('comandanţii', 'JJ'), ('sectorului', 'NN'), ('de', 'IN'), ('jandarmi', 'NN'), (')', ')'), (',', ','), ('Locotenents', 'NNP'), ('Vasile', 'NNP'), ('Grama', 'NNP'), ('and', 'CC'), ('Vasile', 'NNP'), ('Mihăilescu.1', 'NNP'), ('Between', 'NNP'), ('1941', 'CD'), ('and', 'CC'), ('1944', 'CD'), (',', ','), ('the', 'DT'), ('Moghilev', 'NNP'), ('judeţ', 'NN'), ('had', 'VBD'), ('four', 'CD'), ('prefects', 'NNS'), ('whose', 'WP$'), ('decisions', 'NNS'), ('directly', 'RB'), ('affected', 'VBD'), ('the', 'DT'), ('lives', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Jewish', 'JJ'), ('deportees', 'NNS'), (':', ':'), ('Colonels', 'NNP'), ('Constantin', 'NNP'), ('Dumitru', 'NNP'), (',', ','), ('Dr.', 'NNP'), ('Ion', 'NNP'), ('C.', 'NNP'), ('Băleanu', 'NNP'), (',', ','), ('Constantin', 'NNP'), ('Năsturaş', 'NNP'), (',', ','), ('and', 'CC'), ('Constantin', 'NNP'), ('Loghin', 'NNP'), ('.', '.')] 
+SENTENCE: Between 1941 and 1944, the Moghilev judeţ had four prefects whose decisions directly affected the lives of the Jewish deportees: Colonels Constantin Dumitru, Dr. Ion C. Băleanu, Constantin Năsturaş, and Constantin Loghin.
+[('Between', 'JJ'), ('1941', 'CD'), ('and', 'CC'), ('1944', 'CD'), (',', ','), ('the', 'DT'), ('Moghilev', 'NNP'), ('judeţ', 'NN'), ('had', 'VBD'), ('four', 'CD'), ('prefects', 'NNS'), ('whose', 'WP$'), ('decisions', 'NNS'), ('directly', 'RB'), ('affected', 'VBD'), ('the', 'DT'), ('lives', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Jewish', 'JJ'), ('deportees', 'NNS'), (':', ':'), ('Colonels', 'NNP'), ('Constantin', 'NNP'), ('Dumitru', 'NNP'), (',', ','), ('Dr.', 'NNP'), ('Ion', 'NNP'), ('C.', 'NNP'), ('Băleanu', 'NNP'), (',', ','), ('Constantin', 'NNP'), ('Năsturaş', 'NNP'), (',', ','), ('and', 'CC'), ('Constantin', 'NNP'), ('Loghin', 'NNP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name               Ion
@@ -1148,8 +1208,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Overseeing the township’s affairs were the Şargorod raion’s praetors, Iosif Dindelegan and Dimitrie Rusu, and its district gendarmes commanders (comandanţii sectorului de jandarmi), Locotenents Vasile Grama and Vasile Mihăilescu.1 Between 1941 and 1944, the Moghilev judeţ had four prefects whose decisions directly affected the lives of the Jewish deportees: Colonels Constantin Dumitru, Dr. Ion C. Băleanu, Constantin Năsturaş, and Constantin Loghin.
-[('Overseeing', 'VBG'), ('the', 'DT'), ('township', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('affairs', 'NNS'), ('were', 'VBD'), ('the', 'DT'), ('Şargorod', 'JJ'), ('raion', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('praetors', 'NNS'), (',', ','), ('Iosif', 'NNP'), ('Dindelegan', 'NNP'), ('and', 'CC'), ('Dimitrie', 'NNP'), ('Rusu', 'NNP'), (',', ','), ('and', 'CC'), ('its', 'PRP$'), ('district', 'NN'), ('gendarmes', 'NNS'), ('commanders', 'NNS'), ('(', '('), ('comandanţii', 'JJ'), ('sectorului', 'NN'), ('de', 'IN'), ('jandarmi', 'NN'), (')', ')'), (',', ','), ('Locotenents', 'NNP'), ('Vasile', 'NNP'), ('Grama', 'NNP'), ('and', 'CC'), ('Vasile', 'NNP'), ('Mihăilescu.1', 'NNP'), ('Between', 'NNP'), ('1941', 'CD'), ('and', 'CC'), ('1944', 'CD'), (',', ','), ('the', 'DT'), ('Moghilev', 'NNP'), ('judeţ', 'NN'), ('had', 'VBD'), ('four', 'CD'), ('prefects', 'NNS'), ('whose', 'WP$'), ('decisions', 'NNS'), ('directly', 'RB'), ('affected', 'VBD'), ('the', 'DT'), ('lives', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Jewish', 'JJ'), ('deportees', 'NNS'), (':', ':'), ('Colonels', 'NNP'), ('Constantin', 'NNP'), ('Dumitru', 'NNP'), (',', ','), ('Dr.', 'NNP'), ('Ion', 'NNP'), ('C.', 'NNP'), ('Băleanu', 'NNP'), (',', ','), ('Constantin', 'NNP'), ('Năsturaş', 'NNP'), (',', ','), ('and', 'CC'), ('Constantin', 'NNP'), ('Loghin', 'NNP'), ('.', '.')] 
+SENTENCE: Between 1941 and 1944, the Moghilev judeţ had four prefects whose decisions directly affected the lives of the Jewish deportees: Colonels Constantin Dumitru, Dr. Ion C. Băleanu, Constantin Năsturaş, and Constantin Loghin.
+[('Between', 'JJ'), ('1941', 'CD'), ('and', 'CC'), ('1944', 'CD'), (',', ','), ('the', 'DT'), ('Moghilev', 'NNP'), ('judeţ', 'NN'), ('had', 'VBD'), ('four', 'CD'), ('prefects', 'NNS'), ('whose', 'WP$'), ('decisions', 'NNS'), ('directly', 'RB'), ('affected', 'VBD'), ('the', 'DT'), ('lives', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Jewish', 'JJ'), ('deportees', 'NNS'), (':', ':'), ('Colonels', 'NNP'), ('Constantin', 'NNP'), ('Dumitru', 'NNP'), (',', ','), ('Dr.', 'NNP'), ('Ion', 'NNP'), ('C.', 'NNP'), ('Băleanu', 'NNP'), (',', ','), ('Constantin', 'NNP'), ('Năsturaş', 'NNP'), (',', ','), ('and', 'CC'), ('Constantin', 'NNP'), ('Loghin', 'NNP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name        Constantin
@@ -1160,8 +1220,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Overseeing the township’s affairs were the Şargorod raion’s praetors, Iosif Dindelegan and Dimitrie Rusu, and its district gendarmes commanders (comandanţii sectorului de jandarmi), Locotenents Vasile Grama and Vasile Mihăilescu.1 Between 1941 and 1944, the Moghilev judeţ had four prefects whose decisions directly affected the lives of the Jewish deportees: Colonels Constantin Dumitru, Dr. Ion C. Băleanu, Constantin Năsturaş, and Constantin Loghin.
-[('Overseeing', 'VBG'), ('the', 'DT'), ('township', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('affairs', 'NNS'), ('were', 'VBD'), ('the', 'DT'), ('Şargorod', 'JJ'), ('raion', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('praetors', 'NNS'), (',', ','), ('Iosif', 'NNP'), ('Dindelegan', 'NNP'), ('and', 'CC'), ('Dimitrie', 'NNP'), ('Rusu', 'NNP'), (',', ','), ('and', 'CC'), ('its', 'PRP$'), ('district', 'NN'), ('gendarmes', 'NNS'), ('commanders', 'NNS'), ('(', '('), ('comandanţii', 'JJ'), ('sectorului', 'NN'), ('de', 'IN'), ('jandarmi', 'NN'), (')', ')'), (',', ','), ('Locotenents', 'NNP'), ('Vasile', 'NNP'), ('Grama', 'NNP'), ('and', 'CC'), ('Vasile', 'NNP'), ('Mihăilescu.1', 'NNP'), ('Between', 'NNP'), ('1941', 'CD'), ('and', 'CC'), ('1944', 'CD'), (',', ','), ('the', 'DT'), ('Moghilev', 'NNP'), ('judeţ', 'NN'), ('had', 'VBD'), ('four', 'CD'), ('prefects', 'NNS'), ('whose', 'WP$'), ('decisions', 'NNS'), ('directly', 'RB'), ('affected', 'VBD'), ('the', 'DT'), ('lives', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Jewish', 'JJ'), ('deportees', 'NNS'), (':', ':'), ('Colonels', 'NNP'), ('Constantin', 'NNP'), ('Dumitru', 'NNP'), (',', ','), ('Dr.', 'NNP'), ('Ion', 'NNP'), ('C.', 'NNP'), ('Băleanu', 'NNP'), (',', ','), ('Constantin', 'NNP'), ('Năsturaş', 'NNP'), (',', ','), ('and', 'CC'), ('Constantin', 'NNP'), ('Loghin', 'NNP'), ('.', '.')] 
+SENTENCE: Between 1941 and 1944, the Moghilev judeţ had four prefects whose decisions directly affected the lives of the Jewish deportees: Colonels Constantin Dumitru, Dr. Ion C. Băleanu, Constantin Năsturaş, and Constantin Loghin.
+[('Between', 'JJ'), ('1941', 'CD'), ('and', 'CC'), ('1944', 'CD'), (',', ','), ('the', 'DT'), ('Moghilev', 'NNP'), ('judeţ', 'NN'), ('had', 'VBD'), ('four', 'CD'), ('prefects', 'NNS'), ('whose', 'WP$'), ('decisions', 'NNS'), ('directly', 'RB'), ('affected', 'VBD'), ('the', 'DT'), ('lives', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Jewish', 'JJ'), ('deportees', 'NNS'), (':', ':'), ('Colonels', 'NNP'), ('Constantin', 'NNP'), ('Dumitru', 'NNP'), (',', ','), ('Dr.', 'NNP'), ('Ion', 'NNP'), ('C.', 'NNP'), ('Băleanu', 'NNP'), (',', ','), ('Constantin', 'NNP'), ('Năsturaş', 'NNP'), (',', ','), ('and', 'CC'), ('Constantin', 'NNP'), ('Loghin', 'NNP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name        Constantin
@@ -1172,12 +1232,13 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Overseeing the township’s affairs were the Şargorod raion’s praetors, Iosif Dindelegan and Dimitrie Rusu, and its district gendarmes commanders (comandanţii sectorului de jandarmi), Locotenents Vasile Grama and Vasile Mihăilescu.1 Between 1941 and 1944, the Moghilev judeţ had four prefects whose decisions directly affected the lives of the Jewish deportees: Colonels Constantin Dumitru, Dr. Ion C. Băleanu, Constantin Năsturaş, and Constantin Loghin.
-[('Overseeing', 'VBG'), ('the', 'DT'), ('township', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('affairs', 'NNS'), ('were', 'VBD'), ('the', 'DT'), ('Şargorod', 'JJ'), ('raion', 'NN'), ('’', 'NNP'), ('s', 'NN'), ('praetors', 'NNS'), (',', ','), ('Iosif', 'NNP'), ('Dindelegan', 'NNP'), ('and', 'CC'), ('Dimitrie', 'NNP'), ('Rusu', 'NNP'), (',', ','), ('and', 'CC'), ('its', 'PRP$'), ('district', 'NN'), ('gendarmes', 'NNS'), ('commanders', 'NNS'), ('(', '('), ('comandanţii', 'JJ'), ('sectorului', 'NN'), ('de', 'IN'), ('jandarmi', 'NN'), (')', ')'), (',', ','), ('Locotenents', 'NNP'), ('Vasile', 'NNP'), ('Grama', 'NNP'), ('and', 'CC'), ('Vasile', 'NNP'), ('Mihăilescu.1', 'NNP'), ('Between', 'NNP'), ('1941', 'CD'), ('and', 'CC'), ('1944', 'CD'), (',', ','), ('the', 'DT'), ('Moghilev', 'NNP'), ('judeţ', 'NN'), ('had', 'VBD'), ('four', 'CD'), ('prefects', 'NNS'), ('whose', 'WP$'), ('decisions', 'NNS'), ('directly', 'RB'), ('affected', 'VBD'), ('the', 'DT'), ('lives', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Jewish', 'JJ'), ('deportees', 'NNS'), (':', ':'), ('Colonels', 'NNP'), ('Constantin', 'NNP'), ('Dumitru', 'NNP'), (',', ','), ('Dr.', 'NNP'), ('Ion', 'NNP'), ('C.', 'NNP'), ('Băleanu', 'NNP'), (',', ','), ('Constantin', 'NNP'), ('Năsturaş', 'NNP'), (',', ','), ('and', 'CC'), ('Constantin', 'NNP'), ('Loghin', 'NNP'), ('.', '.')] 
+SENTENCE: Between 1941 and 1944, the Moghilev judeţ had four prefects whose decisions directly affected the lives of the Jewish deportees: Colonels Constantin Dumitru, Dr. Ion C. Băleanu, Constantin Năsturaş, and Constantin Loghin.
+[('Between', 'JJ'), ('1941', 'CD'), ('and', 'CC'), ('1944', 'CD'), (',', ','), ('the', 'DT'), ('Moghilev', 'NNP'), ('judeţ', 'NN'), ('had', 'VBD'), ('four', 'CD'), ('prefects', 'NNS'), ('whose', 'WP$'), ('decisions', 'NNS'), ('directly', 'RB'), ('affected', 'VBD'), ('the', 'DT'), ('lives', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Jewish', 'JJ'), ('deportees', 'NNS'), (':', ':'), ('Colonels', 'NNP'), ('Constantin', 'NNP'), ('Dumitru', 'NNP'), (',', ','), ('Dr.', 'NNP'), ('Ion', 'NNP'), ('C.', 'NNP'), ('Băleanu', 'NNP'), (',', ','), ('Constantin', 'NNP'), ('Năsturaş', 'NNP'), (',', ','), ('and', 'CC'), ('Constantin', 'NNP'), ('Loghin', 'NNP'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - SOFIA
+
 NAME: Designation       Individual
 First Name        Aleksandŭr
 Alt First Name           NaN
@@ -1217,6 +1278,7 @@ SENTENCE: In March a National Assembly protest against deportation spearheaded b
 ------------------------------------
 
 ARTICLE: Project MUSE - DJEBIBINIA
+
 NAME: Designation       Individual
 First Name             André
 Alt First Name           NaN
@@ -1256,6 +1318,7 @@ SENTENCE: Moatti and Maurice Uzan, ascertained during an inspection that there w
 ------------------------------------
 
 ARTICLE: Project MUSE - KINDIA
+
 NAME: Designation       Individual
 First Name           Antoine
 Alt First Name           NaN
@@ -1301,12 +1364,13 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: The master of the ship was Captain Petra Panapolous, and most of the crew was British.1 They had spent 17 days at sea and were not doing well when they arrived in the camp.
-[('The', 'DT'), ('master', 'NN'), ('of', 'IN'), ('the', 'DT'), ('ship', 'NN'), ('was', 'VBD'), ('Captain', 'NNP'), ('Petra', 'NNP'), ('Panapolous', 'NNP'), (',', ','), ('and', 'CC'), ('most', 'JJS'), ('of', 'IN'), ('the', 'DT'), ('crew', 'NN'), ('was', 'VBD'), ('British.1', 'NNP'), ('They', 'PRP'), ('had', 'VBD'), ('spent', 'VBN'), ('17', 'CD'), ('days', 'NNS'), ('at', 'IN'), ('sea', 'NN'), ('and', 'CC'), ('were', 'VBD'), ('not', 'RB'), ('doing', 'VBG'), ('well', 'RB'), ('when', 'WRB'), ('they', 'PRP'), ('arrived', 'VBD'), ('in', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('.', '.')] 
+SENTENCE: The master of the ship was Captain Petra Panapolous, and most of the crew was British.
+[('The', 'DT'), ('master', 'NN'), ('of', 'IN'), ('the', 'DT'), ('ship', 'NN'), ('was', 'VBD'), ('Captain', 'NNP'), ('Petra', 'NNP'), ('Panapolous', 'NNP'), (',', ','), ('and', 'CC'), ('most', 'JJS'), ('of', 'IN'), ('the', 'DT'), ('crew', 'NN'), ('was', 'VBD'), ('British', 'JJ'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - CUZMINŢI
+
 NAME: Designation       Individual
 First Name            Ştefan
 Alt First Name           NaN
@@ -1316,8 +1380,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: However, the presence of German authorities in and around Cuzminţi continued well after the transfer of authority.1 The praetor in the Balki raion was Ştefan Tăutu.
-[('However', 'RB'), (',', ','), ('the', 'DT'), ('presence', 'NN'), ('of', 'IN'), ('German', 'JJ'), ('authorities', 'NNS'), ('in', 'IN'), ('and', 'CC'), ('around', 'IN'), ('Cuzminţi', 'NNP'), ('continued', 'VBD'), ('well', 'RB'), ('after', 'IN'), ('the', 'DT'), ('transfer', 'NN'), ('of', 'IN'), ('authority.1', 'PDT'), ('The', 'DT'), ('praetor', 'NN'), ('in', 'IN'), ('the', 'DT'), ('Balki', 'NNP'), ('raion', 'NN'), ('was', 'VBD'), ('Ştefan', 'JJ'), ('Tăutu', 'NNP'), ('.', '.')] 
+SENTENCE: The praetor in the Balki raion was Ştefan Tăutu.
+[('The', 'DT'), ('praetor', 'NN'), ('in', 'IN'), ('the', 'DT'), ('Balki', 'NNP'), ('raion', 'NN'), ('was', 'VBD'), ('Ştefan', 'JJ'), ('Tăutu', 'NNP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name         Siegfried
@@ -1328,19 +1392,20 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Multiple families shared a single room.2
-According to the statistical records of the Health Service of the Moghilev Prefecture, 175 Jews deported from Romania were living in Cuzminţi in October 1942.3 According to an estimate by Siegfried Jägendorf, president of the Moghilev Jewish Council, 50 percent of the deported Jews in the Moghilev  [End Page 664] district perished during the winter of 1941 from cold, hunger, and typhus.
-[('Multiple', 'JJ'), ('families', 'NNS'), ('shared', 'VBD'), ('a', 'DT'), ('single', 'JJ'), ('room.2', 'NN'), ('According', 'VBG'), ('to', 'TO'), ('the', 'DT'), ('statistical', 'JJ'), ('records', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Health', 'NNP'), ('Service', 'NNP'), ('of', 'IN'), ('the', 'DT'), ('Moghilev', 'NNP'), ('Prefecture', 'NNP'), (',', ','), ('175', 'CD'), ('Jews', 'NNS'), ('deported', 'VBN'), ('from', 'IN'), ('Romania', 'NNP'), ('were', 'VBD'), ('living', 'VBG'), ('in', 'IN'), ('Cuzminţi', 'NNP'), ('in', 'IN'), ('October', 'NNP'), ('1942.3', 'CD'), ('According', 'VBG'), ('to', 'TO'), ('an', 'DT'), ('estimate', 'NN'), ('by', 'IN'), ('Siegfried', 'NNP'), ('Jägendorf', 'NNP'), (',', ','), ('president', 'NN'), ('of', 'IN'), ('the', 'DT'), ('Moghilev', 'NNP'), ('Jewish', 'NNP'), ('Council', 'NNP'), (',', ','), ('50', 'CD'), ('percent', 'NN'), ('of', 'IN'), ('the', 'DT'), ('deported', 'JJ'), ('Jews', 'NNPS'), ('in', 'IN'), ('the', 'DT'), ('Moghilev', 'NNP'), ('[', 'NNP'), ('End', 'NNP'), ('Page', 'NNP'), ('664', 'CD'), (']', 'NNP'), ('district', 'NN'), ('perished', 'VBD'), ('during', 'IN'), ('the', 'DT'), ('winter', 'NN'), ('of', 'IN'), ('1941', 'CD'), ('from', 'IN'), ('cold', 'JJ'), (',', ','), ('hunger', 'NN'), (',', ','), ('and', 'CC'), ('typhus', 'RB'), ('.', '.')] 
+SENTENCE: According to an estimate by Siegfried Jägendorf, president of the Moghilev Jewish Council, 50 percent of the deported Jews in the Moghilev   district perished during the winter of 1941 from cold, hunger, and typhus.
+[('According', 'VBG'), ('to', 'TO'), ('an', 'DT'), ('estimate', 'NN'), ('by', 'IN'), ('Siegfried', 'NNP'), ('Jägendorf', 'NNP'), (',', ','), ('president', 'NN'), ('of', 'IN'), ('the', 'DT'), ('Moghilev', 'NNP'), ('Jewish', 'NNP'), ('Council', 'NNP'), (',', ','), ('50', 'CD'), ('percent', 'NN'), ('of', 'IN'), ('the', 'DT'), ('deported', 'JJ'), ('Jews', 'NNPS'), ('in', 'IN'), ('the', 'DT'), ('Moghilev', 'NNP'), ('district', 'NN'), ('perished', 'VBD'), ('during', 'IN'), ('the', 'DT'), ('winter', 'NN'), ('of', 'IN'), ('1941', 'CD'), ('from', 'IN'), ('cold', 'JJ'), (',', ','), ('hunger', 'NN'), (',', ','), ('and', 'CC'), ('typhus', 'RB'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - DOAGA
+
 ------------------------------------
 
 ----------------------------------------------------------------------
 VOLUME: v4
 
 ARTICLE: Project MUSE - KRIEGSGEFANGENEN-LAZARETTE
+
 NAME: Designation       Individual
 First Name         Alexander
 Alt First Name           NaN
@@ -1356,6 +1421,7 @@ SENTENCE: Alexander Neumann notes in his study that “because of the incomplete
 ------------------------------------
 
 ARTICLE: Project MUSE - MANNSCHAFTSSTAMMLAGER (STALAG) 339
+
 NAME: Designation       Individual
 First Name              Ilia
 Alt First Name           NaN
@@ -1365,9 +1431,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: According to the testimonies of witnesses and eyewitnesses, these pits contained the bodies of more than 500 Jewish prisoners and about 1,500 Red Army officers, political commissars, and other “undesirables,” whom the Germans separated from the other prisoners and shot between October 1941 to March 1942.10 Ilia Furmanov, who managed to hide his religious affiliation and thus avoid the same fate, recalls that other groups of prisoners were also included in these shooting operations; many Muslim prisoners, including Tatars and men from the Central Asian republics, were shot along with the Jews because they were also circumcised.11
-The ChGK concluded that more than 68,000 persons had perished in the camp at Darnitsa, based on forensic examination of the exhumed corpses and the number of bodies found in the mass graves and the surrounding areas.12 However, the figures reported by the ChGK have proven in many cases to be greatly exaggerated and should thus be viewed accordingly.
-[('According', 'VBG'), ('to', 'TO'), ('the', 'DT'), ('testimonies', 'NNS'), ('of', 'IN'), ('witnesses', 'NNS'), ('and', 'CC'), ('eyewitnesses', 'NNS'), (',', ','), ('these', 'DT'), ('pits', 'NNS'), ('contained', 'VBD'), ('the', 'DT'), ('bodies', 'NNS'), ('of', 'IN'), ('more', 'JJR'), ('than', 'IN'), ('500', 'CD'), ('Jewish', 'JJ'), ('prisoners', 'NNS'), ('and', 'CC'), ('about', 'IN'), ('1,500', 'CD'), ('Red', 'JJ'), ('Army', 'NNP'), ('officers', 'NNS'), (',', ','), ('political', 'JJ'), ('commissars', 'NNS'), (',', ','), ('and', 'CC'), ('other', 'JJ'), ('“', 'NN'), ('undesirables', 'NNS'), (',', ','), ('”', 'NNP'), ('whom', 'WP'), ('the', 'DT'), ('Germans', 'NNPS'), ('separated', 'VBD'), ('from', 'IN'), ('the', 'DT'), ('other', 'JJ'), ('prisoners', 'NNS'), ('and', 'CC'), ('shot', 'NN'), ('between', 'IN'), ('October', 'NNP'), ('1941', 'CD'), ('to', 'TO'), ('March', 'NNP'), ('1942.10', 'CD'), ('Ilia', 'NNP'), ('Furmanov', 'NNP'), (',', ','), ('who', 'WP'), ('managed', 'VBD'), ('to', 'TO'), ('hide', 'VB'), ('his', 'PRP$'), ('religious', 'JJ'), ('affiliation', 'NN'), ('and', 'CC'), ('thus', 'RB'), ('avoid', 'VB'), ('the', 'DT'), ('same', 'JJ'), ('fate', 'NN'), (',', ','), ('recalls', 'VBZ'), ('that', 'IN'), ('other', 'JJ'), ('groups', 'NNS'), ('of', 'IN'), ('prisoners', 'NNS'), ('were', 'VBD'), ('also', 'RB'), ('included', 'VBN'), ('in', 'IN'), ('these', 'DT'), ('shooting', 'VBG'), ('operations', 'NNS'), (';', ':'), ('many', 'JJ'), ('Muslim', 'NNP'), ('prisoners', 'NNS'), (',', ','), ('including', 'VBG'), ('Tatars', 'NNS'), ('and', 'CC'), ('men', 'NNS'), ('from', 'IN'), ('the', 'DT'), ('Central', 'NNP'), ('Asian', 'NNP'), ('republics', 'NNS'), (',', ','), ('were', 'VBD'), ('shot', 'VBN'), ('along', 'IN'), ('with', 'IN'), ('the', 'DT'), ('Jews', 'NNS'), ('because', 'IN'), ('they', 'PRP'), ('were', 'VBD'), ('also', 'RB'), ('circumcised.11', 'VBZ'), ('The', 'DT'), ('ChGK', 'NNP'), ('concluded', 'VBD'), ('that', 'IN'), ('more', 'JJR'), ('than', 'IN'), ('68,000', 'CD'), ('persons', 'NNS'), ('had', 'VBD'), ('perished', 'VBN'), ('in', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('at', 'IN'), ('Darnitsa', 'NNP'), (',', ','), ('based', 'VBN'), ('on', 'IN'), ('forensic', 'JJ'), ('examination', 'NN'), ('of', 'IN'), ('the', 'DT'), ('exhumed', 'JJ'), ('corpses', 'NNS'), ('and', 'CC'), ('the', 'DT'), ('number', 'NN'), ('of', 'IN'), ('bodies', 'NNS'), ('found', 'VBN'), ('in', 'IN'), ('the', 'DT'), ('mass', 'NN'), ('graves', 'NNS'), ('and', 'CC'), ('the', 'DT'), ('surrounding', 'VBG'), ('areas.12', 'NN'), ('However', 'RB'), (',', ','), ('the', 'DT'), ('figures', 'NNS'), ('reported', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('ChGK', 'NNP'), ('have', 'VBP'), ('proven', 'VBN'), ('in', 'IN'), ('many', 'JJ'), ('cases', 'NNS'), ('to', 'TO'), ('be', 'VB'), ('greatly', 'RB'), ('exaggerated', 'JJ'), ('and', 'CC'), ('should', 'MD'), ('thus', 'RB'), ('be', 'VB'), ('viewed', 'VBN'), ('accordingly', 'RB'), ('.', '.')] 
+SENTENCE: Ilia Furmanov, who managed to hide his religious affiliation and thus avoid the same fate, recalls that other groups of prisoners were also included in these shooting operations; many Muslim prisoners, including Tatars and men from the Central Asian republics, were shot along with the Jews because they were also circumcised.
+[('Ilia', 'NNP'), ('Furmanov', 'NNP'), (',', ','), ('who', 'WP'), ('managed', 'VBD'), ('to', 'TO'), ('hide', 'VB'), ('his', 'PRP$'), ('religious', 'JJ'), ('affiliation', 'NN'), ('and', 'CC'), ('thus', 'RB'), ('avoid', 'VB'), ('the', 'DT'), ('same', 'JJ'), ('fate', 'NN'), (',', ','), ('recalls', 'VBZ'), ('that', 'IN'), ('other', 'JJ'), ('groups', 'NNS'), ('of', 'IN'), ('prisoners', 'NNS'), ('were', 'VBD'), ('also', 'RB'), ('included', 'VBN'), ('in', 'IN'), ('these', 'DT'), ('shooting', 'VBG'), ('operations', 'NNS'), (';', ':'), ('many', 'JJ'), ('Muslim', 'NNP'), ('prisoners', 'NNS'), (',', ','), ('including', 'VBG'), ('Tatars', 'NNS'), ('and', 'CC'), ('men', 'NNS'), ('from', 'IN'), ('the', 'DT'), ('Central', 'NNP'), ('Asian', 'NNP'), ('republics', 'NNS'), (',', ','), ('were', 'VBD'), ('shot', 'VBN'), ('along', 'IN'), ('with', 'IN'), ('the', 'DT'), ('Jews', 'NNS'), ('because', 'IN'), ('they', 'PRP'), ('were', 'VBD'), ('also', 'RB'), ('circumcised', 'VBN'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name         Aleksandr
@@ -1378,11 +1443,9 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: The mortality rate in the subcamp was high.6
-The former POW Aleksandr Shugai, who was in the camp for an entire year, beginning on January 18, 1942, described the conditions as follows:
-
+SENTENCE: The former POW Aleksandr Shugai, who was in the camp for an entire year, beginning on January 18, 1942, described the conditions as follows:
 Personally, upon arrival at the camp I was confined in a separate barracks.
-[('The', 'DT'), ('mortality', 'NN'), ('rate', 'NN'), ('in', 'IN'), ('the', 'DT'), ('subcamp', 'NN'), ('was', 'VBD'), ('high.6', 'PDT'), ('The', 'DT'), ('former', 'JJ'), ('POW', 'NNP'), ('Aleksandr', 'NNP'), ('Shugai', 'NNP'), (',', ','), ('who', 'WP'), ('was', 'VBD'), ('in', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('for', 'IN'), ('an', 'DT'), ('entire', 'JJ'), ('year', 'NN'), (',', ','), ('beginning', 'VBG'), ('on', 'IN'), ('January', 'NNP'), ('18', 'CD'), (',', ','), ('1942', 'CD'), (',', ','), ('described', 'VBD'), ('the', 'DT'), ('conditions', 'NNS'), ('as', 'IN'), ('follows', 'VBZ'), (':', ':'), ('Personally', 'RB'), (',', ','), ('upon', 'IN'), ('arrival', 'NN'), ('at', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('I', 'PRP'), ('was', 'VBD'), ('confined', 'VBN'), ('in', 'IN'), ('a', 'DT'), ('separate', 'JJ'), ('barracks', 'NNS'), ('.', '.')] 
+[('The', 'DT'), ('former', 'JJ'), ('POW', 'NNP'), ('Aleksandr', 'NNP'), ('Shugai', 'NNP'), (',', ','), ('who', 'WP'), ('was', 'VBD'), ('in', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('for', 'IN'), ('an', 'DT'), ('entire', 'JJ'), ('year', 'NN'), (',', ','), ('beginning', 'VBG'), ('on', 'IN'), ('January', 'NNP'), ('18', 'CD'), (',', ','), ('1942', 'CD'), (',', ','), ('described', 'VBD'), ('the', 'DT'), ('conditions', 'NNS'), ('as', 'IN'), ('follows', 'VBZ'), (':', ':'), ('Personally', 'RB'), (',', ','), ('upon', 'IN'), ('arrival', 'NN'), ('at', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('I', 'PRP'), ('was', 'VBD'), ('confined', 'VBN'), ('in', 'IN'), ('a', 'DT'), ('separate', 'JJ'), ('barracks', 'NNS'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name          Grigorii
@@ -1394,8 +1457,8 @@ Title                    NaN
 Place                    NaN
 Organization             NaN
 SENTENCE: According to the statements of Grigorii Peresada, who worked in the camp as a stoker,
-the Soviet POWs managed to get for themselves various kinds of carrion to eat (dead horses, dogs, cats, and the like), and in addition they gathered bones and other refuse from the garbage pits, and all this they cooked in pots and ate, and they managed  [End Page 336] to do it even though they knew they would be beaten for it.
-[('According', 'VBG'), ('to', 'TO'), ('the', 'DT'), ('statements', 'NNS'), ('of', 'IN'), ('Grigorii', 'NNP'), ('Peresada', 'NNP'), (',', ','), ('who', 'WP'), ('worked', 'VBD'), ('in', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('as', 'IN'), ('a', 'DT'), ('stoker', 'NN'), (',', ','), ('the', 'DT'), ('Soviet', 'JJ'), ('POWs', 'NNP'), ('managed', 'VBD'), ('to', 'TO'), ('get', 'VB'), ('for', 'IN'), ('themselves', 'PRP'), ('various', 'JJ'), ('kinds', 'NNS'), ('of', 'IN'), ('carrion', 'NN'), ('to', 'TO'), ('eat', 'VB'), ('(', '('), ('dead', 'JJ'), ('horses', 'NNS'), (',', ','), ('dogs', 'NNS'), (',', ','), ('cats', 'NNS'), (',', ','), ('and', 'CC'), ('the', 'DT'), ('like', 'JJ'), (')', ')'), (',', ','), ('and', 'CC'), ('in', 'IN'), ('addition', 'NN'), ('they', 'PRP'), ('gathered', 'VBD'), ('bones', 'NNS'), ('and', 'CC'), ('other', 'JJ'), ('refuse', 'NN'), ('from', 'IN'), ('the', 'DT'), ('garbage', 'NN'), ('pits', 'NNS'), (',', ','), ('and', 'CC'), ('all', 'PDT'), ('this', 'DT'), ('they', 'PRP'), ('cooked', 'VBD'), ('in', 'IN'), ('pots', 'NNS'), ('and', 'CC'), ('ate', 'NN'), (',', ','), ('and', 'CC'), ('they', 'PRP'), ('managed', 'VBD'), ('[', 'JJ'), ('End', 'NNP'), ('Page', 'NNP'), ('336', 'CD'), (']', 'NN'), ('to', 'TO'), ('do', 'VB'), ('it', 'PRP'), ('even', 'RB'), ('though', 'IN'), ('they', 'PRP'), ('knew', 'VBD'), ('they', 'PRP'), ('would', 'MD'), ('be', 'VB'), ('beaten', 'VBN'), ('for', 'IN'), ('it', 'PRP'), ('.', '.')] 
+the Soviet POWs managed to get for themselves various kinds of carrion to eat (dead horses, dogs, cats, and the like), and in addition they gathered bones and other refuse from the garbage pits, and all this they cooked in pots and ate, and they managed   to do it even though they knew they would be beaten for it.
+[('According', 'VBG'), ('to', 'TO'), ('the', 'DT'), ('statements', 'NNS'), ('of', 'IN'), ('Grigorii', 'NNP'), ('Peresada', 'NNP'), (',', ','), ('who', 'WP'), ('worked', 'VBD'), ('in', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('as', 'IN'), ('a', 'DT'), ('stoker', 'NN'), (',', ','), ('the', 'DT'), ('Soviet', 'JJ'), ('POWs', 'NNP'), ('managed', 'VBD'), ('to', 'TO'), ('get', 'VB'), ('for', 'IN'), ('themselves', 'PRP'), ('various', 'JJ'), ('kinds', 'NNS'), ('of', 'IN'), ('carrion', 'NN'), ('to', 'TO'), ('eat', 'VB'), ('(', '('), ('dead', 'JJ'), ('horses', 'NNS'), (',', ','), ('dogs', 'NNS'), (',', ','), ('cats', 'NNS'), (',', ','), ('and', 'CC'), ('the', 'DT'), ('like', 'JJ'), (')', ')'), (',', ','), ('and', 'CC'), ('in', 'IN'), ('addition', 'NN'), ('they', 'PRP'), ('gathered', 'VBD'), ('bones', 'NNS'), ('and', 'CC'), ('other', 'JJ'), ('refuse', 'NN'), ('from', 'IN'), ('the', 'DT'), ('garbage', 'NN'), ('pits', 'NNS'), (',', ','), ('and', 'CC'), ('all', 'PDT'), ('this', 'DT'), ('they', 'PRP'), ('cooked', 'VBD'), ('in', 'IN'), ('pots', 'NNS'), ('and', 'CC'), ('ate', 'NN'), (',', ','), ('and', 'CC'), ('they', 'PRP'), ('managed', 'VBD'), ('to', 'TO'), ('do', 'VB'), ('it', 'PRP'), ('even', 'RB'), ('though', 'IN'), ('they', 'PRP'), ('knew', 'VBD'), ('they', 'PRP'), ('would', 'MD'), ('be', 'VB'), ('beaten', 'VBN'), ('for', 'IN'), ('it', 'PRP'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name            Gustav
@@ -1406,21 +1469,22 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: There were repeated instances when POWs who remained alive cut off the arms, legs, and even other body parts of prisoners who had starved to death and used all this as food for themselves, managing all this in great fear and with beatings as a result.8
-Gustav Getroi, a Jew from Lwów who entered the camp as early as October 1941 and, as a former doctor, was assigned to the infirmary, recalled that
-
+SENTENCE: Gustav Getroi, a Jew from Lwów who entered the camp as early as October 1941 and, as a former doctor, was assigned to the infirmary, recalled that
 over the course of a month, I personally, as well as the wounded POWs who were in the infirmary, received food rations once a day, consisting of soup made of frozen beets.
-[('There', 'EX'), ('were', 'VBD'), ('repeated', 'VBN'), ('instances', 'NNS'), ('when', 'WRB'), ('POWs', 'NNP'), ('who', 'WP'), ('remained', 'VBD'), ('alive', 'JJ'), ('cut', 'NN'), ('off', 'IN'), ('the', 'DT'), ('arms', 'NNS'), (',', ','), ('legs', 'NNS'), (',', ','), ('and', 'CC'), ('even', 'RB'), ('other', 'JJ'), ('body', 'NN'), ('parts', 'NNS'), ('of', 'IN'), ('prisoners', 'NNS'), ('who', 'WP'), ('had', 'VBD'), ('starved', 'VBN'), ('to', 'TO'), ('death', 'NN'), ('and', 'CC'), ('used', 'VBD'), ('all', 'PDT'), ('this', 'DT'), ('as', 'IN'), ('food', 'NN'), ('for', 'IN'), ('themselves', 'PRP'), (',', ','), ('managing', 'VBG'), ('all', 'PDT'), ('this', 'DT'), ('in', 'IN'), ('great', 'JJ'), ('fear', 'NN'), ('and', 'CC'), ('with', 'IN'), ('beatings', 'NNS'), ('as', 'IN'), ('a', 'DT'), ('result.8', 'NN'), ('Gustav', 'NNP'), ('Getroi', 'NNP'), (',', ','), ('a', 'DT'), ('Jew', 'NNP'), ('from', 'IN'), ('Lwów', 'NNP'), ('who', 'WP'), ('entered', 'VBD'), ('the', 'DT'), ('camp', 'NN'), ('as', 'RB'), ('early', 'RB'), ('as', 'IN'), ('October', 'NNP'), ('1941', 'CD'), ('and', 'CC'), (',', ','), ('as', 'IN'), ('a', 'DT'), ('former', 'JJ'), ('doctor', 'NN'), (',', ','), ('was', 'VBD'), ('assigned', 'VBN'), ('to', 'TO'), ('the', 'DT'), ('infirmary', 'JJ'), (',', ','), ('recalled', 'VBD'), ('that', 'IN'), ('over', 'IN'), ('the', 'DT'), ('course', 'NN'), ('of', 'IN'), ('a', 'DT'), ('month', 'NN'), (',', ','), ('I', 'PRP'), ('personally', 'RB'), (',', ','), ('as', 'RB'), ('well', 'RB'), ('as', 'IN'), ('the', 'DT'), ('wounded', 'JJ'), ('POWs', 'NNP'), ('who', 'WP'), ('were', 'VBD'), ('in', 'IN'), ('the', 'DT'), ('infirmary', 'JJ'), (',', ','), ('received', 'VBD'), ('food', 'NN'), ('rations', 'NNS'), ('once', 'RB'), ('a', 'DT'), ('day', 'NN'), (',', ','), ('consisting', 'VBG'), ('of', 'IN'), ('soup', 'NN'), ('made', 'VBN'), ('of', 'IN'), ('frozen', 'JJ'), ('beets', 'NNS'), ('.', '.')] 
+[('Gustav', 'NNP'), ('Getroi', 'NNP'), (',', ','), ('a', 'DT'), ('Jew', 'NNP'), ('from', 'IN'), ('Lwów', 'NNP'), ('who', 'WP'), ('entered', 'VBD'), ('the', 'DT'), ('camp', 'NN'), ('as', 'RB'), ('early', 'RB'), ('as', 'IN'), ('October', 'NNP'), ('1941', 'CD'), ('and', 'CC'), (',', ','), ('as', 'IN'), ('a', 'DT'), ('former', 'JJ'), ('doctor', 'NN'), (',', ','), ('was', 'VBD'), ('assigned', 'VBN'), ('to', 'TO'), ('the', 'DT'), ('infirmary', 'JJ'), (',', ','), ('recalled', 'VBD'), ('that', 'IN'), ('over', 'IN'), ('the', 'DT'), ('course', 'NN'), ('of', 'IN'), ('a', 'DT'), ('month', 'NN'), (',', ','), ('I', 'PRP'), ('personally', 'RB'), (',', ','), ('as', 'RB'), ('well', 'RB'), ('as', 'IN'), ('the', 'DT'), ('wounded', 'JJ'), ('POWs', 'NNP'), ('who', 'WP'), ('were', 'VBD'), ('in', 'IN'), ('the', 'DT'), ('infirmary', 'JJ'), (',', ','), ('received', 'VBD'), ('food', 'NN'), ('rations', 'NNS'), ('once', 'RB'), ('a', 'DT'), ('day', 'NN'), (',', ','), ('consisting', 'VBG'), ('of', 'IN'), ('soup', 'NN'), ('made', 'VBN'), ('of', 'IN'), ('frozen', 'JJ'), ('beets', 'NNS'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - DURCHGANGSLAGER (DULAG) XVII / DULAG DÖLLERSHEIM
+
 ------------------------------------
 
 ARTICLE: Project MUSE - OFFIZIERLAGER (OFLAG) IV A
+
 ------------------------------------
 
 ARTICLE: Project MUSE - FLÜCHTLINGSLAGER (FL) TSCHIR
+
 NAME: Designation       Individual
 First Name            Iraida
 Alt First Name           NaN
@@ -1450,9 +1514,11 @@ On foot, we reached the Chir railroad station.
 ------------------------------------
 
 ARTICLE: Project MUSE - FRONTSTAMMLAGER (FRONTSTALAG) 136
+
 ------------------------------------
 
 ARTICLE: Project MUSE - MANNSCHAFTSSTAMMLAGER (STALAG) VI D
+
 NAME: Designation       Individual
 First Name              Kurt
 Alt First Name           NaN
@@ -1528,6 +1594,7 @@ SENTENCE: Among the French prisoners in Stalag VI D was the well-known French wr
 ------------------------------------
 
 ARTICLE: Project MUSE - FELDSTRAFGEFANGENEN-ABTEILUNG (FStGA) 21
+
 NAME: Designation       Individual
 First Name             Eugen
 Alt First Name           NaN
@@ -1537,8 +1604,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: On October 6, 1942, General der Artillerie Eugen Müller of the Army High Command (Oberkommando des Heeres, OKH) stated that in view of the “the generally restricted availability of staff personnel” the FStGAs “unfortunately cannot be expanded.”5 Because field penal service for the penitentiary prisoners would have required increased numbers of guard personnel, it appeared inefficient from a military standpoint.
-[('On', 'IN'), ('October', 'NNP'), ('6', 'CD'), (',', ','), ('1942', 'CD'), (',', ','), ('General', 'NNP'), ('der', 'NN'), ('Artillerie', 'NNP'), ('Eugen', 'NNP'), ('Müller', 'NNP'), ('of', 'IN'), ('the', 'DT'), ('Army', 'NNP'), ('High', 'NNP'), ('Command', 'NNP'), ('(', '('), ('Oberkommando', 'NNP'), ('des', 'VBZ'), ('Heeres', 'NNP'), (',', ','), ('OKH', 'NNP'), (')', ')'), ('stated', 'VBD'), ('that', 'IN'), ('in', 'IN'), ('view', 'NN'), ('of', 'IN'), ('the', 'DT'), ('“', 'NN'), ('the', 'DT'), ('generally', 'RB'), ('restricted', 'VBN'), ('availability', 'NN'), ('of', 'IN'), ('staff', 'NN'), ('personnel', 'NNS'), ('”', 'VBP'), ('the', 'DT'), ('FStGAs', 'NNP'), ('“', 'NNP'), ('unfortunately', 'RB'), ('can', 'MD'), ('not', 'RB'), ('be', 'VB'), ('expanded.', 'JJ'), ('”', 'JJ'), ('5', 'CD'), ('Because', 'IN'), ('field', 'NN'), ('penal', 'JJ'), ('service', 'NN'), ('for', 'IN'), ('the', 'DT'), ('penitentiary', 'JJ'), ('prisoners', 'NNS'), ('would', 'MD'), ('have', 'VB'), ('required', 'VBN'), ('increased', 'JJ'), ('numbers', 'NNS'), ('of', 'IN'), ('guard', 'NN'), ('personnel', 'NNS'), (',', ','), ('it', 'PRP'), ('appeared', 'VBD'), ('inefficient', 'NN'), ('from', 'IN'), ('a', 'DT'), ('military', 'JJ'), ('standpoint', 'NN'), ('.', '.')] 
+SENTENCE: On October 6, 1942, General der Artillerie Eugen Müller of the Army High Command (Oberkommando des Heeres, OKH) stated that in view of the “the generally restricted availability of staff personnel” the FStGAs “unfortunately cannot be expanded.” Because field penal service for the penitentiary prisoners would have required increased numbers of guard personnel, it appeared inefficient from a military standpoint.
+[('On', 'IN'), ('October', 'NNP'), ('6', 'CD'), (',', ','), ('1942', 'CD'), (',', ','), ('General', 'NNP'), ('der', 'NN'), ('Artillerie', 'NNP'), ('Eugen', 'NNP'), ('Müller', 'NNP'), ('of', 'IN'), ('the', 'DT'), ('Army', 'NNP'), ('High', 'NNP'), ('Command', 'NNP'), ('(', '('), ('Oberkommando', 'NNP'), ('des', 'VBZ'), ('Heeres', 'NNP'), (',', ','), ('OKH', 'NNP'), (')', ')'), ('stated', 'VBD'), ('that', 'IN'), ('in', 'IN'), ('view', 'NN'), ('of', 'IN'), ('the', 'DT'), ('“', 'NN'), ('the', 'DT'), ('generally', 'RB'), ('restricted', 'VBN'), ('availability', 'NN'), ('of', 'IN'), ('staff', 'NN'), ('personnel', 'NNS'), ('”', 'VBP'), ('the', 'DT'), ('FStGAs', 'NNP'), ('“', 'NNP'), ('unfortunately', 'RB'), ('can', 'MD'), ('not', 'RB'), ('be', 'VB'), ('expanded.', 'RB'), ('”', 'NNP'), ('Because', 'IN'), ('field', 'NN'), ('penal', 'JJ'), ('service', 'NN'), ('for', 'IN'), ('the', 'DT'), ('penitentiary', 'JJ'), ('prisoners', 'NNS'), ('would', 'MD'), ('have', 'VB'), ('required', 'VBN'), ('increased', 'JJ'), ('numbers', 'NNS'), ('of', 'IN'), ('guard', 'NN'), ('personnel', 'NNS'), (',', ','), ('it', 'PRP'), ('appeared', 'VBD'), ('inefficient', 'NN'), ('from', 'IN'), ('a', 'DT'), ('military', 'JJ'), ('standpoint', 'NN'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name          Heinrich
@@ -1549,13 +1616,14 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: According to Müller’s order, “members of the field army who have been sentenced to a penitentiary term” were only to be handed over to the Reich Justice Administration if they were “the most uneducable asocials; homosexual repeat-offenders; elements which were dangerous to the community; or convicts who were not needed by the Wehrmacht for various reasons.” In all other cases, “prisoners who were sentenced to the penitentiary” were to be sent “to the FStGAs or Feldstraflager under a conditional restoration of suitability for military service.”8
+SENTENCE: According to Müller’s order, “members of the field army who have been sentenced to a penitentiary term” were only to be handed over to the Reich Justice Administration if they were “the most uneducable asocials; homosexual repeat-offenders; elements which were dangerous to the community; or convicts who were not needed by the Wehrmacht for various reasons.” In all other cases, “prisoners who were sentenced to the penitentiary” were to be sent “to the FStGAs or Feldstraflager under a conditional restoration of suitability for military service.”
 A day after Müller’s order, Heinrich Himmler, who had become the commander of the Replacement Army (Ersatzheer) on July 20, 1944, ordered that in his area of responsibility, the penal system was “to be placed without exception in the immediate service of the war effort”: “Soldiers and army officials … who have been sentenced to prison are no longer to be … given over to the civilian justice system.
-[('According', 'VBG'), ('to', 'TO'), ('Müller', 'NNP'), ('’', 'NNP'), ('s', 'NN'), ('order', 'NN'), (',', ','), ('“', 'JJ'), ('members', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('field', 'NN'), ('army', 'NN'), ('who', 'WP'), ('have', 'VBP'), ('been', 'VBN'), ('sentenced', 'VBN'), ('to', 'TO'), ('a', 'DT'), ('penitentiary', 'JJ'), ('term', 'NN'), ('”', 'NN'), ('were', 'VBD'), ('only', 'RB'), ('to', 'TO'), ('be', 'VB'), ('handed', 'VBN'), ('over', 'IN'), ('to', 'TO'), ('the', 'DT'), ('Reich', 'NNP'), ('Justice', 'NNP'), ('Administration', 'NNP'), ('if', 'IN'), ('they', 'PRP'), ('were', 'VBD'), ('“', 'VBN'), ('the', 'DT'), ('most', 'RBS'), ('uneducable', 'JJ'), ('asocials', 'NNS'), (';', ':'), ('homosexual', 'JJ'), ('repeat-offenders', 'NNS'), (';', ':'), ('elements', 'NNS'), ('which', 'WDT'), ('were', 'VBD'), ('dangerous', 'JJ'), ('to', 'TO'), ('the', 'DT'), ('community', 'NN'), (';', ':'), ('or', 'CC'), ('convicts', 'NNS'), ('who', 'WP'), ('were', 'VBD'), ('not', 'RB'), ('needed', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('Wehrmacht', 'NNP'), ('for', 'IN'), ('various', 'JJ'), ('reasons.', 'NN'), ('”', 'NN'), ('In', 'IN'), ('all', 'DT'), ('other', 'JJ'), ('cases', 'NNS'), (',', ','), ('“', 'JJ'), ('prisoners', 'NNS'), ('who', 'WP'), ('were', 'VBD'), ('sentenced', 'VBN'), ('to', 'TO'), ('the', 'DT'), ('penitentiary', 'JJ'), ('”', 'NN'), ('were', 'VBD'), ('to', 'TO'), ('be', 'VB'), ('sent', 'VBN'), ('“', 'NN'), ('to', 'TO'), ('the', 'DT'), ('FStGAs', 'NNP'), ('or', 'CC'), ('Feldstraflager', 'NNP'), ('under', 'IN'), ('a', 'DT'), ('conditional', 'JJ'), ('restoration', 'NN'), ('of', 'IN'), ('suitability', 'NN'), ('for', 'IN'), ('military', 'JJ'), ('service.', 'NN'), ('”', 'VBD'), ('8', 'CD'), ('A', 'NNP'), ('day', 'NN'), ('after', 'IN'), ('Müller', 'NNP'), ('’', 'NNP'), ('s', 'NN'), ('order', 'NN'), (',', ','), ('Heinrich', 'NNP'), ('Himmler', 'NNP'), (',', ','), ('who', 'WP'), ('had', 'VBD'), ('become', 'VBN'), ('the', 'DT'), ('commander', 'NN'), ('of', 'IN'), ('the', 'DT'), ('Replacement', 'NNP'), ('Army', 'NNP'), ('(', '('), ('Ersatzheer', 'NNP'), (')', ')'), ('on', 'IN'), ('July', 'NNP'), ('20', 'CD'), (',', ','), ('1944', 'CD'), (',', ','), ('ordered', 'VBD'), ('that', 'IN'), ('in', 'IN'), ('his', 'PRP$'), ('area', 'NN'), ('of', 'IN'), ('responsibility', 'NN'), (',', ','), ('the', 'DT'), ('penal', 'JJ'), ('system', 'NN'), ('was', 'VBD'), ('“', 'VBN'), ('to', 'TO'), ('be', 'VB'), ('placed', 'VBN'), ('without', 'IN'), ('exception', 'NN'), ('in', 'IN'), ('the', 'DT'), ('immediate', 'JJ'), ('service', 'NN'), ('of', 'IN'), ('the', 'DT'), ('war', 'NN'), ('effort', 'NN'), ('”', 'NN'), (':', ':'), ('“', 'NN'), ('Soldiers', 'NNS'), ('and', 'CC'), ('army', 'NN'), ('officials', 'NNS'), ('…', 'VBP'), ('who', 'WP'), ('have', 'VBP'), ('been', 'VBN'), ('sentenced', 'VBN'), ('to', 'TO'), ('prison', 'NN'), ('are', 'VBP'), ('no', 'RB'), ('longer', 'JJR'), ('to', 'TO'), ('be', 'VB'), ('…', 'JJ'), ('given', 'VBN'), ('over', 'IN'), ('to', 'TO'), ('the', 'DT'), ('civilian', 'JJ'), ('justice', 'NN'), ('system', 'NN'), ('.', '.')] 
+[('According', 'VBG'), ('to', 'TO'), ('Müller', 'NNP'), ('’', 'NNP'), ('s', 'NN'), ('order', 'NN'), (',', ','), ('“', 'JJ'), ('members', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('field', 'NN'), ('army', 'NN'), ('who', 'WP'), ('have', 'VBP'), ('been', 'VBN'), ('sentenced', 'VBN'), ('to', 'TO'), ('a', 'DT'), ('penitentiary', 'JJ'), ('term', 'NN'), ('”', 'NN'), ('were', 'VBD'), ('only', 'RB'), ('to', 'TO'), ('be', 'VB'), ('handed', 'VBN'), ('over', 'IN'), ('to', 'TO'), ('the', 'DT'), ('Reich', 'NNP'), ('Justice', 'NNP'), ('Administration', 'NNP'), ('if', 'IN'), ('they', 'PRP'), ('were', 'VBD'), ('“', 'VBN'), ('the', 'DT'), ('most', 'RBS'), ('uneducable', 'JJ'), ('asocials', 'NNS'), (';', ':'), ('homosexual', 'JJ'), ('repeat-offenders', 'NNS'), (';', ':'), ('elements', 'NNS'), ('which', 'WDT'), ('were', 'VBD'), ('dangerous', 'JJ'), ('to', 'TO'), ('the', 'DT'), ('community', 'NN'), (';', ':'), ('or', 'CC'), ('convicts', 'NNS'), ('who', 'WP'), ('were', 'VBD'), ('not', 'RB'), ('needed', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('Wehrmacht', 'NNP'), ('for', 'IN'), ('various', 'JJ'), ('reasons.', 'NN'), ('”', 'NN'), ('In', 'IN'), ('all', 'DT'), ('other', 'JJ'), ('cases', 'NNS'), (',', ','), ('“', 'JJ'), ('prisoners', 'NNS'), ('who', 'WP'), ('were', 'VBD'), ('sentenced', 'VBN'), ('to', 'TO'), ('the', 'DT'), ('penitentiary', 'JJ'), ('”', 'NN'), ('were', 'VBD'), ('to', 'TO'), ('be', 'VB'), ('sent', 'VBN'), ('“', 'NN'), ('to', 'TO'), ('the', 'DT'), ('FStGAs', 'NNP'), ('or', 'CC'), ('Feldstraflager', 'NNP'), ('under', 'IN'), ('a', 'DT'), ('conditional', 'JJ'), ('restoration', 'NN'), ('of', 'IN'), ('suitability', 'NN'), ('for', 'IN'), ('military', 'JJ'), ('service.', 'NN'), ('”', 'VBD'), ('A', 'DT'), ('day', 'NN'), ('after', 'IN'), ('Müller', 'NNP'), ('’', 'NNP'), ('s', 'NN'), ('order', 'NN'), (',', ','), ('Heinrich', 'NNP'), ('Himmler', 'NNP'), (',', ','), ('who', 'WP'), ('had', 'VBD'), ('become', 'VBN'), ('the', 'DT'), ('commander', 'NN'), ('of', 'IN'), ('the', 'DT'), ('Replacement', 'NNP'), ('Army', 'NNP'), ('(', '('), ('Ersatzheer', 'NNP'), (')', ')'), ('on', 'IN'), ('July', 'NNP'), ('20', 'CD'), (',', ','), ('1944', 'CD'), (',', ','), ('ordered', 'VBD'), ('that', 'IN'), ('in', 'IN'), ('his', 'PRP$'), ('area', 'NN'), ('of', 'IN'), ('responsibility', 'NN'), (',', ','), ('the', 'DT'), ('penal', 'JJ'), ('system', 'NN'), ('was', 'VBD'), ('“', 'VBN'), ('to', 'TO'), ('be', 'VB'), ('placed', 'VBN'), ('without', 'IN'), ('exception', 'NN'), ('in', 'IN'), ('the', 'DT'), ('immediate', 'JJ'), ('service', 'NN'), ('of', 'IN'), ('the', 'DT'), ('war', 'NN'), ('effort', 'NN'), ('”', 'NN'), (':', ':'), ('“', 'NN'), ('Soldiers', 'NNS'), ('and', 'CC'), ('army', 'NN'), ('officials', 'NNS'), ('…', 'VBP'), ('who', 'WP'), ('have', 'VBP'), ('been', 'VBN'), ('sentenced', 'VBN'), ('to', 'TO'), ('prison', 'NN'), ('are', 'VBP'), ('no', 'RB'), ('longer', 'JJR'), ('to', 'TO'), ('be', 'VB'), ('…', 'JJ'), ('given', 'VBN'), ('over', 'IN'), ('to', 'TO'), ('the', 'DT'), ('civilian', 'JJ'), ('justice', 'NN'), ('system', 'NN'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - OFFIZIERLAGER (OFLAG) XVII A
+
 NAME: Designation       Individual
 First Name             Anton
 Alt First Name           NaN
@@ -1601,8 +1669,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: The police force that the German commandant created, under Capitaine Georges Brécard, was termed, among other things, the “French Gestapo.”3 In April 1942, when the Pétainists, besides recruiting for the Legion of French Volunteers against Bolshevism and similar organizations, even began arranging for placement of “voluntary labor in Germany,” the “patriots” known as “Maffia” became active.
-[('The', 'DT'), ('police', 'NN'), ('force', 'NN'), ('that', 'IN'), ('the', 'DT'), ('German', 'JJ'), ('commandant', 'NN'), ('created', 'VBD'), (',', ','), ('under', 'IN'), ('Capitaine', 'NNP'), ('Georges', 'NNP'), ('Brécard', 'NNP'), (',', ','), ('was', 'VBD'), ('termed', 'VBN'), (',', ','), ('among', 'IN'), ('other', 'JJ'), ('things', 'NNS'), (',', ','), ('the', 'DT'), ('“', 'NNP'), ('French', 'NNP'), ('Gestapo.', 'NNP'), ('”', 'NNP'), ('3', 'CD'), ('In', 'IN'), ('April', 'NNP'), ('1942', 'CD'), (',', ','), ('when', 'WRB'), ('the', 'DT'), ('Pétainists', 'NNS'), (',', ','), ('besides', 'IN'), ('recruiting', 'VBG'), ('for', 'IN'), ('the', 'DT'), ('Legion', 'NNP'), ('of', 'IN'), ('French', 'JJ'), ('Volunteers', 'NNP'), ('against', 'IN'), ('Bolshevism', 'NNP'), ('and', 'CC'), ('similar', 'JJ'), ('organizations', 'NNS'), (',', ','), ('even', 'RB'), ('began', 'VBD'), ('arranging', 'VBG'), ('for', 'IN'), ('placement', 'NN'), ('of', 'IN'), ('“', 'NNP'), ('voluntary', 'JJ'), ('labor', 'NN'), ('in', 'IN'), ('Germany', 'NNP'), (',', ','), ('”', 'VBZ'), ('the', 'DT'), ('“', 'JJ'), ('patriots', 'NNS'), ('”', 'RB'), ('known', 'VBN'), ('as', 'IN'), ('“', 'NN'), ('Maffia', 'NNP'), ('”', 'NNP'), ('became', 'VBD'), ('active', 'JJ'), ('.', '.')] 
+SENTENCE: The police force that the German commandant created, under Capitaine Georges Brécard, was termed, among other things, the “French Gestapo.” In April 1942, when the Pétainists, besides recruiting for the Legion of French Volunteers against Bolshevism and similar organizations, even began arranging for placement of “voluntary labor in Germany,” the “patriots” known as “Maffia” became active.
+[('The', 'DT'), ('police', 'NN'), ('force', 'NN'), ('that', 'IN'), ('the', 'DT'), ('German', 'JJ'), ('commandant', 'NN'), ('created', 'VBD'), (',', ','), ('under', 'IN'), ('Capitaine', 'NNP'), ('Georges', 'NNP'), ('Brécard', 'NNP'), (',', ','), ('was', 'VBD'), ('termed', 'VBN'), (',', ','), ('among', 'IN'), ('other', 'JJ'), ('things', 'NNS'), (',', ','), ('the', 'DT'), ('“', 'NNP'), ('French', 'NNP'), ('Gestapo.', 'NNP'), ('”', 'NNP'), ('In', 'IN'), ('April', 'NNP'), ('1942', 'CD'), (',', ','), ('when', 'WRB'), ('the', 'DT'), ('Pétainists', 'NNS'), (',', ','), ('besides', 'IN'), ('recruiting', 'VBG'), ('for', 'IN'), ('the', 'DT'), ('Legion', 'NNP'), ('of', 'IN'), ('French', 'JJ'), ('Volunteers', 'NNP'), ('against', 'IN'), ('Bolshevism', 'NNP'), ('and', 'CC'), ('similar', 'JJ'), ('organizations', 'NNS'), (',', ','), ('even', 'RB'), ('began', 'VBD'), ('arranging', 'VBG'), ('for', 'IN'), ('placement', 'NN'), ('of', 'IN'), ('“', 'NNP'), ('voluntary', 'JJ'), ('labor', 'NN'), ('in', 'IN'), ('Germany', 'NNP'), (',', ','), ('”', 'VBZ'), ('the', 'DT'), ('“', 'JJ'), ('patriots', 'NNS'), ('”', 'RB'), ('known', 'VBN'), ('as', 'IN'), ('“', 'NN'), ('Maffia', 'NNP'), ('”', 'NNP'), ('became', 'VBD'), ('active', 'JJ'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name            Pierre
@@ -1649,8 +1717,8 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Furthermore, the protests of members of the camp university as opponents of the Vichy regime had an effect on the German camp  [End Page 273] command from the very outset and, for a time, prevented antisemitic measures in the camp.6 In the end, however, the approximately 150 Jews (including the biologist and embryologist Etienne Wolff) were transferred to the “ghetto” of Barracks 21.
-[('Furthermore', 'RB'), (',', ','), ('the', 'DT'), ('protests', 'NNS'), ('of', 'IN'), ('members', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('university', 'NN'), ('as', 'IN'), ('opponents', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('Vichy', 'NNP'), ('regime', 'NN'), ('had', 'VBD'), ('an', 'DT'), ('effect', 'NN'), ('on', 'IN'), ('the', 'DT'), ('German', 'JJ'), ('camp', 'NN'), ('[', 'NNP'), ('End', 'NNP'), ('Page', 'NNP'), ('273', 'CD'), (']', 'NNP'), ('command', 'NN'), ('from', 'IN'), ('the', 'DT'), ('very', 'RB'), ('outset', 'JJ'), ('and', 'CC'), (',', ','), ('for', 'IN'), ('a', 'DT'), ('time', 'NN'), (',', ','), ('prevented', 'VBN'), ('antisemitic', 'JJ'), ('measures', 'NNS'), ('in', 'IN'), ('the', 'DT'), ('camp.6', 'NN'), ('In', 'IN'), ('the', 'DT'), ('end', 'NN'), (',', ','), ('however', 'RB'), (',', ','), ('the', 'DT'), ('approximately', 'RB'), ('150', 'CD'), ('Jews', 'NNS'), ('(', '('), ('including', 'VBG'), ('the', 'DT'), ('biologist', 'NN'), ('and', 'CC'), ('embryologist', 'NN'), ('Etienne', 'NNP'), ('Wolff', 'NNP'), (')', ')'), ('were', 'VBD'), ('transferred', 'VBN'), ('to', 'TO'), ('the', 'DT'), ('“', 'NNP'), ('ghetto', 'NN'), ('”', 'NN'), ('of', 'IN'), ('Barracks', 'NNP'), ('21', 'CD'), ('.', '.')] 
+SENTENCE: In the end, however, the approximately 150 Jews (including the biologist and embryologist Etienne Wolff) were transferred to the “ghetto” of Barracks 21.
+[('In', 'IN'), ('the', 'DT'), ('end', 'NN'), (',', ','), ('however', 'RB'), (',', ','), ('the', 'DT'), ('approximately', 'RB'), ('150', 'CD'), ('Jews', 'NNS'), ('(', '('), ('including', 'VBG'), ('the', 'DT'), ('biologist', 'NN'), ('and', 'CC'), ('embryologist', 'NN'), ('Etienne', 'NNP'), ('Wolff', 'NNP'), (')', ')'), ('were', 'VBD'), ('transferred', 'VBN'), ('to', 'TO'), ('the', 'DT'), ('“', 'NNP'), ('ghetto', 'NN'), ('”', 'NN'), ('of', 'IN'), ('Barracks', 'NNP'), ('21', 'CD'), ('.', '.')] 
 
 NAME: Designation       Individual
 First Name             Henri
@@ -1673,14 +1741,13 @@ Alt Last Name            NaN
 Title                    NaN
 Place                    NaN
 Organization             NaN
-SENTENCE: Paul Franck, however, took his own life to avoid deportation.10
-Also worthy of mention are at least two other officers from Oflag XVII A who suffered for their (alleged) activities: Capitaine Levacher and Lieutenant Choné, who had allowed themselves to be “transformed” into “voluntary laborers” in Vienna, were arrested for espionage in October 1943 and sentenced to death in Torgau on December 8, 1943; in February 1945, their punishment was changed to forced labor.11
-In the summer of 1944, the Western Allies’ advance through France cut off communications and care packages, so conditions in the camp worsened considerably.
-[('Paul', 'NNP'), ('Franck', 'NNP'), (',', ','), ('however', 'RB'), (',', ','), ('took', 'VBD'), ('his', 'PRP$'), ('own', 'JJ'), ('life', 'NN'), ('to', 'TO'), ('avoid', 'VB'), ('deportation.10', 'NN'), ('Also', 'RB'), ('worthy', 'JJ'), ('of', 'IN'), ('mention', 'NN'), ('are', 'VBP'), ('at', 'IN'), ('least', 'JJS'), ('two', 'CD'), ('other', 'JJ'), ('officers', 'NNS'), ('from', 'IN'), ('Oflag', 'NNP'), ('XVII', 'NNP'), ('A', 'NNP'), ('who', 'WP'), ('suffered', 'VBD'), ('for', 'IN'), ('their', 'PRP$'), ('(', '('), ('alleged', 'VBN'), (')', ')'), ('activities', 'NNS'), (':', ':'), ('Capitaine', 'NNP'), ('Levacher', 'NNP'), ('and', 'CC'), ('Lieutenant', 'NNP'), ('Choné', 'NNP'), (',', ','), ('who', 'WP'), ('had', 'VBD'), ('allowed', 'VBN'), ('themselves', 'PRP'), ('to', 'TO'), ('be', 'VB'), ('“', 'VBN'), ('transformed', 'JJ'), ('”', 'NN'), ('into', 'IN'), ('“', 'JJ'), ('voluntary', 'JJ'), ('laborers', 'NNS'), ('”', 'VBP'), ('in', 'IN'), ('Vienna', 'NNP'), (',', ','), ('were', 'VBD'), ('arrested', 'VBN'), ('for', 'IN'), ('espionage', 'NN'), ('in', 'IN'), ('October', 'NNP'), ('1943', 'CD'), ('and', 'CC'), ('sentenced', 'VBD'), ('to', 'TO'), ('death', 'NN'), ('in', 'IN'), ('Torgau', 'NNP'), ('on', 'IN'), ('December', 'NNP'), ('8', 'CD'), (',', ','), ('1943', 'CD'), (';', ':'), ('in', 'IN'), ('February', 'NNP'), ('1945', 'CD'), (',', ','), ('their', 'PRP$'), ('punishment', 'NN'), ('was', 'VBD'), ('changed', 'VBN'), ('to', 'TO'), ('forced', 'VB'), ('labor.11', 'NN'), ('In', 'IN'), ('the', 'DT'), ('summer', 'NN'), ('of', 'IN'), ('1944', 'CD'), (',', ','), ('the', 'DT'), ('Western', 'JJ'), ('Allies', 'NNP'), ('’', 'NNP'), ('advance', 'NN'), ('through', 'IN'), ('France', 'NNP'), ('cut', 'VBD'), ('off', 'RP'), ('communications', 'NNS'), ('and', 'CC'), ('care', 'NN'), ('packages', 'NNS'), (',', ','), ('so', 'IN'), ('conditions', 'NNS'), ('in', 'IN'), ('the', 'DT'), ('camp', 'NN'), ('worsened', 'VBD'), ('considerably', 'RB'), ('.', '.')] 
+SENTENCE: Paul Franck, however, took his own life to avoid deportation.
+[('Paul', 'NNP'), ('Franck', 'NNP'), (',', ','), ('however', 'RB'), (',', ','), ('took', 'VBD'), ('his', 'PRP$'), ('own', 'JJ'), ('life', 'NN'), ('to', 'TO'), ('avoid', 'VB'), ('deportation', 'NN'), ('.', '.')] 
 
 ------------------------------------
 
 ARTICLE: Project MUSE - FRONTSTAMMLAGER (FRONTSTALAG) 221
+
 NAME: Designation       Individual
 First Name           Georges
 Alt First Name           NaN

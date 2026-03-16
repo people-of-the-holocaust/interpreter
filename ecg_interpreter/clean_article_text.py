@@ -2,7 +2,7 @@ import re
 from bs4 import BeautifulSoup
 
 
-def clean_article_text(article_path):
+def clean(article_path):
     with open(article_path, "r", encoding="utf-8") as f:
         soup = BeautifulSoup(f, 'lxml')
         # get article title and body text
