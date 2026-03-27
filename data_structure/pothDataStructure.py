@@ -3,80 +3,79 @@ import psycopg2
 #Maybe use scypt instead of bcrypt here
 import bycrypt
 
-#REMEMBER encrypt so that others cannot get access to the database without authorization.
-databaseConnect = psycopg2.connect("dbname='tempName' user='dBeaver' host='testHost' password='notUsedYet'")
-dataBaseEditor = databaseConnect.cursor()
-
 #Encyclopedia class
 class Encyclopedia:
-    #List of Pages, will always be Pages class
-    pages = []
+    #List of Volumes, will always be Volumes class
+    volumesList = []
 
-    #Outputs a tuple list that attaches People class to the Pages class
-    def getInfo(self):
+    #Outputs a list of actions
+    def getActionInfo(self):
         outputList = []
-        for page in self.pages:
-            newTuple = (page, page.getPeople)
-            outputList.append(newTuple)
+        for volume in self.volumesList:
+            outputList.append(volume.getActionInfo)
         return outputList
     
 #Page class (Used in Encyclopedia)
-class Page:
-    #List of Paragraphs in the Page. Always will Para class
-    paras = []
-    #Page desc contains the Page header that contains the location
-    desc = None
-    #Page date contains the date that is used in the database
-    date = None
+class Volume:
+    #List of articles in the Volume. Always will Articles class
+    articlesList = []
 
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.
-    def getPeople (self):
-        paragrphs = self.pars
-        for paras in self.paragraphs:
-            return paras.getPeople()
+    def getActionInfo (self):
+        for articles in self.articlesList:
+            return articles.getPeople()
 
 #Paragraph class (under Pages)
-class Para:
-    #List of setences in the paragraph. Always will be Sentenes Class
+class Article:
+    #List of setences in the Article. Always will be Sentences Class
     paragraphText = None
-    sents = []
+    sentsList = []
 
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.
-    def getPeople (self):
+    def getActionInfo (self):
         for sentences in self.sents:
-            return sentences.getPeople()
+            return sentences.getActionsList()
 
-#Sentences class (under Paragraphs)
+#Sentences class (under Articles)
 class Sentences:
     #Sentence Text as a String.
     sentText = None
     #List of persons in a sentence. Always will be filled with Persons Class.
-    persons = []
+    actionsList = []
 
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.
-    def getPeople (self):
-        return self.persons
+    def getActonsList (self):
+        return self.actionsList
 
-#Persons class (under Sentences)
-class Persons:
-    #Fields for a specific person. None of these require getters or setters.
-    fName = None
-    aFName = None
-    mName = None
-    lName = None
-    aLName = None
-    title = None
-    dates = None
-    status = None
-    orgs = None
-    gender = None
-    location = None
+#Action class (under Sentences)
+class Action:
+    personSubjID = None
+    personObjID = None
+    action = None
+    details = None
+    placeID = None
+
 
 #Getters and Setters are not required, as access is by (object name).(field)
     
 #TODO Write Python to add the tuples (Page:People []) that uses PostgreSQL commands
 #to add to our current databaase.
 
+#Will need to create and use an encyclopedia
+encylopediaData = []
+for encyclo in encycloList:
+   encylopediaData.append(encyclo.getInfo)
+
+
+#REMEMBER encrypt so that others cannot get access to the database without authorization.
+dbConnect = psycopg2.connect("dbname='tempName' user='dBeaver' host='testHost' password='notUsedYet'")
+dbEditor = dbConnect.cursor()
+
+#People: fName, afName, mName, lName, alName, title, dates, status, organizations, gender
+#Places: Name, Type, Subtype, Current Country, Latitude, Longitude, Location Accuracy
+#Activity: description, date
+for data in encylopediaData:
+    dbEditor.execute("INSERT INTO people ()")
