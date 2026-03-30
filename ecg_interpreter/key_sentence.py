@@ -87,7 +87,7 @@ def is_key(sent):
         if result == -1:
             found_lnames = ppl_df[ppl_df['Last Name'] == w]
             if len(found_lnames) != 0:
-                mult_ppl_options[sent] = found_lnames
+                # found multiple options, parse further (LEFT FOR NEXT ITERATION)
                 result = -2
         if result != -1 and result != -2:
             if result not in key_sents:
