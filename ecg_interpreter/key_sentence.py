@@ -2,12 +2,6 @@ import pandas as pd
 from nltk.tokenize import word_tokenize
 
 
-# load in people table from people_sort
-ppl_df = pd.read_csv('people_table.csv')
-ppl_df = ppl_df.drop('Unnamed: 0', axis=1)
-ppl_df.index.name = "ID"
-
-
 # helper function - if first name found, determine if next words are middle or last name
 # checks for fmal, afmal, fal, or afal
 def is_full_name_altlname(filtered_df, words_lst, fname_i, sent):
@@ -65,12 +59,12 @@ def is_full_name(filtered_df, words_lst, fname_i, sent):
 
 
 # main function - determine if a given sentence contains a person name
-def is_key(sent):
-    # key: person name, item: sent
-    # one sentence might be a key sentence for multiple people
-    key_sents = {}
+# sent might be KEY for multiple people
+# returns a list of pids for whom this sentence is KEY
+def is_key(sent, ppl_df):
+    pids = []
+    # result: -1 = no pid found, -2 = multiple people found, else = found pid
     result = -1
-    print(sent)
     words = word_tokenize(sent)
     for i, w in enumerate(words):
         found_fnames = ppl_df[ppl_df['First Name'] == w]
@@ -86,13 +80,11 @@ def is_key(sent):
         # didn't find correct person from fname or afname, check if lname
         if result == -1:
             found_lnames = ppl_df[ppl_df['Last Name'] == w]
+            # found multiple options, parse further (LEFT FOR NEXT ITERATION)
             if len(found_lnames) != 0:
-                # found multiple options, parse further (LEFT FOR NEXT ITERATION)
                 result = -2
         if result != -1 and result != -2:
-            if result not in key_sents:
-                key_sents[result] = []
-            if sent not in key_sents[result]:
-                key_sents[result].append(sent)
-    return key_sents
+            if result not in pids:
+                pids.append(result)
+    return pids
 
