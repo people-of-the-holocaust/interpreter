@@ -1,8 +1,8 @@
 import pandas as pd
 
 # import modules to test
-from key_sentence import is_key
-from actions import get_person_action
+from ecg_interpreter import is_key
+from ecg_interpreter import get_person_action
 
 # CREATE DUMMY PPL_DF FOR TESTS
 # load in people table from people_sort
