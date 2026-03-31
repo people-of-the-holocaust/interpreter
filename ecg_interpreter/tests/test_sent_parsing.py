@@ -5,7 +5,7 @@ from ecg_interpreter import is_key
 from ecg_interpreter import get_person_action
 
 # CREATE DUMMY PPL_DF FOR TESTS
-# load in people table from people_sort
+# currently loading in people table from people_sort
 dummy_ppl_df = pd.read_csv('./../tables/people_table.csv')
 dummy_ppl_df = dummy_ppl_df.drop('Unnamed: 0', axis=1)
 dummy_ppl_df.index.name = "ID"
