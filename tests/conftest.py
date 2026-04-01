@@ -4,10 +4,13 @@ import os
 import spacy
 import nltk
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="session", autouse=True)
 def setup_nltk():
-    nltk.download('punkt_tab')
-    # nltk.download('averaged_perceptron_tagger_eng')
+    try:
+        nltk.data.find('tokenizers/punkt_tab')
+    except LookupError:
+        nltk.download('punkt_tab')
+        # nltk.download('averaged_perceptron_tagger_eng')
 
 @pytest.fixture(scope="session")
 def load_spacy_model():
