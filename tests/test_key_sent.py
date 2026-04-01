@@ -50,21 +50,21 @@ def test_is_key_fal2(dummy_ppl_df):
     result = is_key(sentence, dummy_ppl_df)
     assert result == pids
 
-# def test_is_key_afmal():
-#     # test person - not part of actual dataset 
-#     # name - pid 
-#     pids = []
-#     sentence = ""
-#     result = is_key(sentence, dummy_ppl_df)
-#     assert result == pids
+def test_is_key_afmal(dummy_ppl_df):
+    # test person - not part of actual dataset 
+    # Bippity (Boppity) Boo Zoo (Doo) - pid 16845
+    pids = [16845]
+    sentence = "What a sentence about Boppity Boo Doo!"
+    result = is_key(sentence, dummy_ppl_df)
+    assert result == pids
 
-# def test_is_key_afal():
-#     # test person - not part of actual dataset 
-#     # name - pid 
-#     pids = []
-#     sentence = ""
-#     result = is_key(sentence, dummy_ppl_df)
-#     assert result == pids
+def test_is_key_afal(dummy_ppl_df):
+    # test person - not part of actual dataset 
+    # Bippity (Boppity) Boo Zoo (Doo) - pid 16845
+    pids = [16845]
+    sentence = "Boppity Doo is not a real person."
+    result = is_key(sentence, dummy_ppl_df)
+    assert result == pids
 
 def test_is_key_afml(dummy_ppl_df):
     # article 
