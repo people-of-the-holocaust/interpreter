@@ -2,6 +2,12 @@ import pytest
 import pandas as pd
 import os
 import spacy
+import nltk
+
+@pytest.fixture(scope="session")
+def setup_nltk():
+    nltk.download('punkt')
+    nltk.download('averaged_perceptron_tagger_eng')
 
 @pytest.fixture(scope="session")
 def load_spacy_model():
