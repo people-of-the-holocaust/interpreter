@@ -1,5 +1,3 @@
-import pandas as pd
-
 # import modules to test
 from ecg_interpreter import get_person_action
 
