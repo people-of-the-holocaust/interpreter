@@ -1,0 +1,6 @@
+pandas
+bs4
+spacy
+nltk
+pytest
+flake8

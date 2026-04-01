@@ -2,7 +2,7 @@ import pandas as pd
 import spacy
 nlp = spacy.load("en_core_web_sm")
 
-def get_action(name, s):
+def parse_action(name, s):
     print(s)
     # tokenize s using spacy
     token_s = nlp(s)
@@ -32,8 +32,9 @@ def get_action(name, s):
                 action = {"subj": None, "verb": token.head.text, "obj": name}
                 return action
 
-
-def actions_per_person(pid, ppl_df, sents):
+# main function - get the action within the given sentence associated with the given pid
+# returns the action node
+def get_person_action(sent, pid, ppl_df):
     # format name, save lname and fname separately
     person = ppl_df.iloc[pid]
     fname = (person["First Name"] if pd.notna(person["First Name"]) else "")
@@ -42,9 +43,10 @@ def actions_per_person(pid, ppl_df, sents):
     lname = (person["Last Name"] if pd.notna(person["Last Name"]) else "")
     name += lname + ((" (" + person["Alt Last Name"] + ") ") if pd.notna(person["Alt Last Name"]) else "")
     # get action for each sentence, related to this person
-    for s in sents:
-        if lname in s:
-            get_action(lname, s)
-        else:
-            get_action(fname, s)
+    # parse_action currently NOT RETURNING ANYTHING - need to actually create node
+    if lname in sent:
+        action = parse_action(lname, sent)
+    else:
+        action = parse_action(fname, sent)
+    return action
 
