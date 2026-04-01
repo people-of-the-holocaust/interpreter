@@ -4,6 +4,8 @@ from ecg_interpreter import get_person_action
 # expected output from get_person_action:
 # {"personSubjID", "personObjID", "action", "details", "placeID"}
 
+# ALL TESTS WILL FAIL RIGHT NOW BECAUSE get_person_action DOES NOT RETURN THIS FORMAT
+
 # Is a KEY sentence where the name is the subject accurately broken up into action parts (subject = name, verb = root verb associated with the clause that includes the name, obj = obj of sentence or NONE, details = rest of sentence)?
 def test_action_subj1(dummy_ppl_df):
     # article KOPRIVNICA
