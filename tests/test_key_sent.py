@@ -88,52 +88,53 @@ def test_is_key_afl2(dummy_ppl_df):
     assert result == pids
 
 # Is a sentence that includes more than one person's name (that is in the people_table) categorized as KEY with all of the pids returned correctly?
-# def test_is_key_multiple_names1():
-#     sentence = ""
-#     result = is_key(sentence, dummy_ppl_df)
-#     # assert result == list of pids
+def test_is_key_multiple_names1(dummy_ppl_df):
+    # Marie Berthier - pid 1008
+    # Otto Bleymehl - pid 1207
+    pids = [1008, 1207]
+    sentence = "This is a sentence about two people, Marie Berthier and Otto Bleymehl."
+    result = is_key(sentence, dummy_ppl_df)
+    assert result == pids
 
-# def test_is_key_multiple_names2():
-#     sentence = ""
-#     result = is_key(sentence, dummy_ppl_df)
-#     # assert result == list of pids
+def test_is_key_multiple_names2(dummy_ppl_df):
+    # Eugen Witt - pid 16134
+    # Antanas Paškauskas - pid 10909
+    # Yitzhak Aaron - pid 1
+    pids = [16134, 10909, 1]
+    sentence = "Eugen Witt, Antanas Paškauskas, and Yitzhak Aaron are in this sentence."
+    result = is_key(sentence, dummy_ppl_df)
+    assert result == pids
 
-# def test_is_key_multiple_names3():
-#     sentence = ""
-#     result = is_key(sentence, dummy_ppl_df)
-#     # assert result == list of pids
+def test_is_key_multiple_names3(dummy_ppl_df):
+    # Alfred Braun - pid 1571
+    # Friedrich Übelhör - pid 16763
+    # Gerard Libot - pid 8693
+    pids = [1571, 16763, 8693]
+    sentence = "Person number 1 is Alfred Braun, person number 2 is Friedrich Übelhör, and person number 3 is Gerard Libot."
+    result = is_key(sentence, dummy_ppl_df)
+    assert result == pids
 
 # Is a sentence that includes a person's name (that is NOT in the people_table) NOT categorized as KEY?
-# def test_is_not_key_incorrect_name1():
-#     sentence = ""
-#     result = is_key(sentence, dummy_ppl_df)
-#     assert not result, "The pid list should be empty"
-
-# def test_is_not_key_incorrect_name2():
-#     sentence = ""
-#     result = is_key(sentence, dummy_ppl_df)
-#     assert not result, "The pid list should be empty"
-
-# def test_is_not_key_incorrect_name3():
-#     sentence = ""
-#     result = is_key(sentence, dummy_ppl_df)
-#     assert not result, "The pid list should be empty"
+def test_is_not_key_incorrect_name(dummy_ppl_df):
+    sentence = "This is a sentence about a fake person, Billy Bob Jean."
+    result = is_key(sentence, dummy_ppl_df)
+    assert not result, "The pid list should be empty"
 
 # Is a sentence that does not include a person's name NOT categorized as KEY?
-# def test_is_not_key_no_name1():
-#     # article 4278
-#     sentence = "The camp's German military personnel included about 20 people."
-#     result = is_key(sentence, dummy_ppl_df)
-#     assert not result, "The pid list should be empty"
+def test_is_not_key_no_name1(dummy_ppl_df):
+    # article 4278
+    sentence = "The camp's German military personnel included about 20 people."
+    result = is_key(sentence, dummy_ppl_df)
+    assert not result, "The pid list should be empty"
 
-# def test_is_not_key_no_name2():
-#     # article
-#     sentence = ""
-#     result = is_key(sentence, dummy_ppl_df)
-#     assert not result, "The pid list should be empty"
+def test_is_not_key_no_name2(dummy_ppl_df):
+    # article 3655
+    sentence = "Between 1940 and 1946, 450 Roma were imprisoned at Les Alliers, the number not exceeding 350 at any time."
+    result = is_key(sentence, dummy_ppl_df)
+    assert not result, "The pid list should be empty"
 
-# def test_is_not_key_no_name3():
-#     # article
-#     sentence = ""
-#     result = is_key(sentence, dummy_ppl_df)
-#     assert not result, "The pid list should be empty"
+def test_is_not_key_no_name3(dummy_ppl_df):
+    # article 1511
+    sentence = "From the age and social structure of the women, one can conclude that those brought to this camp were the “last reserves” of female prisoners who could work: there were many older women and women with a long history in camps."
+    result = is_key(sentence, dummy_ppl_df)
+    assert not result, "The pid list should be empty"
