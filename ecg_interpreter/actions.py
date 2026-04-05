@@ -38,10 +38,11 @@ def get_person_action(sent, pid, ppl_df):
     # format name, save lname and fname separately
     person = ppl_df.iloc[pid]
     fname = (person["First Name"] if pd.notna(person["First Name"]) else "")
-    name = fname + ((" (" + person["Alt First Name"] + ")") if pd.notna(person["Alt First Name"]) else "")
-    name += ((" " + person["Middle Name"] + " ") if pd.notna(person["Middle Name"]) else " ")
+    # name = fname + ((" (" + person["Alt First Name"] + ")") if pd.notna(person["Alt First Name"]) else "")
+    # name += ((" " + person["Middle Name"] + " ") if pd.notna(person["Middle Name"]) else " ")
     lname = (person["Last Name"] if pd.notna(person["Last Name"]) else "")
-    name += lname + ((" (" + person["Alt Last Name"] + ") ") if pd.notna(person["Alt Last Name"]) else "")
+    # name += lname + ((" (" + person["Alt Last Name"] + ") ") if pd.notna(person["Alt Last Name"]) else "")
+    
     # get action for each sentence, related to this person
     # parse_action currently NOT RETURNING ANYTHING - need to actually create node
     if lname in sent:
