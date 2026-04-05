@@ -1,0 +1,85 @@
+﻿LID,Volume,Name,Type,Subtype,Current Country,Latitude,Longitude,Location Accuracy
+0,1,'s-Gravenhage,Concentration Camp,Subcamp,Netherlands,52.0833,4.3000,Exact
+1,1,Abteroda,Concentration Camp,Subcamp,Germany,50.9000,10.0667,Exact
+2,1,Adlershorst,Concentration Camp,Subcamp,Poland,53.4500,20.5333,Exact
+3,1,Ahrensbök-Holstendorf,Early Concentration Camp,N/A,Germany,54.0167,10.5833,Exact
+4,1,"Alderney (Kanalinsel, SS-Bbde I)",Concentration Camp,Subcamp,United Kingdom,49.7060,-2.2145,Exact
+5,1,Allendorf (Münchmühle),Concentration Camp,Subcamp,Germany,50.8281,9.0178,Exact
+6,1,Alt Daber,Early Concentration Camp,N/A,Germany,53.2000,12.5000,Exact
+7,1,Alt-Garge,Concentration Camp,Subcamp,Germany,53.2667,10.8000,Exact
+8,1,Altenberg,Early Concentration Camp,N/A,Czechia,50.7667,13.7667,Exact
+9,1,Altenburg,Concentration Camp,Subcamp,Germany,50.9833,12.4500,Exact
+10,1,Altenhammer,Concentration Camp,Subcamp,Germany,49.4167,12.3167,Exact
+11,1,Althammer,Concentration Camp,Subcamp,Poland,51.4000,17.4667,Exact
+12,1,Amersfoort,Concentration Camp,Subcamp,Netherlands,52.1500,5.3833,Exact
+13,1,Amstetten (Bahnbau I - Men),Concentration Camp,Subcamp,Austria,48.1167,14.8667,Exact
+14,1,Ankenbuck,Early Concentration Camp,N/A,Germany,48.0000,8.5167,Exact
+15,1,Annaburg,Concentration Camp,Subcamp,Germany,51.7333,13.0333,Exact
+248,1,Gross-Rosen Main Camp,Concentration Camp,Main Camp,Poland,50.9982,16.2777,Exact
+249,1,Grulich,Concentration Camp,Subcamp,Czechia,50.2667,15.5333,Exact
+250,1,Gräben,Concentration Camp,Subcamp,Germany,52.2333,12.4333,Exact
+251,1,Gräfenhainichen,Early Concentration Camp,N/A,Germany,51.7167,12.4333,Exact
+252,1,Gräflich-Röhrsdorf,Concentration Camp,Subcamp,Poland,50.9667,15.3833,Exact
+253,1,Gröditz,Concentration Camp,Subcamp,Germany,51.2167,14.6167,Exact
+254,1,Grünberg I,Concentration Camp,Subcamp,Poland,51.9333,15.5000,Exact
+255,1,Grüneberg,Concentration Camp,Subcamp,Germany,52.8667,13.2333,Exact
+256,1,Grünheide,Concentration Camp,Subcamp,Germany,52.4167,13.8167,Exact
+257,1,Guben,Concentration Camp,Subcamp,Germany,51.2833,14.7167,Exact
+496,1,Neckarzimmern,Concentration Camp,Subcamp,Germany,49.3191,9.1325,Exact
+497,1,Neu - Ulm,Concentration Camp,Subcamp,Germany,48.4000,10.0167,Exact
+498,1,Neu-Dachs,Concentration Camp,Subcamp,Poland,50.1333,19.2667,Exact
+709,1,Tannenwald,Concentration Camp,Subcamp,Germany,51.4000,12.3333,Exact
+710,1,Tannroda,Concentration Camp,Subcamp,Germany,50.8667,11.2500,Exact
+809,1,Zschachwitz,Concentration Camp,Subcamp,Germany,51.0000,13.8500,Exact
+810,1,Zschopau,Concentration Camp,Subcamp,Germany,50.7500,13.0667,Exact
+811,1,Zschorlau,Early Concentration Camp,N/A,Germany,50.5667,12.6500,Exact
+812,1,Zweibrücken,Early Concentration Camp,N/A,Germany,51.4000,14.7167,Exact
+813,1,Zwickau,Early Concentration Camp,N/A,Germany,50.7333,12.5000,Exact
+814,1,Zwodau,Concentration Camp,Subcamp,Czechia,50.1833,12.6333,Exact
+815,1,Ötztal,Concentration Camp,Subcamp,Austria,47.2333,10.8500,Exact
+1283,2,Elista (Stepnoi),Ghetto,N/A,Russia,46.3078,44.2558,Exact
+1284,2,Elizovo (Yelizovo),Ghetto,N/A,Belarus,53.3864,28.9281,Exact
+1285,2,Eržvilkas,Ghetto,N/A,Lithuania,55.2667,22.7167,Exact
+1286,2,Ezerishche (Yezerishche),Ghetto,N/A,Russia,55.8226,29.8728,Exact
+1333,2,Gwoździec,Ghetto,N/A,Ukraine,48.5833,25.2833,Exact
+1334,2,Góra Kalwaria,Ghetto,N/A,Poland,51.9765,21.2153,Exact
+1335,2,Hermanowicze,Ghetto,N/A,Belarus,55.4000,27.8000,Exact
+1336,2,Hoduciszki,Ghetto,N/A,Belarus,55.1500,26.6000,Exact
+1337,2,Holszany,Ghetto,N/A,Belarus,54.2500,26.0167,Exact
+1473,2,Końskowola,Ghetto,N/A,Poland,51.3744,22.0523,Exact
+1474,2,Konstantynów (nad Bugiem),Ghetto,N/A,Poland,52.1752,23.0849,Exact
+1475,2,Koprzywnica,Ghetto,N/A,Poland,50.5833,21.5833,Exact
+1476,2,Kopyczyńce,Ghetto,N/A,Ukraine,49.1000,25.9333,Exact
+1477,2,Kopyl’,Ghetto,N/A,Belarus,52.4667,23.4500,Exact
+1478,2,Kopys’,Ghetto,N/A,Belarus,54.3371,30.3493,Exact
+1479,2,Korczyna,Ghetto,N/A,Poland,49.7167,21.8167,Exact
+1480,2,Korelicze,Ghetto,N/A,Belarus,53.5667,26.1333,Exact
+1740,2,Pajūris,Ghetto,N/A,Lithuania,55.4833,22.0110,Exact
+1741,2,Pakruojis,Ghetto,N/A,Lithuania,55.9667,23.8667,Exact
+1742,2,Palanga,Ghetto,N/A,Lithuania,55.9207,21.0786,Exact
+1743,2,Panevėžys,Ghetto,N/A,Lithuania,55.7333,24.3500,Exact
+1744,2,Paradyż,Ghetto,N/A,Poland,51.2875,20.1243,Exact
+2104,2,Wadowice,Ghetto,N/A,Poland,49.8833,19.4833,Exact
+2105,2,Warka,Ghetto,N/A,Poland,51.7840,21.1910,Exact
+2517,3,Katouna,Internment Camp,N/A,Greece,38.7853,21.1167,Exact
+2531,3,Komárom,Ghetto,N/A,Hungary,47.7391,18.1267,Exact
+2532,3,Kondas,Forced Labor Camp,N/A,Tunisia,35.9300,10.3000,Exact
+2533,3,Koprivnica,Internment Camp,N/A,Croatia,46.1633,16.8307,Exact
+2534,3,Kostolná pri Trenčíne,Forced Labor Camp,N/A,Slovakia,48.8833,17.9722,Exact
+2535,3,Koulikoro,Internment Camp,N/A,Mali,12.8650,-7.5690,Exact
+2945,4,BOUCHA,Tunisia Wehrmacht Camps,Unknown,Tunisia,36.0330,9.7000,Exact
+2946,4,CAP SERRAT,Tunisia Wehrmacht Camps,Unknown,Tunisia,37.1430,9.1310,Exact
+2947,4,CHEYLUS,Tunisia Wehrmacht Camps,Unknown,Tunisia,36.5900,9.9940,Exact
+2948,4,DRIJA,Tunisia Wehrmacht Camps,Unknown,Tunisia,36.0700,9.7190,Exact
+2949,4,DURCHGANGSLAGER (DULAG) 100,Wehrmacht Prisoner of War Camp (POW Camp),Dulag (Durchgangslager),Lithuania,54.9015,23.9755,Exact
+2950,4,DURCHGANGSLAGER (DULAG) 101,Wehrmacht Prisoner of War Camp (POW Camp),Dulag (Durchgangslager),Russia,59.4330,29.4830,Exact
+2951,4,DURCHGANGSLAGER (DULAG) 102,Wehrmacht Prisoner of War Camp (POW Camp),Dulag (Durchgangslager),Ukraine,50.5830,27.6330,Exact
+2952,4,DURCHGANGSLAGER (DULAG) 110,Wehrmacht Prisoner of War Camp (POW Camp),Dulag (Durchgangslager),Russia,58.0000,31.3330,Exact
+2953,4,DURCHGANGSLAGER (DULAG) 111,Wehrmacht Prisoner of War Camp (POW Camp),Dulag (Durchgangslager),Poland,52.0830,21.1170,Exact
+3303,4,MANNSCHAFTSSTAMMLAGER (STALAG) 315,Wehrmacht Prisoner of War Camp (POW Camp),Stalag (Mannschaftsstammlager),France,48.1782,6.4338,Exact
+3304,4,MANNSCHAFTSSTAMMLAGER (STALAG) 315 (II F),Wehrmacht Prisoner of War Camp (POW Camp),Stalag (Mannschaftsstammlager),Poland,53.6830,16.9500,Exact
+3305,4,MANNSCHAFTSSTAMMLAGER (STALAG) 316,Wehrmacht Prisoner of War Camp (POW Camp),Stalag (Mannschaftsstammlager),Poland,53.1350,23.1460,Exact
+3459,4,WEHRMACHTGEFÄNGNIS GERMERSHEIM,Wehrmacht Disciplinary Facilities,WG (Wehrmachtgefängnis),Germany,49.2170,8.3670,Exact
+3460,4,WEHRMACHTGEFÄNGNIS GLATZ,Wehrmacht Disciplinary Facilities,WG (Wehrmachtgefängnis),Poland,50.4330,16.6500,Exact
+3461,4,WEHRMACHTGEFÄNGNIS GRAUDENZ,Wehrmacht Disciplinary Facilities,WG (Wehrmachtgefängnis),Poland,53.4949,18.7529,Exact
+3462,4,WEHRMACHTGEFANGENENLAGER (WGL) DONAU),Wehrmacht Disciplinary Facilities,WGL (Wehrmachtgefangenenlager),Germany,48.4530,10.2710,Exact
