@@ -1,4 +1,3 @@
-#Error, psycopg2 could not be resolved from source (reportMissingModuleSource)
 import psycopg2
 #Maybe use scypt instead of bcrypt here
 import bycrypt
@@ -10,12 +9,19 @@ class Encyclopedia:
     #List of Volumes, will always be Volumes class
     volumesList = []
 
+    #TODO add functionality to get Sentences Objects
+    def getSentences(self):
+        outputSentences = []
+        for volume in self.volumesList:
+            outputSentences.extend(volume.getSetnences)
+        return outputSentences
+    
     #Outputs a list of actions
     def getActions(self):
-        output = []
+        outputActions = []
         for volume in self.volumesList:
-            output.append(volume.getActions)
-        return output
+            outputActions.extend(volume.getActions)
+        return outputActions
     
 #Page class (Used in Encyclopedia)
 class Volume:
@@ -24,11 +30,12 @@ class Volume:
 
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.
+
     def getActions (self):
-        output = []
+        outputActions = []
         for article in self.articlesList:
-            output.append(article.getActions())
-        return output
+            outputActions.extend(article.getActions())
+        return outputActions
 
 #Paragraph class (under Pages)
 class Article:
@@ -39,16 +46,17 @@ class Article:
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.
     def getActions (self):
-        output = []
+        outputActions = []
         for sentences in self.sents:
-            output.append(sentences.getActions())
-        return output
+            outputActions.extend(sentences.getActions())
+        return outputActions
 
 #Sentences class (under Articles)
-class Sentences:
+class Sentence:
     #List of persons in a sentence. Always will be filled with Persons Class.
     actionsList = []
-
+    personSubjIDs = []
+    personObjIDs = []
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.
     def getActions (self):
@@ -56,17 +64,11 @@ class Sentences:
 
 #Action class (under Sentences)
 class Action:
-    personSubjID = None
-    personObjID = None
     action = None
     details = None
     placeID = None
 
 
-#TODO test this tree data structure.
-
-
-#TODO here attach using psycopg2 with Postgresql
 #REMEMBER encrypt so that others cannot get access to the database without authorization.
 #dbConnect = psycopg2.connect("dbname='tempName' user='dBeaver' host='testHost' password='notUsedYet'")
 #dbEditor = dbConnect.cursor()
