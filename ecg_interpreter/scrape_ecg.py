@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
+from ecg_interpreter import clean_article
+
 # THIS VERSION GOES THROUGH THE ARTICLES IN THE PEOPLE INDEX SEARCH
 # NEED TO CHANGE TO JUST GO THROUGH ARTICLES VOLUME BY VOLUME
 # ENSURE THAT ANY PAGE SCRAPED IS ACTUAL CONTENT
@@ -62,12 +64,14 @@ def get_associated_article_links(person_soup):
             articles[e.text] = base_article_url + e["href"] 
     return articles
 
-# helper function - get the content of an article given the full url
+# get the content of an article given the full url
 def get_article_content(url):
     article_response = requests.get(url)
     article_response.raise_for_status()
     article_soup = BeautifulSoup(article_response.text, 'lxml')
     article_body = article_soup.find_all(id="body")
+    # CALL clean_article
+    # return (place, clean_body)
     return article_body
 
 # CHANGE BELOW CODE
@@ -88,5 +92,5 @@ def get_article_content(url):
 #         print()
 #     i += 1
 
-def scrape():
-    return
+def scrape(base_url):
+    return {"lid as number": "article_1_url"}
