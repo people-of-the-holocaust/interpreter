@@ -8,18 +8,11 @@ from ecg_interpreter import clean_article
 # NEED TO CHANGE TO JUST GO THROUGH ARTICLES VOLUME BY VOLUME
 # ENSURE THAT ANY PAGE SCRAPED IS ACTUAL CONTENT
 
-# set up base url for article pages and for index search
-base_article_url = "https://muse.jhu.edu"
-base_name_index_url = 'https://muse.jhu.edu/ushmm/index/names'
-# create session to save cookies
-session = requests.Session()
-session.get(base_name_index_url)
-
 # get list of names from people index search
 # return list of raw names
-def get_raw_names():
+def get_raw_names(session, base_name_index_url):
     # get content of the index search page
-    index_search_response = requests.get(base_name_index_url)
+    index_search_response = session.get(base_name_index_url)
     index_search_soup = BeautifulSoup(index_search_response.text, 'lxml')
     # list of all people entries
     people_entries = index_search_soup.find_all(class_="entry")
@@ -65,8 +58,8 @@ def get_associated_article_links(person_soup):
     return articles
 
 # get the content of an article given the full url
-def get_article_content(url):
-    article_response = requests.get(url)
+def get_article_content(url, session):
+    article_response = session.get(url)
     article_response.raise_for_status()
     article_soup = BeautifulSoup(article_response.text, 'lxml')
     article_body = article_soup.find_all(id="body")
@@ -92,5 +85,5 @@ def get_article_content(url):
 #         print()
 #     i += 1
 
-def scrape(base_url, plc_df):
+def scrape(base_url, plc_df, session):
     return {"lid as number": "article_1_url"}
