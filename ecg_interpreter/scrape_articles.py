@@ -37,7 +37,4 @@ def get_article_content(url, session):
     article_response = session.get(url)
     article_response.raise_for_status()
     article_soup = BeautifulSoup(article_response.text, 'lxml')
-    article_body = article_soup.find_all(id="body")
-    # CALL clean_article
-    # return (place, clean_body)
-    return article_body
+    return clean_article(article_soup)
