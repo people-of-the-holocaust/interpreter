@@ -1,6 +1,6 @@
 import requests
 import pandas as pd
-from ecg_interpreter import get_raw_names, create_ppl_table, scrape, get_article_content, is_key, get_person_action
+from ecg_interpreter import get_raw_names, create_ppl_table, scrape_vol, get_article_content, is_key, get_person_action
 
 def main():
     # urls
@@ -19,7 +19,7 @@ def main():
     plc_df = pd.read_csv("./tables/place_table.csv")
 
     for url in vol_urls:
-        article_links = scrape(url, plc_df, session)
+        article_links = scrape_vol(url, plc_df, session)
         for lid, link in article_links.items():
             place, body = get_article_content(link, session)
             # tokenize body into sentences
