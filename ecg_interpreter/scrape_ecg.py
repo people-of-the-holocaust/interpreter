@@ -92,5 +92,5 @@ def get_article_content(url):
 #         print()
 #     i += 1
 
-def scrape(base_url):
+def scrape(base_url, plc_df):
     return {"lid as number": "article_1_url"}

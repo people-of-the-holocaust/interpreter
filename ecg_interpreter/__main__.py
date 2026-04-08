@@ -13,7 +13,7 @@ def main():
     vol_base_urls = ["1", "2", "3", "4"]
 
     for url in vol_base_urls:
-        article_links = scrape(url)
+        article_links = scrape(url, plc_df)
         for lid, link in article_links.items():
             place, body = get_article_content(link)
             # tokenize body into sentences
