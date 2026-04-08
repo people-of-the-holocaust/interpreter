@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
 from ecg_interpreter import get_raw_names, create_ppl_table, scrape_vol, get_article_content, is_key, get_person_action
+from nltk.tokenize import sent_tokenize
 
 def main():
     # urls
@@ -22,8 +23,7 @@ def main():
         article_links = scrape_vol(url, plc_df, session)
         for lid, link in article_links.items():
             place, body = get_article_content(link, session)
-            # tokenize body into sentences
-            sentences = body
+            sentences = sent_tokenize(body)
             for sent in sentences:
                 pids = is_key(sent, ppl_df)
                 for pid in pids:
