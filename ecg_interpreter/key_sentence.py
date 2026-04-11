@@ -63,7 +63,7 @@ def is_full_name(filtered_df, words_lst, fname_i, sent):
 # returns a list of pids for whom this sentence is KEY
 def is_key(sent, ppl_df):
     pids = []
-    # result: -1 = no pid found, -2 = multiple people found, else = found pid
+    # result: -1 = no pid found, -2 = multiple people found, else = list of found pids
     result = -1
     words = word_tokenize(sent)
     for i, w in enumerate(words):
