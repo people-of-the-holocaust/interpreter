@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 from ecg_interpreter import get_raw_names, create_ppl_table, scrape_vol, get_article_content, is_key, get_person_action
-from ecg_interpreter import Encyclopedia, Volume, Article, Sentences, Action
+from ecg_interpreter import Encyclopedia, Volume, Article, Sentences
 from nltk.tokenize import sent_tokenize
 
 def main():
