@@ -10,6 +10,10 @@ class Encyclopedia:
     #List of Volumes, will always be Volumes class
     volumesList = []
 
+    #Function to add a volume to the volumesList
+    def addVolume(self, newVol):
+        self.volumesList.append(newVol)
+    
     #Outputs a list of actions
     def getActions(self):
         output = []
@@ -19,8 +23,19 @@ class Encyclopedia:
     
 #Page class (Used in Encyclopedia)
 class Volume:
-    #List of articles in the Volume. Always will Articles class
+    volumeNumber = None
+    volumeURL = None
+    #List of articles in the Volume. Always will be Articles class
     articlesList = []
+
+    #Constructor for Volume
+    def __init__(self, volNum, volURL):
+        self.volumeNumber = volNum
+        self.volumeURL = volURL
+
+    #Function to add article to articlesList
+    def addArticle(self, newArticle):
+        self.articlesList.append(newArticle)
 
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.
@@ -32,10 +47,22 @@ class Volume:
 
 #Paragraph class (under Pages)
 class Article:
-    #List of setences in the Article. Always will be Sentences Class
-    paragraphText = None
+    title = None
+    text = None
+    documentNumber = None
+    #List of key sentences in the Article. Always will be Sentences Class
     sentsList = []
 
+    #Constructor for Article
+    def __init__(self, title, text, docNum):
+        self.title = title
+        self.text = text
+        self.documentNumber = docNum
+
+    #Function to add key sentence to sentsList
+    def addSent(self, newSent):
+        self.sentsList.append(newSent)
+    
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.
     def getActions (self):
@@ -45,9 +72,21 @@ class Article:
         return output
 
 #Sentences class (under Articles)
-class Sentences:
+class Sentence:
+    text = None
+    #List of ID numbers for names that appear in the sentence. Always will be numbers.
+    pids = []
     #List of persons in a sentence. Always will be filled with Persons Class.
     actionsList = []
+
+    #Constructor for Sentence
+    def __init__(self, text, pids):
+        self.text = text
+        self.pids = pids
+    
+    #Function to add action to actionsList
+    def addAction(self, newAction):
+        self.actionsList.append(newAction)
 
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.
@@ -61,6 +100,14 @@ class Action:
     action = None
     details = None
     placeID = None
+
+    #Constructor for Action
+    def __init__(self, psid, poid, act, det, lid):
+        self.personSubjID = psid
+        self.personObjID = poid
+        self.action = act
+        self.details = det
+        self.placeID = lid
 
 
 #TODO test this tree data structure.

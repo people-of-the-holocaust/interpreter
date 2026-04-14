@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 from ecg_interpreter import get_raw_names, create_ppl_table, scrape_vol, get_article_content, is_key, get_person_action
-from ecg_interpreter import Encyclopedia, Volume, Article, Sentences
+from ecg_interpreter import Encyclopedia, Volume, Article, Sentence
 from nltk.tokenize import sent_tokenize
 
 def main():
@@ -30,17 +30,17 @@ def main():
 
     for vnum, vurl in vol_urls.items():
         # create volume node
-        curr_vol = Volume()
-        ecg_node.volumesList.append(curr_vol)
+        curr_vol = Volume(vnum, vurl)
+        ecg_node.addVolume(curr_vol)
         # get content articles from volume
         article_links = scrape_vol(vurl, plc_df, session, vnum)
         # loop over each article
         for lid, link in article_links.items():
             place, body = get_article_content((base_article_url + link), session)
+            docNum = 0 # FIX THIS LINE
             # create article node
-            curr_article = Article()
-            curr_article.paragraphText = body
-            curr_vol.articlesList.append(curr_article)
+            curr_article = Article(place, body, docNum)
+            curr_vol.addArticle(curr_article)
             # get sentences in article
             sentences = sent_tokenize(body)
             # loop over each sentence
@@ -48,14 +48,12 @@ def main():
                 pids = is_key(sent, ppl_df)
                 if type(pids) == list:
                     # create sentence node
-                    curr_sent = Sentences()
-                    # curr_sent.pids = pids
-                    curr_article.sentsList.append(curr_sent)
+                    curr_sent = Sentence(sent, pids)
+                    curr_article.addSent(curr_sent)
                     # loop over each pid found in key sentence
                     for pid in pids:
-                        # create action node
-                        action = get_person_action(sent, pid, ppl_df, lid)
-                        curr_sent.actionsList.append(action)
+                        # get action node
+                        curr_sent.addAction(get_person_action(sent, pid, ppl_df, lid))
 
 
     return 0

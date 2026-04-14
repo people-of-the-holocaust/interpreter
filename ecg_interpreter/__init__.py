@@ -5,4 +5,4 @@ from .clean_people_names import create_ppl_table
 from .scrape_people import get_raw_names
 from .scrape_articles import scrape_vol
 from .scrape_articles import get_article_content
-from .pothDataStructure import Encyclopedia, Volume, Article, Sentences, Action
+from .pothDataStructure import Encyclopedia, Volume, Article, Sentence, Action
