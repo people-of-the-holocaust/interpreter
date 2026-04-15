@@ -1,70 +1,77 @@
-# given an Encyclopedia object, traverse through the tree and print out the data in a readable format
+# given an Encyclopedia object, traverse the tree and return a formatted string containing the tree data
 def print_ecg(ecg_node):
+    formatted_tree = ""
     if ecg_node:
         if len(ecg_node.volumesList) > 0:
             for vol in ecg_node.volumesList:
-                print_vol(vol)
+                formatted_tree += str(print_vol(vol))
+            return formatted_tree
         else:
-            print("ENCYCLOPEDIA OBJECT DOES NOT HAVE ANY VOLUMES")
+            return "ENCYCLOPEDIA OBJECT DOES NOT HAVE ANY VOLUMES"
 
     else:
-        print("ENCYCLOPEDIA OBJECT DOES NOT EXIST")
+        return "ENCYCLOPEDIA OBJECT DOES NOT EXIST"
 
 def print_vol(vol_node):
+    formatted_vol = ""
     if vol_node:
-        print("VOLUME", vol_node.volumeNumber, ":", vol_node.volumeURL)
+        formatted_vol += ("\n\n\nVOLUME " + str(vol_node.volumeNumber) + " : " + str(vol_node.volumeURL))
         if len(vol_node.articlesList) > 0:
             for article in vol_node.articlesList:
-                print_article(article)
+                formatted_vol += str(print_article(article))
+            return formatted_vol
         else:
-            print("VOLUME OBJECT DOES NOT HAVE ANY ARTICLES")
+            return "VOLUME OBJECT DOES NOT HAVE ANY ARTICLES"
     else:
-        print("VOLUME OBJECT DOES NOT EXIST")
+        return "VOLUME OBJECT DOES NOT EXIST"
 
 def print_article(article_node):
+    formatted_article = ""
     if article_node:
-        print("ARTICLE:", article_node.title, ":", article_node.documentNumber)
+        formatted_article += ("\n\nARTICLE: " + str(article_node.title) + " : " + str(article_node.documentNumber))
         if article_node.text is None:
-            print("Article does not have any text.")
+            formatted_article += "Article does not have any text saved.\n"
         if len(article_node.sentsList) > 0:
             for sent in article_node.sentsList:
-                print_sent(sent)
+                formatted_article += str(print_sent(sent))
+            return formatted_article
         else:
-            print("ARTICLE OBJECT DOES NOT HAVE ANY SENTENCES")
+            return "ARTICLE OBJECT DOES NOT HAVE ANY SENTENCES"
     else:
-        print("ARTICLE OBJECT DOES NOT EXIST")
+        return "ARTICLE OBJECT DOES NOT EXIST"
 
 
 def print_sent(sent_node):
+    formatted_sent = ""
     if sent_node:
-        print("SENTENCE:")
+        formatted_sent += "\nSENTENCE:"
         if sent_node.text is None:
-            print("Sentence does not have any text.")
+            formatted_sent += "Sentence does not have any text.\n"
         if len(sent_node.pids) == 0:
-            print("Sentence does not have any pids.")
+            formatted_sent += "Sentence does not have any pids.\n"
         if len(sent_node.actionsList) > 0:
             for action in sent_node.actionsList:
-                print_action(action)
+                formatted_sent += str(print_action(action))
+            return formatted_sent
         else:
-            print("SENTENCE OBJECT DOES NOT HAVE ANY SENTENCES")
+            formatted_sent += "SENTENCE OBJECT DOES NOT HAVE ANY ACTIONS"
+            return formatted_sent
     else:
-        print("SENTENCE OBJECT DOES NOT EXIST")
+        return "SENTENCE OBJECT DOES NOT EXIST"
 
 def print_action(action_node):
     if action_node:
         if all(field is None for field in [action_node.personSubjID, action_node.personObjID, action_node.action, action_node.details, action_node.placeID]):
-            print("ACTION HAS NO FIELDS")
-            return
+            return "\nACTION HAS NO FIELDS"
         # action could not be parsed
         if action_node.action is None:
-            print(action_node.details)
-            print("Action in above sentence could not be parsed during processing.")
+            return (str(action_node.details) + "\nAction in above sentence could not be parsed during processing.")
         # object case
         elif action_node.personSubjID is None:
-            print(action_node.details, action_node.action, action_node.personObjID, "in", action_node.placeID)
+            return (str(action_node.details) + " " + str(action_node.action) + " " + str(action_node.personObjID) + " in " + str(action_node.placeID))
         # subject case
         elif action_node.personObjID is None:
-            print(action_node.personSubjID, action_node.action, action_node.details, "in", action_node.placeID)
+            return (str(action_node.personSubjID) + " " + str(action_node.action) + " " + str(action_node.details) + " in " + str(action_node.placeID))
     else:
-        print("ACTION OBJECT DOES NOT EXIST")
+        return "ACTION OBJECT DOES NOT EXIST"
     

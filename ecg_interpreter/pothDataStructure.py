@@ -1,7 +1,7 @@
 #Error, psycopg2 could not be resolved from source (reportMissingModuleSource)
-import psycopg2
+# import psycopg2
 #Maybe use scypt instead of bcrypt here
-import bycrypt
+# import bycrypt
 
 #TODO Add Getters and Setters to data structure.
 
