@@ -1,6 +1,7 @@
 import pandas as pd
 import spacy
 nlp = spacy.load("en_core_web_sm")
+from .pothDataStructure import Action
 
 def parse_action(name, s):
     doc = nlp(s)
@@ -71,26 +72,17 @@ def get_person_action(sent, pid, ppl_df, lid):
     # format action dict (SWITCH TO NODE LATER)
     # error handling: cannot parse action - return action node with just sent, pid, and lid
     if result == None:
-        action = {"personSubjID": pid,
-                  "personObjID": None,
-                  "action": None,
-                  "details": sent,
-                  "placeID": lid}
+        action = Action(pid, None, None, sent, lid)
+        # action = {"personSubjID": pid, "personObjID": None, "action": None, "details": sent, "placeID": lid}
     # OBJECT CASE
     elif result["subj"] == None:
         details_index = sent.find(result["verb"]) - 1
-        action = {"personSubjID": None,
-                  "personObjID": pid,
-                  "action": result["verb"],
-                  "details": sent[:details_index].strip(),
-                  "placeID": lid}
+        action = Action(None, pid, result["verb"], sent[:details_index].strip(), lid)
+        # action = {"personSubjID": None, "personObjID": pid, "action": result["verb"], "details": sent[:details_index].strip(), "placeID": lid}
     # SUBJECT CASE
     else:
         details_index = sent.find(result["verb"]) + len(result["verb"])
-        action = {"personSubjID": pid,
-                  "personObjID": None,
-                  "action": result["verb"],
-                  "details": sent[details_index:].strip(),
-                  "placeID": lid}
+        action = Action(pid, None, result["verb"], sent[details_index:].strip(), lid)
+        # action = {"personSubjID": pid, "personObjID": None, "action": result["verb"], "details": sent[details_index:].strip(), "placeID": lid}
     return action
 
