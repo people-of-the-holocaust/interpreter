@@ -8,8 +8,12 @@
 #Encyclopedia class
 class Encyclopedia:
     #List of Volumes, will always be Volumes class
-    volumesList = []
+    volumesList = None
 
+    #Constructor for Encyclopedia
+    def __init__(self):
+        self.volumesList = []
+    
     #Function to add a volume to the volumesList
     def addVolume(self, newVol):
         self.volumesList.append(newVol)
@@ -26,12 +30,13 @@ class Volume:
     volumeNumber = None
     volumeURL = None
     #List of articles in the Volume. Always will be Articles class
-    articlesList = []
+    articlesList = None
 
     #Constructor for Volume
     def __init__(self, volNum, volURL):
         self.volumeNumber = volNum
         self.volumeURL = volURL
+        self.articlesList = []
 
     #Function to add article to articlesList
     def addArticle(self, newArticle):
@@ -51,13 +56,14 @@ class Article:
     text = None
     documentNumber = None
     #List of key sentences in the Article. Always will be Sentences Class
-    sentsList = []
+    sentsList = None
 
     #Constructor for Article
     def __init__(self, title, text, docNum):
         self.title = title
         self.text = text
         self.documentNumber = docNum
+        self.sentsList = []
 
     #Function to add key sentence to sentsList
     def addSent(self, newSent):
@@ -75,14 +81,15 @@ class Article:
 class Sentence:
     text = None
     #List of ID numbers for names that appear in the sentence. Always will be numbers.
-    pids = []
+    pids = None
     #List of persons in a sentence. Always will be filled with Persons Class.
-    actionsList = []
+    actionsList = None
 
     #Constructor for Sentence
     def __init__(self, text, pids):
         self.text = text
         self.pids = pids
+        self.actionsList = []
     
     #Function to add action to actionsList
     def addAction(self, newAction):

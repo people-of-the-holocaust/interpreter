@@ -5,7 +5,62 @@ from ecg_interpreter import print_ecg
 
 def test_empty_tree():
     ecg = Encyclopedia()
-    print_ecg(ecg)
+    expected = "ENCYCLOPEDIA OBJECT DOES NOT HAVE ANY VOLUMES"
+    result = print_ecg(ecg)
+    assert result == expected
+
+def test_1ofeach_tree():
+    ecg = Encyclopedia()
+    v1 = Volume(1, "url1")
+    a1 = Article("Test Article 1", "article 1 text test", 10)
+    s1 = Sentence("sentence 1 text test", [0])
+    act0 = Action(0, None, "did", "subject test", 200)
+
+    s1.addAction(act0)
+    a1.addSent(s1)
+    v1.addArticle(a1)
+    ecg.addVolume(v1)
+
+    expected = "\n\n\nVOLUME " + str(v1.volumeNumber) + " : " + str(v1.volumeURL)
+    expected += ("\n\nARTICLE: " + str(a1.title) + " : " + str(a1.documentNumber))
+    expected += "\nSENTENCE:"
+    expected += str(act0.personSubjID) + " " + str(act0.action) + " " + str(act0.details) + " in " + str(act0.placeID)
+
+    result = print_ecg(ecg)
+    assert result == expected
+
+def test_2vols_tree():
+    ecg = Encyclopedia()
+    v1 = Volume(1, "url1")
+    v2 = Volume(2, "url2")
+    a1 = Article("Test Article 1", "article 1 text test", 10)
+    a2 = Article("Test Article 2", "article 2 text test", 20)
+    s1 = Sentence("sentence 1 text test", [0])
+    s2 = Sentence("sentence 2 text test", [1])
+    act0 = Action(0, None, "did", "subject test", 200)
+    act1 = Action(None, 1, "did", "object test", 200)
+
+    s1.addAction(act0)
+    a1.addSent(s1)
+    v1.addArticle(a1)
+    ecg.addVolume(v1)
+
+    s2.addAction(act1)
+    a2.addSent(s2)
+    v2.addArticle(a2)
+    ecg.addVolume(v2)
+
+    expected = "\n\n\nVOLUME " + str(v1.volumeNumber) + " : " + str(v1.volumeURL)
+    expected += ("\n\nARTICLE: " + str(a1.title) + " : " + str(a1.documentNumber))
+    expected += "\nSENTENCE:"
+    expected += str(act0.personSubjID) + " " + str(act0.action) + " " + str(act0.details) + " in " + str(act0.placeID)
+    expected += "\n\n\nVOLUME " + str(v2.volumeNumber) + " : " + str(v2.volumeURL)
+    expected += ("\n\nARTICLE: " + str(a2.title) + " : " + str(a2.documentNumber))
+    expected += "\nSENTENCE:"
+    expected += (str(act1.details) + " " + str(act1.action) + " " + str(act1.personObjID) + " in " + str(act1.placeID))
+
+    result = print_ecg(ecg)
+    assert result == expected
 
 def test_full_tree():
     ecg = Encyclopedia()
@@ -28,14 +83,14 @@ def test_full_tree():
     s10 = Sentence("sentence 10 text test", [4, 6, 9])
     act0 = Action(0, None, "did", "subject test", 200)
     act1 = Action(None, 1, "did", "object test", 200)
-    act2 = Action(2, None, None, "could not be parsed tests", 200)
+    act2 = Action(2, None, None, "2 could not be parsed tests", 200)
     act3 = Action(3, None, "did", "subject test", 200)
     act4 = Action(None, 4, "did", "object test", 200)
-    act5 = Action(5, None, None, "could not be parsed tests", 200)
+    act5 = Action(5, None, None, "5 could not be parsed tests", 200)
     act6 = Action(6, None, "did", "subject test", 200)
     act7 = Action(None, 7, "did", "object test", 200)
-    act8 = Action(8, None, None, "could not be parsed tests", 200)
-    act9 = Action(9, None, None, "could not be parsed tests", 200)
+    act8 = Action(8, None, None, "8 could not be parsed tests", 200)
+    act9 = Action(9, None, None, "9 could not be parsed tests", 200)
 
 
     s1.addAction(act0)
