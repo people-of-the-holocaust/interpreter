@@ -1,6 +1,6 @@
 import requests
 import pandas as pd
-from ecg_interpreter import get_raw_names, create_ppl_table, scrape_vol, get_article_content, is_key, get_person_action
+from ecg_interpreter import get_raw_names, create_ppl_table, scrape_vol, get_article_content, is_key, get_person_action, print_ecg
 from ecg_interpreter import Encyclopedia, Volume, Article, Sentence
 from nltk.tokenize import sent_tokenize
 
@@ -37,7 +37,8 @@ def main():
         # loop over each article
         for lid, link in article_links.items():
             place, body = get_article_content((base_article_url + link), session)
-            docNum = 0 # FIX THIS LINE
+            # link is formatted as '/document/####'
+            docNum = int(link.split("/")[-1])
             # create article node
             curr_article = Article(place, body, docNum)
             curr_vol.addArticle(curr_article)
@@ -55,5 +56,6 @@ def main():
                         # get action node
                         curr_sent.addAction(get_person_action(sent, pid, ppl_df, lid))
 
-
+    final_tree = print_ecg(ecg_node)
+    print(final_tree)
     return 0

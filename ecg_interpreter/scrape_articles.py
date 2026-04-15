@@ -23,9 +23,9 @@ def get_vol_article_links(vol_soup, plc_df, vol_num):
             if entries:
                 # save lid and url ending into dict
                 articles[int(row["LID"][0])] = entries[0]["href"]
-        # case 2: article is not a place / other error
-        else:
-            print("NUMBER OF ROWS FOUND WITH", title, ":", len(row))
+        # case 2: article is not a place / other error - do nothing for now
+        # else:
+        #     print("NUMBER OF ROWS FOUND WITH", title, ":", len(row))
     return articles
 
 # get urls (NOT including base url) for all of the content articles in a volume

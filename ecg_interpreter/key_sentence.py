@@ -19,14 +19,11 @@ def is_full_name_altlname(filtered_df, words_lst, fname_i, sent):
     # found one row with valid fml or fl name
     if len(found_lnames) == 1:
         found_id = found_lnames.index[0]
-        print("FINAL ID", found_id)
         return found_id
     # did not find valid name, classify as NOT PERSON NAME (-1)
     elif len(found_lnames) == 0:
-        print("NOT PERSON NAME")
         return -1
     # found multiple options, parse further (LEFT FOR NEXT ITERATION)
-    print("TOO MANY PEOPLE")
     return -2
     
     
@@ -47,14 +44,11 @@ def is_full_name(filtered_df, words_lst, fname_i, sent):
     # found one row with valid fml or fl name
     if len(found_lnames) == 1:
         found_id = found_lnames.index[0]
-        print("FINAL ID", found_id)
         return found_id
     # did not find valid name with reg lname, check alt lname
     elif len(found_lnames) == 0:
-        print("CHECK ALT LAST NAME")
         return is_full_name_altlname(filtered_df, words_lst, fname_i, sent)
     # found multiple options, parse further (LEFT FOR NEXT ITERATION)
-    print("TOO MANY PEOPLE")
     return -2
 
 
@@ -70,13 +64,11 @@ def is_key(sent, ppl_df):
         found_fnames = ppl_df[ppl_df['First Name'] == w]
         if len(found_fnames) != 0:
             result = is_full_name(found_fnames, words, i, sent)
-            print("REG RESULT:", result)
         # didn't find the correct person from fname, check afname
         if result == -1:
             found_afnames = ppl_df[ppl_df['Alt First Name'] == w]
             if len(found_afnames) != 0:
                 result = is_full_name(found_afnames, words, i, sent)
-                print("ALT RESULT:", result)
         # didn't find correct person from fname or afname, check if lname
         if result == -1:
             found_lnames = ppl_df[ppl_df['Last Name'] == w]
