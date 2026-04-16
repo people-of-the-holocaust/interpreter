@@ -3,5 +3,6 @@ bs4
 spacy
 nltk
 pytest
-flake8psycopg2
+flake8
+psycopg2
 bcrypt
