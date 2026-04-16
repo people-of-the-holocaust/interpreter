@@ -3,7 +3,7 @@ from ecg_interpreter import Encyclopedia, Volume, Article, Sentence, Action
 #Testing data structure
 
 #One of each node, Encyclopedia->Volume->Article->Sentence->Action, all empty
-def one_of_each_node_test():
+def test_one_of_each_node():
     actNode = Action()
     sentNode = Sentence()
     artiNode = Article()
@@ -22,7 +22,7 @@ def one_of_each_node_test():
     assert len(encycNode.volumesList[0].articlesList[0].sentsList[0].actionsList) == 1
 
 #Testing four Volumes with one of Article, Sentence, and Action.
-def three_nodes_in_encyclopedia():
+def test_three_nodes_in_encyclopedia():
     encyNode = Encyclopedia()
     for i in range(4):
         volumeNode = Volume()
@@ -67,7 +67,7 @@ def test_accessing_actions():
     #Expected to be of size of 12 with varying actions.
     assert len(actions) != 0
     assert len(actions) == 12
-
+ 
 #Test for when there's no actions possible.
 def test_no_actions():
     encyNode = Encyclopedia
@@ -127,6 +127,7 @@ def test_accessing_actions():
 
     assert len(encyNode.getSentences()) == 4
 
+
 #Tests for when zero sentences.
 def test_zero_sentences():
     artiNode = Article()
@@ -137,3 +138,8 @@ def test_zero_sentences():
     volNode.articlesList.append(artiNode)
     
     assert len(encycNode.getSentences()) == 0
+
+test_one_of_each_node()
+test_three_nodes_in_encyclopedia()
+test_accessing_actions()
+test_zero_sentences()

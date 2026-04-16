@@ -55,8 +55,7 @@ class Article:
 class Sentence:
     #List of persons in a sentence. Always will be filled with Persons Class.
     actionsList = []
-    personSubjIDs = []
-    personObjIDs = []
+
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.
     def getActions (self):
@@ -64,14 +63,26 @@ class Sentence:
 
 #Action class (under Sentences)
 class Action:
+    personSubjID = None
+    personObjID = None
     action = None
     details = None
     placeID = None
 
 
 #REMEMBER encrypt so that others cannot get access to the database without authorization.
-#dbConnect = psycopg2.connect("dbname='tempName' user='dBeaver' host='testHost' password='notUsedYet'")
-#dbEditor = dbConnect.cursor()
+#Must be an Encyclopedia value
+def insert_into_database(root):
+    encActions = root.getActions
+    #Fix this where password is the password for account
+    connect = psycopg2.connect("dbname='postgres', user='01a76196-f218-4028-888e-c7b310493720', host='db.elkjpkawrounaqjwzbjo.supabase.co', password='dummyPass")
+
+    with connect.cursor as curs:
+        for actions in encActions:
+            #Add to execute for ids, description, and so on.
+            curs.execute("INSERT INTO Activity (Person Subj ID, Person Obj ID, Action, details, Place ID) VALUES (%s, %s, %s, %s, %s)",
+                         (actions.personSubjID, actions.personObjID, actions.action, actions.details, actions.placeId))
+
 
 #People: fName, afName, mName, lName, alName, title, dates, status, organizations, gender
 #Places: Name, Type, Subtype, Current Country, Latitude, Longitude, Location Accuracy
