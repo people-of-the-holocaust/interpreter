@@ -3,10 +3,11 @@ import pandas as pd
 from ecg_interpreter import get_raw_names, create_ppl_table, scrape_vol, get_article_content, is_key, get_person_action, print_ecg
 from ecg_interpreter import Encyclopedia, Volume, Article, Sentence
 from nltk.tokenize import sent_tokenize
+from importlib.resources import files
 
 def main():
     print("IN MAIN")
-    
+
     # urls
     base_article_url = "https://muse.jhu.edu"
     name_index_url = 'https://muse.jhu.edu/ushmm/index/names'
@@ -25,7 +26,8 @@ def main():
     ppl_df = create_ppl_table(raw_ppl_names)
 
     # set up place_table
-    plc_df = pd.read_csv("./tables/place_table.csv")
+    place_csv_path = files("ecg_interpreter").joinpath("tables/place_table.csv")
+    plc_df = pd.read_csv(place_csv_path)
 
     # create encyclopedia node
     ecg_node = Encyclopedia()

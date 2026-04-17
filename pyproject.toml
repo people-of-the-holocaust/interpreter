@@ -20,5 +20,9 @@ dependencies = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
+[tool.setuptools.package-data]
+ecg_interpreter = ["tables/*.csv"]
+
 [project.scripts]
 my-tool = "ecg_interpreter:main"
+
