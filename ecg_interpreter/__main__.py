@@ -35,7 +35,11 @@ def main():
         # get content articles from volume
         article_links = scrape_vol(vurl, plc_df, session, vnum)
         # loop over each article
+        i = 0
         for lid, link in article_links.items():
+            # TESTING - ONLY LOOK AT FIRST 20 ARTICLES
+            if i >= 20:
+                break
             place, body = get_article_content((base_article_url + link), session)
             # link is formatted as '/document/####'
             docNum = int(link.split("/")[-1])
@@ -55,7 +59,10 @@ def main():
                     for pid in pids:
                         # get action node
                         curr_sent.addAction(get_person_action(sent, pid, ppl_df, lid))
+            i += 1
 
     final_tree = print_ecg(ecg_node)
-    print(final_tree)
+    with open("tree_output.txt", "w") as f:
+        f.write(final_tree)
+    # print(final_tree)
     return 0
