@@ -5,6 +5,8 @@ from ecg_interpreter import Encyclopedia, Volume, Article, Sentence
 from nltk.tokenize import sent_tokenize
 
 def main():
+    print("IN MAIN")
+    
     # urls
     base_article_url = "https://muse.jhu.edu"
     name_index_url = 'https://muse.jhu.edu/ushmm/index/names'
@@ -27,6 +29,8 @@ def main():
 
     # create encyclopedia node
     ecg_node = Encyclopedia()
+
+    print("STARTING VOLUME SCRAPING")
 
     for vnum, vurl in vol_urls.items():
         # create volume node
