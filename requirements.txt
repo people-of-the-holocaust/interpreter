@@ -4,3 +4,5 @@ spacy
 nltk
 pytest
 flake8
+psycopg2
+dotenv

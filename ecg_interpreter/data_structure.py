@@ -1,9 +1,9 @@
-#Error, psycopg2 could not be resolved from source (reportMissingModuleSource)
-# import psycopg2
-#Maybe use scypt instead of bcrypt here
-# import bycrypt
+#Imports, psycopg2 and os.
+import psycopg2, os
+from dotenv import load_dotenv
 
-#TODO Add Getters and Setters to data structure.
+#Grab URL from local enviroment.
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 #Encyclopedia class
 class Encyclopedia:
@@ -20,10 +20,26 @@ class Encyclopedia:
     
     #Outputs a list of actions
     def getActions(self):
-        output = []
+        outputActions = []
         for volume in self.volumesList:
-            output.append(volume.getActions)
-        return output
+            outputActions.extend(volume.getActions)
+        return outputActions
+    
+    def insert_into_database(self):
+        try:
+            #Fix this where password to be a hashed bcrypt password AND update password away from this test password.
+            connect = psycopg2.connect(DATABASE_URL)
+            encActions = self.getActions
+            with connect.cursor as curs:
+                for actions in encActions:
+                #Add to execute for ids, description, and so on. May need to rework an 
+                    curs.execute("INSERT INTO Activity (Person Subj ID, Person Obj ID, Action, details, Place ID) VALUES (%s, %s, %s, %s, %s)",
+                             (actions.personSubjID, actions.personObjID, actions.action, actions.details, actions.placeId))
+            connect.commit()
+            curs.close()
+            connect.close()
+        except:
+            print("Error connection failed")
     
 #Page class (Used in Encyclopedia)
 class Volume:
@@ -44,11 +60,12 @@ class Volume:
 
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.
+
     def getActions (self):
-        output = []
+        outputActions = []
         for article in self.articlesList:
-            output.append(article.getActions())
-        return output
+            outputActions.extend(article.getActions())
+        return outputActions
 
 #Paragraph class (under Pages)
 class Article:
@@ -72,10 +89,10 @@ class Article:
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.
     def getActions (self):
-        output = []
+        outputActions = []
         for sentences in self.sents:
-            output.append(sentences.getActions())
-        return output
+            outputActions.extend(sentences.getActions())
+        return outputActions
 
 #Sentences class (under Articles)
 class Sentence:
@@ -115,18 +132,3 @@ class Action:
         self.action = act
         self.details = det
         self.placeID = lid
-
-
-#TODO test this tree data structure.
-
-
-#TODO here attach using psycopg2 with Postgresql
-#REMEMBER encrypt so that others cannot get access to the database without authorization.
-#dbConnect = psycopg2.connect("dbname='tempName' user='dBeaver' host='testHost' password='notUsedYet'")
-#dbEditor = dbConnect.cursor()
-
-#People: fName, afName, mName, lName, alName, title, dates, status, organizations, gender
-#Places: Name, Type, Subtype, Current Country, Latitude, Longitude, Location Accuracy
-#Activity: description, date
-#for data in encylopediaData:
-#    dbEditor.execute("INSERT INTO people ()")
