@@ -14,7 +14,9 @@ dependencies = [
     "bs4",
     "spacy",
     "nltk",
-    "pytest"
+    "pytest",
+    "psycopg2",
+    "dotenv"
 ]
 
 [tool.pytest.ini_options]
