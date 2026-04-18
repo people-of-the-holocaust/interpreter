@@ -1,7 +1,7 @@
 import pandas as pd
 import spacy
 nlp = spacy.load("en_core_web_sm")
-from .pothDataStructure import Action
+from .data_structure import Action
 
 def parse_action(name, s):
     doc = nlp(s)
