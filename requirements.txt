@@ -5,4 +5,4 @@ nltk
 pytest
 flake8
 psycopg2
-bcrypt
+dotenv

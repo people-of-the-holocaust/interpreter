@@ -1,5 +1,11 @@
-import psycopg2
+import psycopg2, os
+from dotenv import load_dotenv
 
+#Load dotenv
+load_dotenv()
+
+#.env local file with Database URL
+DATABASE_URL = os.getenv("DATABASE_URL")
 #Tests the connnection using psycopg2 to the database.
 
 #Invalid user in connection, hashedPass is the hashed password, currently not used

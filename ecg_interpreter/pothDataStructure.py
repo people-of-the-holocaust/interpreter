@@ -1,23 +1,16 @@
-import psycopg2
-#Maybe use scypt instead of bcrypt here
-import bycrypt
+import psycopg2, os
+from dotenv import load_dotenv
 
-#TODO Add Getters and Setters to data structure.
+load_dotenv()
 
-hashedPass = "$2a$12$4pwVb9bxNCsByFDbwpXXQOBwMvjq.gNFArdovKlno8yHq91AvmcQS"
+#.env local file with Database URL
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 #Encyclopedia class
 class Encyclopedia:
     #List of Volumes, will always be Volumes class
     volumesList = []
 
-    #TODO add functionality to get Sentences Objects
-    def getSentences(self):
-        outputSentences = []
-        for volume in self.volumesList:
-            outputSentences.extend(volume.getSetnences)
-        return outputSentences
-    
     #Outputs a list of actions
     def getActions(self):
         outputActions = []
@@ -25,23 +18,20 @@ class Encyclopedia:
             outputActions.extend(volume.getActions)
         return outputActions
     
-    def insert_into_database(self, inputpass):
-        try:
-            bcrypt.checkpw(inputpass, hashedPass)
-            encActions = self.getActions
-            #Fix this where password to be a hashed bcrypt password AND update password away from this test password.
-            connect = psycopg2.connect("dbname='postgres', user='postgres', host='db.elkjpkawrounaqjwzbjo.supabase.co', password='inputpass'")
+    def insert_into_database(self):
+        encActions = self.getActions
+        DATABASE_URL = os.getenv("DATABASE_URL")
+        #Fix this where password to be a hashed bcrypt password AND update password away from this test password.
+        connect = psycopg2.connect(DATABASE_URL)
 
-            with connect.cursor as curs:
-                for actions in encActions:
-                #Add to execute for ids, description, and so on. May need to rework an 
-                    curs.execute("INSERT INTO Activity (Person Subj ID, Person Obj ID, Action, details, Place ID) VALUES (%s, %s, %s, %s, %s)",
-                             (actions.personSubjID, actions.personObjID, actions.action, actions.details, actions.placeId))
-            connect.commit()
-            curs.close()
-            connect.close()
-        except:
-            print("Error, passwords do not match")
+        with connect.cursor as curs:
+            for actions in encActions:
+            #Add to execute for ids, description, and so on. May need to rework an 
+                curs.execute("INSERT INTO Activity (Person Subj ID, Person Obj ID, Action, details, Place ID) VALUES (%s, %s, %s, %s, %s)",
+                            (actions.personSubjID, actions.personObjID, actions.action, actions.details, actions.placeId))
+        connect.commit()
+        curs.close()
+        connect.close()
     
 #Page class (Used in Encyclopedia)
 class Volume:
