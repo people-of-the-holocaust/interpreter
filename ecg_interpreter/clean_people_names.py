@@ -58,6 +58,7 @@ def split_first(first):
         place = "Belgium"
     if ' and ' in fname:
         # need to figure out how to split these into two rows of people
+#         print(first)
         space = first.index(' ')
         fname = first[:space]
         person2 = first[space:]
