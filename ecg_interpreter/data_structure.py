@@ -1,10 +1,9 @@
-import psycopg2
-#Maybe use scypt instead of bcrypt here
-# import bycrypt
+#Imports, psycopg2 and os.
+import psycopg2, os
+from dotenv import load_dotenv
 
-#TODO Add Getters and Setters to data structure.
-
-hashedPass = "$2a$12$4pwVb9bxNCsByFDbwpXXQOBwMvjq.gNFArdovKlno8yHq91AvmcQS"
+#Grab URL from local enviroment.
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 #Encyclopedia class
 class Encyclopedia:
@@ -26,13 +25,11 @@ class Encyclopedia:
             outputActions.extend(volume.getActions)
         return outputActions
     
-    def insert_into_database(self, inputpass):
+    def insert_into_database(self):
         try:
-            bcrypt.checkpw(inputpass, hashedPass)
-            encActions = self.getActions
             #Fix this where password to be a hashed bcrypt password AND update password away from this test password.
-            connect = psycopg2.connect("dbname='postgres', user='postgres', host='db.elkjpkawrounaqjwzbjo.supabase.co', password='inputpass'")
-
+            connect = psycopg2.connect(DATABASE_URL)
+            encActions = self.getActions
             with connect.cursor as curs:
                 for actions in encActions:
                 #Add to execute for ids, description, and so on. May need to rework an 
@@ -42,7 +39,7 @@ class Encyclopedia:
             curs.close()
             connect.close()
         except:
-            print("Error, passwords do not match")
+            print("Error connection failed")
     
 #Page class (Used in Encyclopedia)
 class Volume:
@@ -135,18 +132,3 @@ class Action:
         self.action = act
         self.details = det
         self.placeID = lid
-
-
-#TODO test this tree data structure.
-
-
-#TODO here attach using psycopg2 with Postgresql
-#REMEMBER encrypt so that others cannot get access to the database without authorization.
-#dbConnect = psycopg2.connect("dbname='tempName' user='dBeaver' host='testHost' password='notUsedYet'")
-#dbEditor = dbConnect.cursor()
-
-#People: fName, afName, mName, lName, alName, title, dates, status, organizations, gender
-#Places: Name, Type, Subtype, Current Country, Latitude, Longitude, Location Accuracy
-#Activity: description, date
-#for data in encylopediaData:
-#    dbEditor.execute("INSERT INTO people ()")
