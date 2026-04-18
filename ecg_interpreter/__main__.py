@@ -57,7 +57,7 @@ def main():
             # loop over each sentence
             for sent in sentences:
                 pids = is_key(sent, ppl_df)
-                if type(pids) == list:
+                if type(pids) == list and len(pids) > 0:
                     # create sentence node
                     curr_sent = Sentence(sent, pids)
                     curr_article.addSent(curr_sent)
