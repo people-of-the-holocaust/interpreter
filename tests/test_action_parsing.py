@@ -1,6 +1,6 @@
 # import modules to test
 from ecg_interpreter import get_person_action
-from ecg_interpreter.pothDataStructure import Action
+from ecg_interpreter.data_structure import Action
 
 # expected output from get_person_action:
 # {"personSubjID", "personObjID", "action", "details", "placeID"}

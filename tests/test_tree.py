@@ -1,6 +1,6 @@
 # ADD TO OTHER DATA STRUCTURE TESTS WHEN BRANCH IS MERGED IN
 
-from ecg_interpreter.pothDataStructure import Encyclopedia, Volume, Article, Sentence, Action
+from ecg_interpreter.data_structure import Encyclopedia, Volume, Article, Sentence, Action
 from ecg_interpreter import print_ecg
 
 def test_empty_tree():
