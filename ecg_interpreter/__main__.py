@@ -44,7 +44,7 @@ def main():
         # create volume node
         curr_vol = Volume(vnum, vurl)
         ecg_node.addVolume(curr_vol)
-        # get content articles from volume
+        # get links for content articles from volume page
         article_links = scrape_vol(vurl, plc_df, session, vnum)
         print("NUMBER OF ARTICLES:", len(article_links))
         # loop over each article
@@ -54,6 +54,7 @@ def main():
             if i >= 10:
                 break
             try:
+                # scrape article content
                 place, body = get_article_content((base_article_url + link), session)
 
                 # link is formatted as '/document/####'
@@ -67,6 +68,7 @@ def main():
                 sentences = sent_tokenize(body)
                 # loop over each sentence
                 for sent in sentences:
+                    # check if sent is KEY, get pids from sent
                     pids = is_key(sent, ppl_df)
                     if type(pids) == list and len(pids) > 0:
                         print("Sentence is key:", sent)
@@ -78,6 +80,7 @@ def main():
                             # get action node
                             curr_sent.addAction(get_person_action(sent, pid, ppl_df, lid))
             except:
+                print("Exception occured - skipped article", link)
                 continue
             i += 1
 
