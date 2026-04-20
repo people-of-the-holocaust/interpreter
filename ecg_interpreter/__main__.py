@@ -65,7 +65,7 @@ def main():
             lid = row.LID
             link = row.doc_link
             # TESTING - ONLY LOOK AT FIRST 20 ARTICLES
-            if i >= 10:
+            if i >= 20:
                 break
             # link is formatted as '/document/####'
             doc_num = int(link.split("/")[-1])
