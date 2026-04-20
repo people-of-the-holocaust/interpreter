@@ -42,12 +42,12 @@ def main():
     with open("error_log.txt", "w") as f:
         f.write("Exceptions occured while processing the following articles:\n")
 
+    print("Completed initial set up")
+
     # CREATE encyclopedia node
     ecg_node = Encyclopedia()
 
     for vnum, vurl in vol_urls.items():
-        # LEVEL: VOLUME
-        print("VOLUME:", vnum)
         # CREATE volume node
         curr_vol = Volume(vnum, vurl)
         ecg_node.addVolume(curr_vol)
@@ -60,14 +60,11 @@ def main():
         article_links_csv_path = files("ecg_interpreter").joinpath(file_name)
         article_links = pd.read_csv(article_links_csv_path, index_col=0)
 
-        print("NUMBER OF ARTICLES:", len(article_links))
-
         i = 0
         for row in article_links.itertuples():
-            # LEVEL: ARTICLE
             lid = row.LID
             link = row.doc_link
-            # TESTING - ONLY LOOK AT FIRST 10 ARTICLES
+            # TESTING - ONLY LOOK AT FIRST 20 ARTICLES
             if i >= 10:
                 break
             # link is formatted as '/document/####'
@@ -78,11 +75,10 @@ def main():
                 # CREATE article node
                 curr_article = Article(place, body, doc_num)
                 curr_vol.addArticle(curr_article)
-                
+
                 # split article body into sentences
                 sentences = sent_tokenize(body)
                 for sent in sentences:
-                    # LEVEL: SENTENCE
                     # check if sent is KEY, get pids from sent
                     pids = is_key(sent, ppl_df)
                     if type(pids) == list and len(pids) > 0:
@@ -101,6 +97,7 @@ def main():
         vol_actions = curr_vol.getActions()
         vol_acts_as_dicts = [vars(act) for act in vol_actions]
         activity_df = pd.concat([activity_df, pd.DataFrame(vol_acts_as_dicts)], ignore_index=True)
+        print("Updated activities for volume", vnum)
 
     # export activity_df to csv
     activity_csv_path = files("ecg_interpreter").joinpath("tables/activity_table.csv")
@@ -109,5 +106,4 @@ def main():
     # final_tree = print_ecg(ecg_node)
     # with open("tree_output.txt", "w") as f:
         # f.write(final_tree)
-    # print(final_tree)
     return 0
