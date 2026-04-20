@@ -6,59 +6,65 @@ from nltk.tokenize import sent_tokenize
 from importlib.resources import files
 
 def main():
-    print("IN MAIN")
+    # LEVEL: ENCYCLOPEDIA
 
-    # urls
+    # SET UP URLS
     base_article_url = "https://muse.jhu.edu"
-    name_index_url = 'https://muse.jhu.edu/ushmm/index/names'
     vol_urls = {
         1: "https://muse.jhu.edu/resource_group/13",
         2: "https://muse.jhu.edu/resource_group/59",
         3: "https://muse.jhu.edu/resource_group/91",
         4: "https://muse.jhu.edu/resource_group/111"
     }
+    # necessary for get_raw_names function
+    # name_index_url = 'https://muse.jhu.edu/ushmm/index/names'
 
     # create session to save cookies
     session = requests.Session()
 
-    # set up people_table - option 1: scrape ECG people index, clean names, sort into table
+    # SET UP people_table
+    # option 1: scrape ECG people index, clean names, sort into table
     # raw_ppl_names = get_raw_names(session, name_index_url)
     # ppl_df = create_ppl_table(raw_ppl_names)
-    # set up people_table - option 2: load in table with first column as index
+    # option 2: load in table with first column as index
     ppl_csv_path = files("ecg_interpreter").joinpath("tables/people_table.csv")
     ppl_df = pd.read_csv(ppl_csv_path, index_col=0)
-    print(ppl_df.head())
 
-    # set up place_table - load in table
-    place_csv_path = files("ecg_interpreter").joinpath("tables/place_table.csv")
-    plc_df = pd.read_csv(place_csv_path)
-    # print(plc_df.head())
+    # SET UP place_table
+    # necessary for scrape_vol function
+    # place_csv_path = files("ecg_interpreter").joinpath("tables/place_table.csv")
+    # plc_df = pd.read_csv(place_csv_path)
 
-    # set up activity dataframe
+    # SET UP activity dataframe
     activity_df = pd.DataFrame()
 
-    # set up error log
+    # SET UP error log
     with open("error_log.txt", "w") as f:
         f.write("Exceptions occured while processing the following articles:\n")
 
-    # create encyclopedia node
+    # CREATE encyclopedia node
     ecg_node = Encyclopedia()
 
-    print("STARTING VOLUME SCRAPING")
-
     for vnum, vurl in vol_urls.items():
+        # LEVEL: VOLUME
         print("VOLUME:", vnum)
-
-        # create volume node
+        # CREATE volume node
         curr_vol = Volume(vnum, vurl)
         ecg_node.addVolume(curr_vol)
-        # get links for content articles from volume page
-        article_links = scrape_vol(vurl, plc_df, session, vnum)
+
+        # get links for content articles
+        # option 1: scrape volume page, save into df
+        # article_links = scrape_vol(vurl, plc_df, session, vnum)
+        # option 2: load in table with first column as index
+        file_name = "tables/vol" + str(vnum) + "_article_links.csv"
+        article_links_csv_path = files("ecg_interpreter").joinpath(file_name)
+        article_links = pd.read_csv(article_links_csv_path, index_col=0)
+
         print("NUMBER OF ARTICLES:", len(article_links))
-        # loop over each article
+
         i = 0
-        # for lid, link in article_links.items():
         for row in article_links.itertuples():
+            # LEVEL: ARTICLE
             lid = row.LID
             link = row.doc_link
             # TESTING - ONLY LOOK AT FIRST 10 ARTICLES
@@ -69,28 +75,24 @@ def main():
             try:
                 # scrape article content
                 place, body = get_article_content((base_article_url + link), session)
-                print("Scraped", doc_num)
-
-                # create article node
+                # CREATE article node
                 curr_article = Article(place, body, doc_num)
                 curr_vol.addArticle(curr_article)
-                # get sentences in article
+                
+                # split article body into sentences
                 sentences = sent_tokenize(body)
-                # loop over each sentence
                 for sent in sentences:
+                    # LEVEL: SENTENCE
                     # check if sent is KEY, get pids from sent
                     pids = is_key(sent, ppl_df)
                     if type(pids) == list and len(pids) > 0:
-                        print("Sentence is key:", sent)
-                        # create sentence node
+                        # CREATE sentence node
                         curr_sent = Sentence(sent, pids)
                         curr_article.addSent(curr_sent)
-                        # loop over each pid found in key sentence
                         for pid in pids:
-                            # get action node
+                            # CREATE action node
                             curr_sent.addAction(get_person_action(sent, pid, ppl_df, lid))
             except:
-                print("Exception occured - skipped article", link)
                 with open("error_log.txt", "a") as f:
                     f.write(f"{doc_num}\n")
                 continue
