@@ -31,11 +31,15 @@ def main():
     plc_df = pd.read_csv(place_csv_path)
     # print(plc_df.head())
 
-    # create encyclopedia node
-    ecg_node = Encyclopedia()
-
     # set up activity dataframe
     activity_df = pd.DataFrame()
+
+    # set up error log
+    with open("error_log.txt", "w") as f:
+        f.write("Exceptions occured while processing the following articles:\n")
+
+    # create encyclopedia node
+    ecg_node = Encyclopedia()
 
     print("STARTING VOLUME SCRAPING")
 
@@ -54,12 +58,11 @@ def main():
             # TESTING - ONLY LOOK AT FIRST 10 ARTICLES
             if i >= 10:
                 break
+            # link is formatted as '/document/####'
+            doc_num = int(link.split("/")[-1])
             try:
                 # scrape article content
                 place, body = get_article_content((base_article_url + link), session)
-
-                # link is formatted as '/document/####'
-                doc_num = int(link.split("/")[-1])
                 print("Scraped", doc_num)
 
                 # create article node
@@ -82,6 +85,8 @@ def main():
                             curr_sent.addAction(get_person_action(sent, pid, ppl_df, lid))
             except:
                 print("Exception occured - skipped article", link)
+                with open("error_log.txt", "a") as f:
+                    f.write(f"{doc_num}\n")
                 continue
             i += 1
         # get all actions for this volume, save into activity_df
