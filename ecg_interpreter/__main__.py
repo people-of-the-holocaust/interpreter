@@ -84,8 +84,15 @@ def main():
                 continue
             i += 1
 
-    final_tree = print_ecg(ecg_node)
-    with open("tree_output.txt", "w") as f:
-        f.write(final_tree)
+    # get all actions, save into df, export to csv
+    all_actions = ecg_node.getActions()
+    actions_as_dicts = [vars(act) for act in all_actions]
+    activity_df = pd.DataFrame(actions_as_dicts)
+    activity_csv_path = files("ecg_interpreter").joinpath("tables/activity_table.csv")
+    activity_df.to_csv(activity_csv_path)
+
+    # final_tree = print_ecg(ecg_node)
+    # with open("tree_output.txt", "w") as f:
+        # f.write(final_tree)
     # print(final_tree)
     return 0
