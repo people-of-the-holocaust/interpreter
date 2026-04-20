@@ -21,14 +21,17 @@ def main():
     # create session to save cookies
     session = requests.Session()
 
-    # set up people_table
-    raw_ppl_names = get_raw_names(session, name_index_url)
-    ppl_df = create_ppl_table(raw_ppl_names)
-    # print(ppl_df.head())
+    # set up people_table - option 1: scrape ECG people index, clean names, sort into table
+    # raw_ppl_names = get_raw_names(session, name_index_url)
+    # ppl_df = create_ppl_table(raw_ppl_names)
+    # set up people_table - option 2: load in table with first column as index
+    ppl_csv_path = files("ecg_interpreter").joinpath("tables/people_table.csv")
+    ppl_df = pd.read_csv(ppl_csv_path, index_col=0)
+    print(ppl_df.head())
 
-    # set up place_table
+    # set up place_table - load in table with first column as index
     place_csv_path = files("ecg_interpreter").joinpath("tables/place_table.csv")
-    plc_df = pd.read_csv(place_csv_path)
+    plc_df = pd.read_csv(place_csv_path, index_col=0)
     # print(plc_df.head())
 
     # set up activity dataframe
