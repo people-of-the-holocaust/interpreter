@@ -29,9 +29,9 @@ def main():
     ppl_df = pd.read_csv(ppl_csv_path, index_col=0)
     print(ppl_df.head())
 
-    # set up place_table - load in table with first column as index
+    # set up place_table - load in table
     place_csv_path = files("ecg_interpreter").joinpath("tables/place_table.csv")
-    plc_df = pd.read_csv(place_csv_path, index_col=0)
+    plc_df = pd.read_csv(place_csv_path)
     # print(plc_df.head())
 
     # set up activity dataframe
@@ -57,7 +57,10 @@ def main():
         print("NUMBER OF ARTICLES:", len(article_links))
         # loop over each article
         i = 0
-        for lid, link in article_links.items():
+        # for lid, link in article_links.items():
+        for row in article_links.itertuples():
+            lid = row.LID
+            link = row.doc_link
             # TESTING - ONLY LOOK AT FIRST 10 ARTICLES
             if i >= 10:
                 break
