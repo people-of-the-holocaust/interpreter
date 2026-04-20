@@ -24,17 +24,18 @@ def main():
     # set up people_table
     raw_ppl_names = get_raw_names(session, name_index_url)
     ppl_df = create_ppl_table(raw_ppl_names)
-
-    print(ppl_df.head())
+    # print(ppl_df.head())
 
     # set up place_table
     place_csv_path = files("ecg_interpreter").joinpath("tables/place_table.csv")
     plc_df = pd.read_csv(place_csv_path)
-
-    print(plc_df.head())
+    # print(plc_df.head())
 
     # create encyclopedia node
     ecg_node = Encyclopedia()
+
+    # set up activity dataframe
+    activity_df = pd.DataFrame()
 
     print("STARTING VOLUME SCRAPING")
 
@@ -83,11 +84,12 @@ def main():
                 print("Exception occured - skipped article", link)
                 continue
             i += 1
+        # get all actions for this volume, save into activity_df
+        vol_actions = curr_vol.getActions()
+        vol_acts_as_dicts = [vars(act) for act in vol_actions]
+        activity_df = pd.concat([activity_df, pd.DataFrame(vol_acts_as_dicts)], ignore_index=True)
 
-    # get all actions, save into df, export to csv
-    all_actions = ecg_node.getActions()
-    actions_as_dicts = [vars(act) for act in all_actions]
-    activity_df = pd.DataFrame(actions_as_dicts)
+    # export activity_df to csv
     activity_csv_path = files("ecg_interpreter").joinpath("tables/activity_table.csv")
     activity_df.to_csv(activity_csv_path)
 
