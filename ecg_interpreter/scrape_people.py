@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup
 import pandas as pd
+from importlib.resources import files
+
 
 # get list of names from people index search
 # return list of raw names
@@ -14,5 +16,6 @@ def get_raw_names(session, base_name_index_url):
 
     # save people names into df, save to csv
     people_df = pd.DataFrame(people_names, columns = ['Name'])
-    people_df.to_csv('./tables/raw_names.csv')
+    raw_names_path = files("ecg_interpreter").joinpath("tables/raw_names.csv")
+    people_df.to_csv(raw_names_path)
     return people_names

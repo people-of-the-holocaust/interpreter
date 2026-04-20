@@ -22,7 +22,7 @@ class Encyclopedia:
     def getActions(self):
         outputActions = []
         for volume in self.volumesList:
-            outputActions.extend(volume.getActions)
+            outputActions.extend(volume.getActions())
         return outputActions
     
     def insert_into_database(self):
@@ -90,7 +90,7 @@ class Article:
     #May need reworking due to returning multiple arrays of People.
     def getActions (self):
         outputActions = []
-        for sentences in self.sents:
+        for sentences in self.sentsList:
             outputActions.extend(sentences.getActions())
         return outputActions
 

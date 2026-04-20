@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ecg_interpreter"
+version = "0.1.0"
+description = "This is the backend of the People of the Holocaust project"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.25.0",
+    "pandas",
+    "bs4",
+    "spacy",
+    "nltk",
+    "pytest",
+    "psycopg2-binary",
+    "dotenv"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+ecg_interpreter = ["tables/*.csv"]
+
+[project.scripts]
+my-tool = "ecg_interpreter:main"
+

@@ -1,4 +1,6 @@
 import pandas as pd
+from importlib.resources import files
+
 
 # hard coded list of titles and deliminators
 titles = ["oberleutnant", "bank", "oberstleutnant", "oberst", "countess", 
@@ -198,5 +200,6 @@ def create_ppl_table(all_names):
             pass
 
     ppl_df = pd.DataFrame(pdict)
-    ppl_df.to_csv('./tables/people_table.csv')
+    people_csv_path = files("ecg_interpreter").joinpath("tables/people_table.csv")
+    ppl_df.to_csv(people_csv_path)
     return ppl_df
