@@ -4,6 +4,6 @@ spacy
 nltk
 pytest
 flake8
-psycopg2
+supabase
 dotenv
 requests
