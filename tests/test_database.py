@@ -24,7 +24,7 @@ def test_database_data():
     supabase.auth.sign_in_with_password(
     {
         "email": os.environ.get("SUPABASE_USER"),
-        "password": os.environ.get("SUPABASE_PASSWORD"),
+        "password": os.environ.get("SUPABASE_PASS"),
     }
     )  
 
@@ -35,9 +35,12 @@ def test_database_data():
                                         "Action": activity_expected[3], 
                                         "Details": activity_expected[4],
                                         "Place ID": activity_expected[5]}).execute()
+    
+    #Select data from table, from Action column aTest0.
     selection = supabase.table("Activity").select("*").eq("Action", "aTest0").execute()
     selectionData = selection.data
 
+    #Turn the data into a viewable list.
     outputData = list(selectionData[0].values())
     try:
         assert (outputData == activity_expected)
@@ -55,9 +58,10 @@ def test_database_insert_multiple():
     #Authorization to sign into database
     supabase.auth.sign_in_with_password(
         {"email": os.environ.get("SUPABASE_USER"),
-         "password": os.environ.get("SUPABASE_PASSWORD"),
+         "password": os.environ.get("SUPABASE_PASS"),
         }
     )
+    #Creation of activity expected values, insert into Activity table.
     for i in range(0, 5):
         activity_expected = [i, i+1, i+2, "TestAction" + str(i+25), "TestDetails" + str(i+50), i+100]
         supabase.table("Activity").insert({"Activity ID": activity_expected[0],
@@ -80,30 +84,38 @@ def test_database_insert_multiple():
             print("test_database_insert_multiple() succeeded, Assertion is valid")
         except:
             print("Assertion failed, output and expected are not equal.")
+        #Delete test data from table.
         supabase.table("Activity").delete().eq("Action", "TestAction" + str(i+25)).execute()
 
 #Test function for function insertIntoDatabase in data_structure.py
 def test_insertIntoDatabase():
+    #Creation of fake actions list, and append Action objects
     actions = []
     for i in range(0,10):
         actNode = Action(i, i+10, "verb", "details", i+100)
         actions.append(actNode)
 
+    #Connect to Supabase Client
     supabase: Client = create_client(
     os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_KEY")
     )
+    #Sign in with local .env file.
     supabase.auth.sign_in_with_password(
     {
     "email": os.environ.get("SUPABASE_USER"),
-    "password": os.environ.get("SUPABASE_PASSWORD"),
+    "password": os.environ.get("SUPABASE_PASS"),
     }
     )
+    #Selection of all rows from table.
     selection = supabase.table("Activity").select("*").execute()
+    #Getter for data, translates into list[dict{key:value}, dict{key:value}, ... dict{key:value}]
     selectionData = selection.data
-
+    #Loop for inserting Actions into database
+    #supabase.table -> go to table "TableName", .insert() -> inserts by "Column Name": value, .execute() -> execute command
     for actionInd in actions:
-        print(actions.index(actionInd)+len(selectionData))
-        print(actionInd.personSubjID, actionInd.personObjID, actionInd.action, actionInd.details, actionInd.placeID)
+        #Print statements for indexes
+        #print(actions.index(actionInd)+len(selectionData))
+        #print(actionInd.personSubjID, actionInd.personObjID, actionInd.action, actionInd.details, actionInd.placeID)
         supabase.table("Activity").insert({"Activity ID": (actions.index(actionInd)+len(selectionData)),
                                             "Person Subj ID": actionInd.personSubjID, 
                                             "Person Obj ID": actionInd.personObjID, 

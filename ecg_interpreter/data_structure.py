@@ -26,25 +26,31 @@ class Encyclopedia:
             outputActions.extend(volume.getActions())
         return outputActions
     
+    #Function that inserts a list of this node's Actions into the database.
     def insertIntoDatabase(self):
+        #Get actions in Encyclopedia
         actions = self.getActions()
-        for i in range(0,10):
-            actNode = Action(i, i+10, "verb", "details", i+100)
-            actions.append(actNode)
 
+        #Connect to Supabase Client
         supabase: Client = create_client(
         os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_KEY")
         )
+        #Sign in with .env file username and password
         supabase.auth.sign_in_with_password(
         {
         "email": os.environ.get("SUPABASE_USER"),
-        "password": os.environ.get("SUPABASE_PASSWORD"),
+        "password": os.environ.get("SUPABASE_PASS"),
         }
         )
+        #Select all rows from table. Used to find the current max size of database.
         selection = supabase.table("Activity").select("*").execute()
         selectionData = selection.data
 
+        #Loop for entering Actions into DB.
+        #supabase.table -> go to table "TableName", .insert() -> inserts by "Column Name": value, .execute() -> execute command
         for actionInd in actions:
+            #actions.index(actionInd)+len(selectData) puts this at the last index in DB.
+            #Required as indexes are primary.
             supabase.table("Activity").insert({"Activity ID": (actions.index(actionInd)+len(selectionData)),
                                             "Person Subj ID": actionInd.personSubjID, 
                                             "Person Obj ID": actionInd.personObjID, 
@@ -76,21 +82,32 @@ class Volume:
             outputActions.extend(article.getActions())
         return outputActions
     
+    #Function that inserts a list of this node's Actions into the database.
+    #Copy of the function used in Encyclopedia.
     def insertIntoDatabase(self):
+        #Get actions in Encyclopedia
         actions = self.getActions()
+
+        #Connect to Supabase Client
         supabase: Client = create_client(
         os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_KEY")
         )
+        #Sign in with .env file username and password
         supabase.auth.sign_in_with_password(
         {
         "email": os.environ.get("SUPABASE_USER"),
-        "password": os.environ.get("SUPABASE_PASSWORD"),
+        "password": os.environ.get("SUPABASE_PASS"),
         }
         )
+        #Select all rows from table. Used to find the current max size of database.
         selection = supabase.table("Activity").select("*").execute()
         selectionData = selection.data
 
+        #Loop for entering Actions into DB.
+        #supabase.table -> go to table "TableName", .insert() -> inserts by "Column Name": value, .execute() -> execute command
         for actionInd in actions:
+            #actions.index(actionInd)+len(selectData) puts this at the last index in DB.
+            #Required as indexes are primary.
             supabase.table("Activity").insert({"Activity ID": (actions.index(actionInd)+len(selectionData)),
                                             "Person Subj ID": actionInd.personSubjID, 
                                             "Person Obj ID": actionInd.personObjID, 
