@@ -1,72 +1,113 @@
-import psycopg2, os
+from ecg_interpreter import Action
+from supabase import create_client, Client
 from dotenv import load_dotenv
+import os
 
 #Load dotenv
 load_dotenv()
 
-#.env local file with Database URL
-DATABASE_URL = os.getenv("DATABASE_URL")
 #Tests the connnection using psycopg2 to the database.
 
 #Invalid user in connection, hashedPass is the hashed password, currently not used
 #intended for testing valid users
-def test_invalid_user(hashePass):
-    try:
-        connect = psycopg2.connect("dbname='People of the Holocaust' user='invalidUser' host='test' password = hashedPass")
-    except:
-        print("Test 1: Invalid user")
-
-#Valid user, incorrect password
-def test_invalid_pass():
-    try:
-        connect = psycopg2.connect("dbname='People of the Holocaust' user='viewDB' host='test' password = 'invalidpass'")
-    except:
-        print("Test 2: Invalid password")
-
-#Valid connection with exact values
-def test_valid_connection(hashPass):
-    try:
-        connect = psycopg2.connect("dbname='People of the Holocaust' user='viewB' host='test' password='hashedPass'")
-    except:
-        print("Test 3: Could not connect")
 
 #Incorrect amount of informmtion provied
 #Insertion into a test database test
-def test_database_data(hashPass, activity):
-    try:
-        connect = psycopg2.connect("dbname='People of the Holocaust' user='userEdit' host='test' password='hashedPass'")
-    except:
-        print("Connection Failed")
-    cursor = connect.cursor()
-    
-    #Test values purely to not interact with the rest of the database
-    cursor.execute("INSERT INTO Activity (Person Subj ID, Person Obj ID, Action, details) VALUES (%(int4)s, %(int4)s, %(varchar)s, %(varchar)s, %(int4)s", 
-                   (activity[0], activity[1], activity[2], activity[3], activity[4]))
-    cursor.execute("SELECT * from Activity;")
-    
-    print(cursor.fetchone())
+def test_database_data():
+    #Test Data
+    activity_expected = [55,155, 255, "aTest0", "dTest0", 555]
+    #Create Supabase Client
+    supabase: Client = create_client(
+        os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_KEY")
+    )
+    #Authorization to sign into database
+    supabase.auth.sign_in_with_password(
+    {
+        "email": os.environ.get("SUPABASE_USER"),
+        "password": os.environ.get("SUPABASE_PASSWORD"),
+    }
+    )  
 
-    assert (cursor.fetchone() == (activity[0], activity[1], activity[2], activity[3], activity[4]))
-    connect.rollback()
-    connect.close()
+    #Insert into database with test function
+    supabase.table("Activity").insert({"Activity ID": activity_expected[0],
+                                        "Person Subj ID": activity_expected[1], 
+                                        "Person Obj ID": activity_expected[2], 
+                                        "Action": activity_expected[3], 
+                                        "Details": activity_expected[4],
+                                        "Place ID": activity_expected[5]}).execute()
+    selection = supabase.table("Activity").select("*").eq("Action", "aTest0").execute()
+    selectionData = selection.data
+
+    outputData = list(selectionData[0].values())
+    try:
+        assert (outputData == activity_expected)
+        print("test_database_data() succeeded, assertion is valid")
+    except:
+        print("Assertation failed, data does not match")
+    #Removes test data, just so it doesn't affect the rest of the database. 
+    supabase.table("Activity").delete().eq("Action", "aTest0").execute()
+    print("Deleted test data from database")
 
 #Test insert multiple lines
-#TODO, use a randomized values that we can add to our database but not change.
-def test_database_insert_multiple(hashPass, activity):
-    try:
-        connect = psycopg2.connect("dbname='People of the Holocaust' user='userEdit' host='test' password='hashedPass'")
-    except:
-        print("Connection Failed")
-    cursor = connect.cursor()
-    
-    #Test values purely to not interact with the rest of the database
-    cursor.execute("INSERT INTO Activity (Person Subj ID, Person Obj ID, Action, details) VALUES (%(int4)s, %(int4)s, %(varchar)s, %(varchar)s, %(int4)s", 
-                   (activity[0], activity[1], activity[2], activity[3], activity[4]))
-    cursor.execute("SELECT * from Activity;")
-    
-    print(cursor.fetchone())
+def test_database_insert_multiple():
+    #Create Supabase Client with .env file
+    supabase: Client = create_client(os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_KEY"))
+    #Authorization to sign into database
+    supabase.auth.sign_in_with_password(
+        {"email": os.environ.get("SUPABASE_USER"),
+         "password": os.environ.get("SUPABASE_PASSWORD"),
+        }
+    )
+    for i in range(0, 5):
+        activity_expected = [i, i+1, i+2, "TestAction" + str(i+25), "TestDetails" + str(i+50), i+100]
+        supabase.table("Activity").insert({"Activity ID": activity_expected[0],
+                                        "Person Subj ID": activity_expected[1], 
+                                        "Person Obj ID": activity_expected[2], 
+                                        "Action": activity_expected[3], 
+                                        "Details": activity_expected[4],
+                                        "Place ID": activity_expected[5]}).execute()
+    selection = supabase.table("Activity").select("*").execute()
+    selectionData = selection.data
+    #print(selectionData)
 
-    assert (cursor.fetchone() == (activity[0], activity[1], activity[2], activity[3], activity[4]))
-    connect.rollback()
-    connect.close()
-    
+    for i in range(0, len(selectionData)):
+        activity_expected = [i, i+1, i+2, "TestAction" + str(i+25), "TestDetails" + str(i+50), i+100]
+        outputData = list(selectionData[i].values())
+        #print(outputData)
+        #print(activity_expected)
+        try:
+            assert (outputData == activity_expected)
+            print("test_database_insert_multiple() succeeded, Assertion is valid")
+        except:
+            print("Assertion failed, output and expected are not equal.")
+        supabase.table("Activity").delete().eq("Action", "TestAction" + str(i+25)).execute()
+
+#Test function for function insertIntoDatabase in data_structure.py
+def test_insertIntoDatabase():
+    actions = []
+    for i in range(0,10):
+        actNode = Action(i, i+10, "verb", "details", i+100)
+        actions.append(actNode)
+
+    supabase: Client = create_client(
+    os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_KEY")
+    )
+    supabase.auth.sign_in_with_password(
+    {
+    "email": os.environ.get("SUPABASE_USER"),
+    "password": os.environ.get("SUPABASE_PASSWORD"),
+    }
+    )
+    selection = supabase.table("Activity").select("*").execute()
+    selectionData = selection.data
+
+    for actionInd in actions:
+        print(actions.index(actionInd)+len(selectionData))
+        print(actionInd.personSubjID, actionInd.personObjID, actionInd.action, actionInd.details, actionInd.placeID)
+        supabase.table("Activity").insert({"Activity ID": (actions.index(actionInd)+len(selectionData)),
+                                            "Person Subj ID": actionInd.personSubjID, 
+                                            "Person Obj ID": actionInd.personObjID, 
+                                            "Action": actionInd.action, 
+                                            "Details": actionInd.details,
+                                            "Place ID": actionInd.placeID}).execute()
+    print("test_insertIntoDatabase success, added test files to DB")

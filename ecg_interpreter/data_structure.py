@@ -1,6 +1,7 @@
-#Imports, psycopg2 and os.
-import psycopg2, os
+#Imports
+from supabase import create_client, Client
 from dotenv import load_dotenv
+import os
 
 #Grab URL from local enviroment.
 DATABASE_URL = os.getenv("DATABASE_URL")
@@ -25,21 +26,31 @@ class Encyclopedia:
             outputActions.extend(volume.getActions())
         return outputActions
     
-    def insert_into_database(self):
-        try:
-            #Fix this where password to be a hashed bcrypt password AND update password away from this test password.
-            connect = psycopg2.connect(DATABASE_URL)
-            encActions = self.getActions
-            with connect.cursor as curs:
-                for actions in encActions:
-                #Add to execute for ids, description, and so on. May need to rework an 
-                    curs.execute("INSERT INTO Activity (Person Subj ID, Person Obj ID, Action, details, Place ID) VALUES (%s, %s, %s, %s, %s)",
-                             (actions.personSubjID, actions.personObjID, actions.action, actions.details, actions.placeId))
-            connect.commit()
-            curs.close()
-            connect.close()
-        except:
-            print("Error connection failed")
+    def insertIntoDatabase(self):
+        actions = self.getActions()
+        for i in range(0,10):
+            actNode = Action(i, i+10, "verb", "details", i+100)
+            actions.append(actNode)
+
+        supabase: Client = create_client(
+        os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_KEY")
+        )
+        supabase.auth.sign_in_with_password(
+        {
+        "email": os.environ.get("SUPABASE_USER"),
+        "password": os.environ.get("SUPABASE_PASSWORD"),
+        }
+        )
+        selection = supabase.table("Activity").select("*").execute()
+        selectionData = selection.data
+
+        for actionInd in actions:
+            supabase.table("Activity").insert({"Activity ID": (actions.index(actionInd)+len(selectionData)),
+                                            "Person Subj ID": actionInd.personSubjID, 
+                                            "Person Obj ID": actionInd.personObjID, 
+                                            "Action": actionInd.action, 
+                                            "Details": actionInd.details,
+                                            "Place ID": actionInd.placeID}).execute()
     
 #Page class (Used in Encyclopedia)
 class Volume:
@@ -59,13 +70,33 @@ class Volume:
         self.articlesList.append(newArticle)
 
     #Function for returning list of People objects under a Page.
-    #May need reworking due to returning multiple arrays of People.
-
     def getActions (self):
         outputActions = []
         for article in self.articlesList:
             outputActions.extend(article.getActions())
         return outputActions
+    
+    def insertIntoDatabase(self):
+        actions = self.getActions()
+        supabase: Client = create_client(
+        os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_KEY")
+        )
+        supabase.auth.sign_in_with_password(
+        {
+        "email": os.environ.get("SUPABASE_USER"),
+        "password": os.environ.get("SUPABASE_PASSWORD"),
+        }
+        )
+        selection = supabase.table("Activity").select("*").execute()
+        selectionData = selection.data
+
+        for actionInd in actions:
+            supabase.table("Activity").insert({"Activity ID": (actions.index(actionInd)+len(selectionData)),
+                                            "Person Subj ID": actionInd.personSubjID, 
+                                            "Person Obj ID": actionInd.personObjID, 
+                                            "Action": actionInd.action, 
+                                            "Details": actionInd.details,
+                                            "Place ID": actionInd.placeID}).execute()
 
 #Paragraph class (under Pages)
 class Article:
