@@ -60,13 +60,9 @@ def main():
         article_links_csv_path = files("ecg_interpreter").joinpath(file_name)
         article_links = pd.read_csv(article_links_csv_path, index_col=0)
 
-        i = 0
         for row in article_links.itertuples():
             lid = row.LID
             link = row.doc_link
-            # TESTING - ONLY LOOK AT FIRST 20 ARTICLES
-            if i >= 20:
-                break
             # link is formatted as '/document/####'
             doc_num = int(link.split("/")[-1])
             try:
@@ -92,7 +88,6 @@ def main():
                 with open("error_log.txt", "a") as f:
                     f.write(f"{doc_num}\n")
                 continue
-            i += 1
         # get all actions for this volume, save into activity_df
         vol_actions = curr_vol.getActions()
         vol_acts_as_dicts = [vars(act) for act in vol_actions]
