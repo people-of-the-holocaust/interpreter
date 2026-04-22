@@ -62,7 +62,7 @@ def main():
 
         i = 0
         for row in article_links.itertuples():
-            if i >= 10:
+            if i >= 5:
                 break
             lid = row.LID
             link = row.doc_link
