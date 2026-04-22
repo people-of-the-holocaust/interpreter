@@ -36,7 +36,7 @@ def main():
     # plc_df = pd.read_csv(place_csv_path)
 
     # SET UP activity dataframe
-    # activity_df = pd.DataFrame()
+    activity_df = pd.DataFrame()
 
     # SET UP error log
     with open("error_log.txt", "w") as f:
@@ -60,10 +60,7 @@ def main():
         article_links_csv_path = files("ecg_interpreter").joinpath(file_name)
         article_links = pd.read_csv(article_links_csv_path, index_col=0)
 
-        i = 0
         for row in article_links.itertuples():
-            if i >= 5:
-                break
             lid = row.LID
             link = row.doc_link
             # link is formatted as '/document/####'
@@ -91,15 +88,17 @@ def main():
                 with open("error_log.txt", "a") as f:
                     f.write(f"{doc_num}\n")
                 continue
-            i += 1
         # get all actions for this volume, save into activity_df
-        # vol_actions = curr_vol.getActions()
-        # vol_acts_as_dicts = [vars(act) for act in vol_actions]
-        # activity_df = pd.concat([activity_df, pd.DataFrame(vol_acts_as_dicts)], ignore_index=True)
-        # et all actions for this volume into the database
-        curr_vol.insertIntoDatabase()
+        vol_actions = curr_vol.getActions()
+        vol_acts_as_dicts = [vars(act) for act in vol_actions]
+        activity_df = pd.concat([activity_df, pd.DataFrame(vol_acts_as_dicts)], ignore_index=True)
+        activity_csv_path = files("ecg_interpreter").joinpath("tables/activity_table.csv")
+        activity_df.to_csv(activity_csv_path)
+        # get all actions for this volume into the database
+        # curr_vol.insertIntoDatabase()
         print("Updated activities for volume", vnum)
 
+    ecg_node.insertIntoDatabase()
     # export activity_df to csv
     # activity_csv_path = files("ecg_interpreter").joinpath("tables/activity_table.csv")
     # activity_df.to_csv(activity_csv_path)
