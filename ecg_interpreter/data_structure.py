@@ -50,14 +50,16 @@ class Encyclopedia:
         #Loop for entering Actions into DB.
         #supabase.table -> go to table "TableName", .insert() -> inserts by "Column Name": value, .execute() -> execute command
         for actionInd in actions:
+            pid_subj = (int(actionInd.personSubjID) if actionInd.personSubjID else None)
+            pid_obj = (int(actionInd.personObjID) if actionInd.personObjID else None)
             #actions.index(actionInd)+len(selectData) puts this at the last index in DB.
             #Required as indexes are primary.
             supabase.table("Activity").insert({"Activity ID": (actions.index(actionInd)+len(selectionData)),
-                                            "Person Subj ID": actionInd.personSubjID, 
-                                            "Person Obj ID": actionInd.personObjID, 
+                                            "Person Subj ID": pid_subj, 
+                                            "Person Obj ID": pid_obj, 
                                             "Action": actionInd.action, 
                                             "Details": actionInd.details,
-                                            "Place ID": actionInd.placeID}).execute()
+                                            "Place ID": int(actionInd.placeID)}).execute()
     
 #Page class (Used in Encyclopedia)
 class Volume:

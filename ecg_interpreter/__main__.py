@@ -36,7 +36,7 @@ def main():
     # plc_df = pd.read_csv(place_csv_path)
 
     # SET UP activity dataframe
-    activity_df = pd.DataFrame()
+    # activity_df = pd.DataFrame()
 
     # SET UP error log
     with open("error_log.txt", "w") as f:
@@ -89,11 +89,11 @@ def main():
                     f.write(f"{doc_num}\n")
                 continue
         # get all actions for this volume, save into activity_df
-        vol_actions = curr_vol.getActions()
-        vol_acts_as_dicts = [vars(act) for act in vol_actions]
-        activity_df = pd.concat([activity_df, pd.DataFrame(vol_acts_as_dicts)], ignore_index=True)
-        activity_csv_path = files("ecg_interpreter").joinpath("tables/activity_table.csv")
-        activity_df.to_csv(activity_csv_path)
+        # vol_actions = curr_vol.getActions()
+        # vol_acts_as_dicts = [vars(act) for act in vol_actions]
+        # activity_df = pd.concat([activity_df, pd.DataFrame(vol_acts_as_dicts)], ignore_index=True)
+        # activity_csv_path = files("ecg_interpreter").joinpath("tables/activity_table.csv")
+        # activity_df.to_csv(activity_csv_path)
         # get all actions for this volume into the database
         # curr_vol.insertIntoDatabase()
         print("Updated activities for volume", vnum)
