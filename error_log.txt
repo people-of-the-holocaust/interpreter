@@ -1,0 +1,13 @@
+Exceptions occured while processing the following articles:
+1286
+3128
+3361
+3410
+3450
+3487
+3714
+3857
+4104
+4285
+4398
+4560

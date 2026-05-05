@@ -15,7 +15,7 @@ dependencies = [
     "spacy",
     "nltk",
     "pytest",
-    "psycopg2-binary",
+    "supabase",
     "dotenv"
 ]
 
