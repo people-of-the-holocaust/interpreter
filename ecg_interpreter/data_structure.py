@@ -150,7 +150,7 @@ class Article:
 #Paragraph class (under Article)
 class Paragraph:
     parid = None
-    pids = None
+    personids = None
     text = None
     #List of key sentences in the Article. Always will be Sentences Class
     sentsList = None
@@ -160,17 +160,18 @@ class Paragraph:
         self.text = text
         self.parid = parid
         self.sentsList = []
-        self.pids = {}
+        self.personids = {}
 
     #Function to add key sentence to sentsList
     def addSent(self, newSent):
         self.sentsList.append(newSent)
 
-    def addPersonId(self, id):
-        self.pids.add(id)
+    def gatherPersonIds(self):
+        for sent in self.sentsList:
+            self.personids.update(sent.pids)
 
-    def getPersonId(self):
-        return self.pids
+    def getPersonIds(self):
+        return self.personids
     
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.

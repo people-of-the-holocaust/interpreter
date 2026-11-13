@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 from ecg_interpreter import get_raw_names, create_ppl_table, scrape_vol, get_article_content, is_key, get_person_action, print_ecg
 from ecg_interpreter import Encyclopedia, Volume, Article, Sentence, Paragraph
-from nltk.tokenize import sent_tokenize, blankline_tokenize
+from nltk.tokenize import sent_tokenize, RegexpTokenizer
 from importlib.resources import files
 
 def main():
@@ -73,7 +73,7 @@ def main():
                 curr_vol.addArticle(curr_article)
                 #Paragraph ids are going to be unique through article foreign key and paragraph number within article.
                 paraid = 0
-                for para in blankline_tokenize(body):
+                for para in RegexpTokenizer(r'[\r\n]+', gaps=True).tokenize(body):
                     curr_para = Paragraph(para, paraid)
                     paraid += 1
                     curr_article.addParagraph(curr_para)
