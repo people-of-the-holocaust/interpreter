@@ -160,10 +160,17 @@ class Paragraph:
         self.text = text
         self.parid = parid
         self.sentsList = []
+        self.pids = {}
 
     #Function to add key sentence to sentsList
     def addSent(self, newSent):
         self.sentsList.append(newSent)
+
+    def addPersonId(self, id):
+        self.pids.add(id)
+
+    def getPersonId(self):
+        return self.pids
     
     #Function for returning list of People objects under a Page.
     #May need reworking due to returning multiple arrays of People.

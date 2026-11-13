@@ -71,9 +71,9 @@ def main():
                 # CREATE article node
                 curr_article = Article(place, body, doc_num)
                 curr_vol.addArticle(curr_article)
-
+                #Paragraph ids are going to be unique through article foreign key and paragraph number within article.
+                paraid = 0
                 for para in blankline_tokenize(body):
-                    paraid = 0
                     curr_para = Paragraph(para, paraid)
                     paraid += 1
                     curr_article.addParagraph(curr_para)
