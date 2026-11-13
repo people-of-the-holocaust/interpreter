@@ -1,8 +1,8 @@
 import requests
 import pandas as pd
 from ecg_interpreter import get_raw_names, create_ppl_table, scrape_vol, get_article_content, is_key, get_person_action, print_ecg
-from ecg_interpreter import Encyclopedia, Volume, Article, Sentence
-from nltk.tokenize import sent_tokenize
+from ecg_interpreter import Encyclopedia, Volume, Article, Sentence, Paragraph
+from nltk.tokenize import sent_tokenize, blankline_tokenize
 from importlib.resources import files
 
 def main():
@@ -72,18 +72,23 @@ def main():
                 curr_article = Article(place, body, doc_num)
                 curr_vol.addArticle(curr_article)
 
-                # split article body into sentences
-                sentences = sent_tokenize(body)
-                for sent in sentences:
-                    # check if sent is KEY, get pids from sent
-                    pids = is_key(sent, ppl_df)
-                    if type(pids) == list and len(pids) > 0:
-                        # CREATE sentence node
-                        curr_sent = Sentence(sent, pids)
-                        curr_article.addSent(curr_sent)
-                        for pid in pids:
-                            # CREATE action node
-                            curr_sent.addAction(get_person_action(sent, pid, ppl_df, lid))
+                for para in blankline_tokenize(body):
+                    paraid = 0
+                    curr_para = Paragraph(para, paraid)
+                    paraid += 1
+                    curr_article.addParagraph(curr_para)
+                    # split article body into sentences
+                    sentences = sent_tokenize(para)
+                    for sent in sentences:
+                        # check if sent is KEY, get pids from sent
+                        pids = is_key(sent, ppl_df)
+                        if type(pids) == list and len(pids) > 0:
+                            # CREATE sentence node
+                            curr_sent = Sentence(sent, pids)
+                            curr_para.addSent(curr_sent)
+                            for pid in pids:
+                                # CREATE action node
+                                curr_sent.addAction(get_person_action(sent, pid, ppl_df, lid))
             except:
                 with open("error_log.txt", "a") as f:
                     f.write(f"{doc_num}\n")

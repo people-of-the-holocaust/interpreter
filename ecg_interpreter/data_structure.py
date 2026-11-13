@@ -120,19 +120,45 @@ class Volume:
                                             "Details": actionInd.details,
                                             "Place ID": int(actionInd.placeID)}).execute()
 
-#Paragraph class (under Pages)
+#Article class (under Volume)
 class Article:
     title = None
     text = None
     documentNumber = None
     #List of key sentences in the Article. Always will be Sentences Class
-    sentsList = None
+    paragraphList = None
 
     #Constructor for Article
     def __init__(self, title, text, docNum):
         self.title = title
         self.text = text
         self.documentNumber = docNum
+        self.paragraphList = []
+
+    #Function to add key sentence to sentsList
+    def addParagraph(self, newParagraph):
+        self.paragraphList.append(newParagraph)
+    
+    #Function for returning list of People objects under a Page.
+    #May need reworking due to returning multiple arrays of People.
+    def getActions (self):
+        outputActions = []
+        for sentences in self.paragraphList:
+            outputActions.extend(sentences.getActions())
+        return outputActions
+
+#Paragraph class (under Article)
+class Paragraph:
+    parid = None
+    pids = None
+    text = None
+    #List of key sentences in the Article. Always will be Sentences Class
+    sentsList = None
+
+    #Constructor for Paragraph
+    def __init__(self, text, parid):
+        self.text = text
+        self.parid = parid
         self.sentsList = []
 
     #Function to add key sentence to sentsList
