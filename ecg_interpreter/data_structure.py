@@ -152,7 +152,6 @@ class Paragraph:
     parid = None
     personids = None
     text = None
-    #List of key sentences in the Article. Always will be Sentences Class
     sentsList = None
 
     #Constructor for Paragraph
@@ -171,6 +170,8 @@ class Paragraph:
             self.personids.update(sent.pids)
 
     def getPersonIds(self):
+        if self.personids == {}:
+            self.gatherPersonIds()
         return self.personids
     
     #Function for returning list of People objects under a Page.

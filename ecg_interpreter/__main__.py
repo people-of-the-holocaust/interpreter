@@ -14,7 +14,8 @@ def main():
         1: "https://muse.jhu.edu/resource_group/13",
         2: "https://muse.jhu.edu/resource_group/59",
         3: "https://muse.jhu.edu/resource_group/91",
-        4: "https://muse.jhu.edu/resource_group/111"
+        4: "https://muse.jhu.edu/resource_group/111",
+        5: "https://muse.jhu.edu/resource_group/209"
     }
     # necessary for get_raw_names function
     name_index_url = 'https://muse.jhu.edu/ushmm/index/names'
@@ -73,7 +74,7 @@ def main():
                 curr_vol.addArticle(curr_article)
                 #Paragraph ids are going to be unique through article foreign key and paragraph number within article.
                 paraid = 0
-                for para in RegexpTokenizer(r'[\r\n]+', gaps=True).tokenize(body):
+                for para in RegexpTokenizer(r'[\r\n]+', gaps=False).tokenize(body):
                     curr_para = Paragraph(para, paraid)
                     paraid += 1
                     curr_article.addParagraph(curr_para)
