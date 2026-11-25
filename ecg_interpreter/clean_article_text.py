@@ -17,7 +17,8 @@ def clean_article(soup):
         text = re.sub(r'Click for larger view', '', text, flags=re.IGNORECASE)
         text = re.sub(r'View full resolution', '', text, flags=re.IGNORECASE)
         text = re.sub(r'\[End Page \d+\]', '', text, flags = re.IGNORECASE)
-        text = re.sub(r'\n+', '\n', text)
+        # Preserve New Lines for Paragraph functions, remove in final version
+        # text = re.sub(r'\n+', '\n', text)
         # remove image credit lines
         text = re.sub(r'^.*USHMM.*$', '', text, flags=re.MULTILINE)
         # add cleaned body text to string that will be returned
